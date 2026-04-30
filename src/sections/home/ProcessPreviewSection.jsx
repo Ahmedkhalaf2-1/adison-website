@@ -1,5 +1,6 @@
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
+import GlassCard from "../../components/glass/GlassCard";
 import GlassButton from "../../components/glass/GlassButton";
 import { homeContent } from "../../content/homeContent";
 import { motion } from "framer-motion";

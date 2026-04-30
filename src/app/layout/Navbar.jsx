@@ -87,7 +87,7 @@ export default function Navbar() {
               >
                 
               </Link>
-            </div>
+            </GlassSurface>
           </Container>
         </motion.header>
       )}
