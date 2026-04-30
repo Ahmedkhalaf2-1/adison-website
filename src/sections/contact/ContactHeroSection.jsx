@@ -10,10 +10,7 @@ export default function ContactHeroSection() {
     <section className="section-pad pt-6 sm:pt-8 lg:pt-10">
       <Container>
         <GlassSurface className="relative overflow-hidden rounded-[34px] px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
-          <div className="absolute inset-0 rounded-[34px] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.03),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.02),_transparent_26%)]" />
 
-          <div className="pointer-events-none absolute -left-8 top-8 h-36 w-36 rounded-full bg-white/[0.02] blur-3xl" />
-          <div className="pointer-events-none absolute right-0 bottom-0 h-44 w-52 rounded-full bg-white/[0.02] blur-3xl" />
 
           <div className="relative z-10 grid gap-8 xl:grid-cols-[1.05fr_0.95fr] xl:items-end">
             <div>

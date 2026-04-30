@@ -26,10 +26,7 @@ export default function ProcessPreviewSection() {
         <GlassSurface className="relative overflow-hidden rounded-[36px] px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
           
           {/* CLEAN BACKGROUND */}
-          <div className="absolute inset-0 rounded-[36px] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.035),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.02),_transparent_28%)]" />
 
-          <div className="pointer-events-none absolute right-0 top-0 h-40 w-40 rounded-full bg-white/[0.02] blur-3xl" />
-          <div className="pointer-events-none absolute bottom-0 left-0 h-44 w-52 rounded-full bg-white/[0.02] blur-3xl" />
 
           <div className="relative z-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
             

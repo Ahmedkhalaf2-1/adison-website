@@ -16,15 +16,17 @@ export default function GlassButton({
       border border-white/10
       bg-white/[0.04]
       text-white
-      hover:bg-white/[0.08]
-      hover:-translate-y-0.5
+      hover:bg-white/[0.12]
+      hover:border-white/20
     `,
 
     secondary: `
-      border border-white/10
+      border border-white/5
+      bg-transparent
       text-white/80
       hover:text-white
-      hover:bg-white/[0.06]
+      hover:bg-white/[0.05]
+      hover:border-white/15
     `,
   };
 

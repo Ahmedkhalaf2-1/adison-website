@@ -19,7 +19,7 @@ const fadeUp = (delay = 0) => ({
 function Field({ label, children, span2 = false }) {
   return (
     <div className={span2 ? "sm:col-span-2" : ""}>
-      <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/90">
+      <p className="mb-2 text-xs font-medium uppercase tracking-wider text-white/90">
         {label}
       </p>
       {children}
@@ -30,9 +30,8 @@ function Field({ label, children, span2 = false }) {
 function StepDot({ active }) {
   return (
     <span
-      className={`inline-block h-1.5 w-1.5 rounded-full transition-all duration-300 ${
-        active ? "bg-white/70 scale-125" : "bg-white/20"
-      }`}
+      className={`inline-block h-1.5 w-1.5 rounded-full transition-all duration-300 ${active ? "bg-white/70 scale-125" : "bg-white/20"
+        }`}
     />
   );
 }
@@ -106,7 +105,6 @@ export default function ContactFormSection() {
           <motion.div {...fadeUp(0)}>
             <GlassSurface className="relative h-full overflow-hidden rounded-[32px] px-6 py-10 sm:px-10 sm:py-12 lg:px-12">
               <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-              <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-white/[0.025] blur-3xl" />
 
               <div className="relative">
                 <SectionHeader
@@ -118,8 +116,8 @@ export default function ContactFormSection() {
 
                 <div className="mt-10 rounded-[20px] border border-white/[0.09] bg-white/[0.04] p-5 sm:p-6">
                   <div className="mb-4 flex items-center gap-2.5">
-                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-400/70" />
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/90">
+                    <div className="h-1.5 w-1.5 rounded-full bg-white/60" />
+                    <p className="text-xs font-medium uppercase tracking-wider text-white/50">
                       Available Now
                     </p>
                   </div>
@@ -134,17 +132,10 @@ export default function ContactFormSection() {
                 </div>
 
                 <div className="mt-5 flex items-center gap-3 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-4 py-3">
-                  <div className="flex shrink-0 items-center gap-1.5">
-                    {[...Array(3)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="h-5 w-0.5 rounded-full bg-white/30"
-                        style={{
-                          opacity: 0.3 + i * 0.25,
-                          height: `${10 + i * 4}px`,
-                        }}
-                      />
-                    ))}
+                  <div className="flex shrink-0 items-center justify-center">
+                    <svg className="h-5 w-5 text-white/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                   </div>
                   <p className="text-sm text-white/90">
                     Typical response within{" "}
@@ -272,19 +263,19 @@ export default function ContactFormSection() {
                       </Field>
 
                       <Field label="Message" span2>
-  <GlassTextarea
-    name="message"
-    value={formData.message}
-    onChange={handleChange}
-    placeholder={form.placeholders.message}
-    maxLength={3000}
-    required
-  />
+                        <GlassTextarea
+                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
+                          placeholder={form.placeholders.message}
+                          maxLength={3000}
+                          required
+                        />
 
-  <p className="text-[11px] text-white/90 mt-2 text-right">
-    {formData.message.length} / 3000
-  </p>
-</Field>
+                        <p className="text-[11px] text-white/90 mt-2 text-right">
+                          {formData.message.length} / 3000
+                        </p>
+                      </Field>
                     </div>
 
                     <div className="mt-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
@@ -296,7 +287,7 @@ export default function ContactFormSection() {
                       <button
                         type="submit"
                         disabled={loading}
-                        className="rounded-2xl border border-white/15 bg-white/10 px-6 py-3 text-white transition duration-300 hover:bg-white/15 disabled:cursor-not-allowed disabled:opacity-60"
+                        className="inline-flex items-center justify-center rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-black transition-transform hover:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
                       >
                         {loading ? "Sending..." : form.submitLabel}
                       </button>

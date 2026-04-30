@@ -24,8 +24,6 @@ export default function HomeCTASection() {
     <section className="section-pad">
       <Container>
         <GlassSurface className="overflow-hidden px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
-          <div className="pointer-events-none absolute -left-8 top-8 h-36 w-36 rounded-full bg-white/[0.02] blur-3xl" />
-          <div className="pointer-events-none absolute right-0 bottom-0 h-44 w-52 rounded-full bg-white/[0.02] blur-3xl" />
 
           <div className="relative z-10 grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
             <motion.div

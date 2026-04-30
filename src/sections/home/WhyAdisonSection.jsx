@@ -65,7 +65,6 @@ export default function WhyAdisonSection() {
             transition={{ duration: 0.8, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
           >
             <GlassSurface className="relative overflow-hidden rounded-[34px] px-6 py-10 sm:px-10 sm:py-12 lg:px-14">
-              <div className="absolute inset-0 rounded-[34px] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.03),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.02),_transparent_30%)]" />
 
               <div className="relative z-10">
                 <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/80">

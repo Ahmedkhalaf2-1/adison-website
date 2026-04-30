@@ -23,8 +23,6 @@ export default function IntroSection() {
     <section className="section-pad">
       <Container>
         <GlassSurface className="overflow-hidden px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
-          <div className="pointer-events-none absolute -top-10 right-0 h-40 w-40 rounded-full bg-white/[0.02] blur-3xl" />
-          <div className="pointer-events-none absolute bottom-0 left-0 h-32 w-44 rounded-full bg-white/[0.02] blur-3xl" />
 
           <div className="relative z-10 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
             <motion.div

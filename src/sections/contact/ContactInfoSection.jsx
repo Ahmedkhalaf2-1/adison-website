@@ -29,7 +29,6 @@ export default function ContactInfoSection() {
               <GlassCard className="group relative h-full overflow-hidden rounded-[28px] transition-all duration-500 hover:bg-white/[0.07]">
 
                 {/* inner corner glow on hover */}
-                <div className="pointer-events-none absolute right-0 top-0 h-28 w-28 rounded-full bg-white/[0.03] opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
 
                 {/* top rule */}
                 <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />

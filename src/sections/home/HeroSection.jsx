@@ -25,9 +25,6 @@ export default function HeroSection() {
       <Container>
         <GlassSurface className="overflow-hidden px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-16">
           {/* subtle haze (white only) */}
-          <div className="pointer-events-none absolute -left-12 top-10 h-40 w-40 rounded-full bg-white/[0.025] blur-3xl" />
-          <div className="pointer-events-none absolute right-0 top-0 h-52 w-52 rounded-full bg-white/[0.02] blur-3xl" />
-          <div className="pointer-events-none absolute bottom-0 left-1/2 h-28 w-80 -translate-x-1/2 rounded-full bg-white/[0.02] blur-3xl" />
 
           <div className="relative z-10 grid items-center gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
 

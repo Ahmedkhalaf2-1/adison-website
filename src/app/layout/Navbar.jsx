@@ -1,32 +1,27 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "../../components/shared/Container";
-import GlassSurface from "../../components/glass/GlassSurface";
 import { navigation } from "../../content/navigation";
-
-function LogoMark() {
-  return (
-    <span className="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl border border-white/12 bg-white/[0.04] backdrop-blur-xl">
-      {/* clean glow */}
-      <span className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_rgba(255,255,255,0.18),_transparent_65%)]" />
-
-      {/* core */}
-      <span className="relative h-4 w-4 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.95)_0%,_rgba(255,255,255,0.6)_50%,_transparent_75%)]" />
-    </span>
-  );
-}
 
 export default function Navbar() {
   const [visible, setVisible] = useState(true);
   const [lastScroll, setLastScroll] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location]);
+
+  // Handle scroll to hide/show navbar
   useEffect(() => {
     const handleScroll = () => {
       const current = window.scrollY;
 
       if (current > lastScroll && current > 80) {
-        setVisible(false);
+        if (!mobileMenuOpen) setVisible(false); // keep visible if menu is open
       } else {
         setVisible(true);
       }
@@ -36,61 +31,118 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScroll]);
+  }, [lastScroll, mobileMenuOpen]);
+
+  // Prevent background scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mobileMenuOpen]);
 
   return (
-    <AnimatePresence>
-      {visible && (
-        <motion.header
-          initial={{ y: -80, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -80, opacity: 0 }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-x-0 top-0 z-50"
-        >
-          <Container className="pt-4 sm:pt-5">
-            <GlassSurface className="flex items-center justify-between rounded-[22px] px-4 py-3 shadow-[0_10px_40px_rgba(0,0,0,0.35)] sm:px-5">
-              
-              {/* LOGO */}
-              <Link to="/" className="flex items-center gap-3">
-                <LogoMark />
-                <span className="text-base font-semibold tracking-tight text-white sm:text-lg">
-                  ADISON
-                </span>
-              </Link>
-
-              {/* NAV */}
-              <nav className="hidden items-center gap-8 md:flex">
-                {navigation.map((item) => (
-                  <NavLink
-                    key={item.path}
-                    to={item.path}
-                    className={({ isActive }) =>
-                      `relative text-sm transition ${
-                        isActive
-                          ? "text-white"
-                          : "text-white/90 hover:text-white"
-                      }`
-                    }
-                  >
-                    {item.label}
-
-                    {/* subtle underline */}
-                    <span className="absolute -bottom-1 left-0 h-px w-0 bg-white/60 transition-all duration-300 group-hover:w-full" />
-                  </NavLink>
-                ))}
-              </nav>
-
-              {/* CTA BUTTON (APPLE STYLE) */}
-              <Link
-                to="/contact"
-              >
+    <>
+      <AnimatePresence>
+        {visible && (
+          <motion.header
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -100, opacity: 0 }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur-xl"
+          >
+            <Container>
+              <div className="flex h-[72px] w-full items-center justify-between">
                 
-              </Link>
-            </GlassSurface>
-          </Container>
-        </motion.header>
-      )}
-    </AnimatePresence>
+                {/* LEFT: LOGO */}
+                <div className="flex flex-1 justify-start">
+                  <Link to="/" className="flex items-center">
+                    <span className="text-lg font-semibold tracking-tight text-white">
+                      ADISON
+                    </span>
+                  </Link>
+                </div>
+
+                {/* CENTER: DESKTOP NAV */}
+                <nav className="hidden flex-none items-center gap-10 md:flex">
+                  {navigation.map((item) => (
+                    <NavLink
+                      key={item.path}
+                      to={item.path}
+                      className={({ isActive }) =>
+                        `text-[14px] font-medium transition-colors duration-200 ${
+                          isActive
+                            ? "text-white"
+                            : "text-white/50 hover:text-white"
+                        }`
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
+                  ))}
+                </nav>
+
+                {/* RIGHT: MOBILE TOGGLE */}
+                <div className="flex flex-1 justify-end md:hidden">
+                  <button
+                    className="flex h-10 w-10 items-center justify-end text-white/70 transition-colors hover:text-white"
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                    aria-label="Toggle Menu"
+                  >
+                    {mobileMenuOpen ? (
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    ) : (
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                    )}
+                  </button>
+                </div>
+
+              </div>
+            </Container>
+
+            {/* MOBILE MENU FULL SCREEN OVERLAY */}
+            <AnimatePresence>
+              {mobileMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute inset-x-0 top-full flex h-[calc(100vh-72px)] flex-col border-t border-white/5 bg-black/80 backdrop-blur-3xl md:hidden"
+                >
+                  <Container className="flex h-full flex-col py-10">
+                    <nav className="flex flex-col gap-8">
+                      {navigation.map((item) => (
+                        <NavLink
+                          key={item.path}
+                          to={item.path}
+                          className={({ isActive }) =>
+                            `text-3xl font-medium tracking-tight transition-colors ${
+                              isActive ? "text-white" : "text-white/40 hover:text-white"
+                            }`
+                          }
+                        >
+                          {item.label}
+                        </NavLink>
+                      ))}
+                    </nav>
+                  </Container>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.header>
+        )}
+      </AnimatePresence>
+
+    </>
   );
 }
