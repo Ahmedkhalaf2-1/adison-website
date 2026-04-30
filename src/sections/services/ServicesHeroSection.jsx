@@ -9,9 +9,7 @@ export default function ServicesHeroSection() {
   return (
     <section className="section-pad pt-6 sm:pt-8 lg:pt-10">
       <Container>
-        <GlassSurface className="relative rounded-[34px] px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
-          <div className="absolute inset-0 rounded-[34px] bg-[radial-gradient(circle_at_top,_rgba(138,116,255,0.12),_transparent_30%),radial-gradient(circle_at_bottom_left,_rgba(78,220,198,0.10),_transparent_26%)]" />
-
+        <GlassSurface className="overflow-hidden px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
           <div className="relative z-10 max-w-5xl">
             <motion.p
               initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
