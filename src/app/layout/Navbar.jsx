@@ -2,6 +2,7 @@ import { NavLink, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "../../components/shared/Container";
+import GlassSurface from "../../components/glass/GlassSurface";
 import { navigation } from "../../content/navigation";
 
 function LogoMark() {
@@ -48,7 +49,7 @@ export default function Navbar() {
           className="fixed inset-x-0 top-0 z-50"
         >
           <Container className="pt-4 sm:pt-5">
-            <div className="flex items-center justify-between rounded-[22px] border border-white/10 bg-white/[0.04] px-4 py-3 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.35)] sm:px-5">
+            <GlassSurface className="flex items-center justify-between rounded-[22px] px-4 py-3 shadow-[0_10px_40px_rgba(0,0,0,0.35)] sm:px-5">
               
               {/* LOGO */}
               <Link to="/" className="flex items-center gap-3">

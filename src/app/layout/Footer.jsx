@@ -1,10 +1,11 @@
 import Container from "../../components/shared/Container";
+import GlassSurface from "../../components/glass/GlassSurface";
 
 export default function Footer() {
   return (
     <footer className="relative z-10 pb-6 pt-20 sm:pt-24">
       <Container>
-        <div className="glass-surface glass-highlight ambient-border rounded-[30px] px-6 py-8 sm:px-8 sm:py-10">
+        <GlassSurface className="px-6 py-8 sm:px-8 sm:py-10">
           <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
             <div>
               <p className="text-lg font-semibold text-white sm:text-xl">
@@ -27,7 +28,7 @@ export default function Footer() {
           <div className="mt-8 border-t border-white/10 pt-5 text-xs text-white/38 sm:text-sm">
             © 2026 ADISON Corp. All rights reserved.
           </div>
-        </div>
+        </GlassSurface>
       </Container>
     </footer>
   );

@@ -23,9 +23,7 @@ export default function HomeCTASection() {
   return (
     <section className="section-pad">
       <Container>
-        <GlassSurface className="relative overflow-hidden rounded-[38px] px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
-          <div className="absolute inset-0 rounded-[38px] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.03),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.02),_transparent_30%)]" />
-
+        <GlassSurface className="overflow-hidden px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
           <div className="pointer-events-none absolute -left-8 top-8 h-36 w-36 rounded-full bg-white/[0.02] blur-3xl" />
           <div className="pointer-events-none absolute right-0 bottom-0 h-44 w-52 rounded-full bg-white/[0.02] blur-3xl" />
 

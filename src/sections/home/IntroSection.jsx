@@ -1,5 +1,6 @@
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
+import GlassCard from "../../components/glass/GlassCard";
 import { homeContent } from "../../content/homeContent";
 import { motion } from "framer-motion";
 
@@ -21,9 +22,7 @@ export default function IntroSection() {
   return (
     <section className="section-pad">
       <Container>
-        <GlassSurface className="relative overflow-hidden rounded-[34px] px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
-          <div className="absolute inset-0 rounded-[34px] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.03),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.025),_transparent_30%)]" />
-
+        <GlassSurface className="overflow-hidden px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
           <div className="pointer-events-none absolute -top-10 right-0 h-40 w-40 rounded-full bg-white/[0.02] blur-3xl" />
           <div className="pointer-events-none absolute bottom-0 left-0 h-32 w-44 rounded-full bg-white/[0.02] blur-3xl" />
 
@@ -51,10 +50,10 @@ export default function IntroSection() {
                 {intro.description}
               </p>
 
-              <div className="rounded-[24px] border border-white/10 bg-white/[0.03] px-5 py-5 text-sm leading-7 text-white/56 sm:text-base">
+              <GlassCard variant="secondary" className="px-5 py-5 text-sm leading-7 text-white/56 sm:text-base">
                 Structured thinking creates stronger execution, clearer priorities,
                 and better business direction from the start.
-              </div>
+              </GlassCard>
             </motion.div>
           </div>
         </GlassSurface>

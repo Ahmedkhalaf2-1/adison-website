@@ -80,14 +80,10 @@ export default function ProcessPreviewSection() {
                     {step.number}
                   </div>
 
-                  <div className="group relative overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.03] px-5 py-6 transition-all duration-500 hover:-translate-y-[4px] hover:border-white/15 hover:bg-white/[0.045] hover:shadow-[0_18px_50px_rgba(0,0,0,0.25)]">
-                    
-                    {/* TOP LINE */}
-                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-
-                    {/* INNER GLOW CLEAN */}
-                    <div className="pointer-events-none absolute inset-0 rounded-[24px] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.03),_transparent_58%)] opacity-70" />
-
+                  <GlassCard
+                    variant="secondary"
+                    className="p-6 lg:p-8"
+                  >
                     {/* MOBILE NUMBER */}
                     <p className="relative z-10 mb-3 text-xs font-semibold tracking-[0.24em] text-white/42 sm:hidden">
                       {step.number}
@@ -100,7 +96,7 @@ export default function ProcessPreviewSection() {
                     <p className="relative z-10 mt-3 max-w-2xl text-sm leading-7 text-white/60">
                       {step.description}
                     </p>
-                  </div>
+                  </GlassCard>
                 </motion.div>
               ))}
             </div>

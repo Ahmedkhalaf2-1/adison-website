@@ -1,22 +1,22 @@
 import GlassSurface from "./GlassSurface";
 
-export default function GlassCard({ children, className = "" }) {
+export default function GlassCard({ children, className = "", variant = "primary" }) {
   return (
     <GlassSurface
-      soft
+      variant={variant}
       className={`
-        relative
-        rounded-[26px]
-        p-5 sm:p-6 lg:p-7
-        transition-all duration-300
-        hover:-translate-y-[4px]
-        hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)]
+        group
+        overflow-hidden
+        p-6 sm:p-8 lg:p-10
+        hover:-translate-y-1.5
+        hover:bg-white/[0.07]
+        hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)]
         ${className}
       `}
     >
-      {/* subtle edge border */}
-      <div className="pointer-events-none absolute inset-0 rounded-[26px] border border-white/10" />
-
+      {/* Subtle top light effect */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      
       {children}
     </GlassSurface>
   );

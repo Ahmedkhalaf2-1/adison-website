@@ -44,7 +44,7 @@ export default function WhyAdisonSection() {
                   </p>
                 </div>
 
-                <div className="mt-10 rounded-[24px] border border-white/10 bg-white/[0.03] p-5">
+                <GlassCard variant="secondary" className="mt-10 p-5 lg:p-6">
                   <div className="flex items-center gap-3">
                     <span className="inline-block h-2.5 w-2.5 rounded-full bg-white/60" />
                     <p className="text-sm font-medium text-white/74">
@@ -55,7 +55,7 @@ export default function WhyAdisonSection() {
                   <p className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
                     Clear direction
                   </p>
-                </div>
+                </GlassCard>
               </div>
             </GlassCard>
           </motion.div>
@@ -82,17 +82,10 @@ export default function WhyAdisonSection() {
 
                 <div className="mt-10 grid gap-4">
                   {whyAdison.points.map((point, index) => (
-                    <motion.div
+                    <GlassSurface
                       key={point}
-                      initial={{ opacity: 0, x: 16, filter: "blur(8px)" }}
-                      whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-                      viewport={{ once: true, amount: 0.18 }}
-                      transition={{
-                        duration: 0.58,
-                        delay: index * 0.06,
-                        ease: [0.22, 1, 0.36, 1],
-                      }}
-                      className="rounded-[22px] border border-white/10 bg-white/[0.03] px-5 py-5 text-sm text-white/72 sm:text-base"
+                      variant="secondary"
+                      className="px-5 py-5 text-sm text-white/72 sm:text-base"
                     >
                       <div className="mb-3 flex items-center gap-3">
                         <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-xs font-semibold text-white/70">
@@ -102,7 +95,7 @@ export default function WhyAdisonSection() {
                       </div>
 
                       <p className="leading-7">{point}</p>
-                    </motion.div>
+                    </GlassSurface>
                   ))}
                 </div>
               </div>
