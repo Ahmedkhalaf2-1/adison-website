@@ -5,9 +5,9 @@ export default function GlassSurface({
   variant = "primary", // primary, secondary, or subtle
 }) {
   const variantStyles = {
-    primary: "bg-black/40 border-white/10 backdrop-blur-xl",
-    secondary: "bg-black/30 border-white/5 backdrop-blur-xl",
-    subtle: "bg-black/20 border-white/5 backdrop-blur-xl",
+    primary: "bg-black/60 border-white/10 backdrop-blur-2xl",
+    secondary: "bg-black/50 border-white/8 backdrop-blur-xl",
+    subtle: "bg-black/40 border-white/5 backdrop-blur-xl",
   };
 
   return (
