@@ -31,7 +31,7 @@ export default function WhyAdisonSection() {
             <GlassCard className="min-h-[420px] rounded-[34px] p-6 sm:p-8 lg:p-10">
               <div className="flex h-full flex-col justify-between">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/46">
+                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/90">
                     Strategic Value
                   </p>
 
@@ -39,7 +39,7 @@ export default function WhyAdisonSection() {
                     Business clarity should feel calm, not chaotic.
                   </h3>
 
-                  <p className="mt-6 max-w-md text-sm leading-7 text-white/62 sm:text-base">
+                  <p className="mt-6 max-w-md text-sm leading-7 text-white/90 sm:text-base">
                     {whyAdison.sideNote}
                   </p>
                 </div>
@@ -47,7 +47,7 @@ export default function WhyAdisonSection() {
                 <GlassCard variant="secondary" className="mt-10 p-5 lg:p-6">
                   <div className="flex items-center gap-3">
                     <span className="inline-block h-2.5 w-2.5 rounded-full bg-white/60" />
-                    <p className="text-sm font-medium text-white/74">
+                    <p className="text-sm font-medium text-white/90">
                       Structured outcomes
                     </p>
                   </div>
@@ -68,7 +68,7 @@ export default function WhyAdisonSection() {
               <div className="absolute inset-0 rounded-[34px] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.03),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.02),_transparent_30%)]" />
 
               <div className="relative z-10">
-                <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/50">
+                <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
                   {whyAdison.eyebrow}
                 </p>
 
@@ -76,7 +76,7 @@ export default function WhyAdisonSection() {
                   {whyAdison.title}
                 </h2>
 
-                <p className="mt-5 max-w-2xl text-base leading-8 text-white/64 sm:text-lg">
+                <p className="mt-5 max-w-2xl text-base leading-8 text-white/90 sm:text-lg">
                   {whyAdison.description}
                 </p>
 
@@ -85,10 +85,10 @@ export default function WhyAdisonSection() {
                     <GlassSurface
                       key={point}
                       variant="secondary"
-                      className="px-5 py-5 text-sm text-white/72 sm:text-base"
+                      className="px-5 py-5 text-sm text-white/90 sm:text-base"
                     >
                       <div className="mb-3 flex items-center gap-3">
-                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-xs font-semibold text-white/70">
+                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-xs font-semibold text-white/90">
                           {String(index + 1).padStart(2, "0")}
                         </span>
                         <span className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent" />

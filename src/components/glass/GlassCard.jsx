@@ -9,7 +9,7 @@ export default function GlassCard({ children, className = "", variant = "primary
         overflow-hidden
         p-6 sm:p-8 lg:p-10
         hover:-translate-y-1.5
-        hover:bg-white/[0.07]
+        hover:bg-black/50
         hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)]
         ${className}
       `}

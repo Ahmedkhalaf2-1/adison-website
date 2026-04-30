@@ -11,14 +11,14 @@ export default function Footer() {
               <p className="text-lg font-semibold text-white sm:text-xl">
                 ADISON Corp.
               </p>
-              <p className="mt-3 max-w-xl text-sm leading-7 text-white/62 sm:text-base">
+              <p className="mt-3 max-w-xl text-sm leading-7 text-white/90 sm:text-base">
                 A Canadian-based firm with global reach, delivering structured,
                 practical, and scalable business innovation and development
                 solutions.
               </p>
             </div>
 
-            <div className="grid gap-3 text-sm text-white/56 sm:text-right">
+            <div className="grid gap-3 text-sm text-white/80 sm:text-right">
               <p>Toronto, Ontario, Canada</p>
               <p>info@adison.ca</p>
               <p>+1 647 847 0111</p>

@@ -20,7 +20,7 @@ export default function ValuesSection() {
             <GlassCard key={item.title} className="rounded-[28px] h-full">
               <div className="flex h-full flex-col">
                 <div className="mb-6 flex items-center gap-3">
-                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/72">
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/90">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span className="h-px flex-1 bg-white/8" />
@@ -30,7 +30,7 @@ export default function ValuesSection() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 text-sm leading-7 text-white/62 sm:text-base">
+                <p className="mt-4 text-sm leading-7 text-white/90 sm:text-base">
                   {item.description}
                 </p>
               </div>

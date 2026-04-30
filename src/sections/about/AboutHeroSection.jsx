@@ -17,7 +17,7 @@ export default function AboutHeroSection() {
                 initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.55, delay: 0.04 }}
-                className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/58"
+                className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/80"
               >
                 {hero.eyebrow}
               </motion.p>
@@ -38,13 +38,13 @@ export default function AboutHeroSection() {
               transition={{ duration: 0.7, delay: 0.18 }}
             >
               <GlassCard variant="secondary" className="p-5 sm:p-6 lg:p-7">
-                <p className="text-sm leading-7 text-white/66 sm:text-base">
+                <p className="text-sm leading-7 text-white/90 sm:text-base">
                   {hero.description}
                 </p>
 
                 <div className="mt-6 h-px w-full bg-gradient-to-r from-white/0 via-white/12 to-white/0" />
 
-                <p className="mt-6 text-sm leading-7 text-white/58 sm:text-base">
+                <p className="mt-6 text-sm leading-7 text-white/80 sm:text-base">
                   {identity.note}
                 </p>
               </GlassCard>

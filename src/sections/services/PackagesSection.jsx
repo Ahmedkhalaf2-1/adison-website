@@ -20,7 +20,7 @@ export default function PackagesSection() {
             <GlassCard key={item.title} className="rounded-[28px] h-full">
               <div className="flex h-full flex-col">
                 <div className="mb-6 flex items-center justify-between gap-4">
-                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/74">
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/90">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
@@ -31,7 +31,7 @@ export default function PackagesSection() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 text-sm leading-7 text-white/62 sm:text-base">
+                <p className="mt-4 text-sm leading-7 text-white/90 sm:text-base">
                   {item.summary}
                 </p>
 
@@ -39,7 +39,7 @@ export default function PackagesSection() {
                   {item.points.map((point) => (
                     <div
                       key={point}
-                      className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white/70"
+                      className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white/90"
                     >
                       {point}
                     </div>

@@ -33,7 +33,7 @@ export default function HomeCTASection() {
               transition={{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }}
               className="text-center lg:text-left"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.30em] text-white/50">
+              <p className="text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
                 {cta.eyebrow}
               </p>
 
@@ -41,7 +41,7 @@ export default function HomeCTASection() {
                 {cta.title}
               </h2>
 
-              <p className="mt-5 max-w-2xl text-base leading-8 text-white/64 sm:text-lg lg:max-w-xl">
+              <p className="mt-5 max-w-2xl text-base leading-8 text-white/90 sm:text-lg lg:max-w-xl">
                 {cta.description}
               </p>
             </motion.div>
@@ -52,7 +52,7 @@ export default function HomeCTASection() {
               className="grid gap-4"
             >
               <GlassCard className="p-5 sm:p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/46">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/90">
                   Next Step
                 </p>
 

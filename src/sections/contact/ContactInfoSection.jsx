@@ -39,7 +39,7 @@ export default function ContactInfoSection() {
                   {/* index row */}
                   <div className="mb-7 flex items-center gap-3">
                     <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-white/[0.1] bg-white/[0.05]">
-                      <span className="text-[11px] font-semibold tabular-nums text-white/60">
+                      <span className="text-[11px] font-semibold tabular-nums text-white/90">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                       {/* animated corner tick */}
@@ -49,7 +49,7 @@ export default function ContactInfoSection() {
                   </div>
 
                   {/* label */}
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-white/42">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-white/90">
                     {item.title}
                   </p>
 
@@ -62,7 +62,7 @@ export default function ContactInfoSection() {
                   <div className="my-5 h-px w-10 bg-gradient-to-r from-white/20 to-transparent transition-all duration-500 group-hover:w-16 group-hover:from-white/30" />
 
                   {/* note */}
-                  <p className="mt-auto text-sm leading-[1.75] text-white/54 sm:text-[0.9375rem]">
+                  <p className="mt-auto text-sm leading-[1.75] text-white/80 sm:text-[0.9375rem]">
                     {item.note}
                   </p>
                 </div>

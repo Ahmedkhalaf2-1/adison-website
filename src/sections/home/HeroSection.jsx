@@ -37,7 +37,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="text-center lg:text-left"
             >
-              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/50">
+              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
                 {hero.eyebrow}
               </p>
 
@@ -45,7 +45,7 @@ export default function HeroSection() {
                 {hero.title}
               </h1>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/64 sm:text-lg lg:max-w-xl">
+              <p className="mt-7 max-w-2xl text-base leading-8 text-white/90 sm:text-lg lg:max-w-xl">
                 {hero.description}
               </p>
 
@@ -69,7 +69,7 @@ export default function HeroSection() {
               <GlassCard className="min-h-[180px]">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.26em] text-white/48">
+                    <p className="text-xs font-semibold uppercase tracking-[0.26em] text-white/90">
                       Global Positioning
                     </p>
                     <h3 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
@@ -78,7 +78,7 @@ export default function HeroSection() {
                   </div>
 
                   <div className="mt-8 flex items-center gap-3">
-                    <p className="text-sm text-white/56">
+                    <p className="text-sm text-white/80">
                       Structured business innovation and development
                     </p>
                   </div>
@@ -87,7 +87,7 @@ export default function HeroSection() {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <GlassCard className="min-h-[150px]">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/46">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/90">
                     Core Focus
                   </p>
                   <p className="mt-4 text-lg font-semibold leading-snug text-white">
@@ -96,7 +96,7 @@ export default function HeroSection() {
                 </GlassCard>
 
                 <GlassCard className="min-h-[150px]">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/46">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/90">
                     Strategic Direction
                   </p>
                   <p className="mt-4 text-lg font-semibold leading-snug text-white">

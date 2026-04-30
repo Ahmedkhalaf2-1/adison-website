@@ -19,7 +19,7 @@ const fadeUp = (delay = 0) => ({
 function Field({ label, children, span2 = false }) {
   return (
     <div className={span2 ? "sm:col-span-2" : ""}>
-      <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/40">
+      <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/90">
         {label}
       </p>
       {children}
@@ -119,7 +119,7 @@ export default function ContactFormSection() {
                 <div className="mt-10 rounded-[20px] border border-white/[0.09] bg-white/[0.04] p-5 sm:p-6">
                   <div className="mb-4 flex items-center gap-2.5">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-400/70" />
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/40">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/90">
                       Available Now
                     </p>
                   </div>
@@ -128,7 +128,7 @@ export default function ContactFormSection() {
                     {closing.title}
                   </p>
 
-                  <p className="mt-3 text-sm leading-[1.8] text-white/52 sm:text-[0.9375rem]">
+                  <p className="mt-3 text-sm leading-[1.8] text-white/80 sm:text-[0.9375rem]">
                     {closing.description}
                   </p>
                 </div>
@@ -146,9 +146,9 @@ export default function ContactFormSection() {
                       />
                     ))}
                   </div>
-                  <p className="text-sm text-white/48">
+                  <p className="text-sm text-white/90">
                     Typical response within{" "}
-                    <span className="font-semibold text-white/72">
+                    <span className="font-semibold text-white/90">
                       24 hours
                     </span>
                   </p>
@@ -187,7 +187,7 @@ export default function ContactFormSection() {
                   >
                     <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-white/[0.05]">
                       <svg
-                        className="h-6 w-6 text-white/70"
+                        className="h-6 w-6 text-white/90"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -205,7 +205,7 @@ export default function ContactFormSection() {
                       <p className="text-lg font-semibold text-white">
                         Message received
                       </p>
-                      <p className="mt-2 text-sm text-white/52">
+                      <p className="mt-2 text-sm text-white/80">
                         We'll be in touch within 24 hours.
                       </p>
                     </div>
@@ -255,7 +255,7 @@ export default function ContactFormSection() {
                           <option
                             value=""
                             disabled
-                            className="bg-[#0a0d18] text-white/50"
+                            className="bg-[#0a0d18] text-white/80"
                           >
                             {form.placeholders.inquiry}
                           </option>
@@ -281,14 +281,14 @@ export default function ContactFormSection() {
     required
   />
 
-  <p className="text-[11px] text-white/40 mt-2 text-right">
+  <p className="text-[11px] text-white/90 mt-2 text-right">
     {formData.message.length} / 3000
   </p>
 </Field>
                     </div>
 
                     <div className="mt-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-                      <p className="max-w-xs text-sm leading-[1.8] text-white/44">
+                      <p className="max-w-xs text-sm leading-[1.8] text-white/90">
                         Share your idea, your project, or the kind of support
                         you are looking for.
                       </p>

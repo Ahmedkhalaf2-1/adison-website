@@ -32,7 +32,7 @@ export default function IntroSection() {
               transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
               className="text-center lg:text-left"
             >
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/50">
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
                 {intro.eyebrow}
               </p>
 
@@ -46,11 +46,11 @@ export default function IntroSection() {
               transition={{ duration: 0.78, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="grid gap-5"
             >
-              <p className="max-w-2xl text-base leading-8 text-white/64 sm:text-lg">
+              <p className="max-w-2xl text-base leading-8 text-white/90 sm:text-lg">
                 {intro.description}
               </p>
 
-              <GlassCard variant="secondary" className="px-5 py-5 text-sm leading-7 text-white/56 sm:text-base">
+              <GlassCard variant="secondary" className="px-5 py-5 text-sm leading-7 text-white/80 sm:text-base">
                 Structured thinking creates stronger execution, clearer priorities,
                 and better business direction from the start.
               </GlassCard>

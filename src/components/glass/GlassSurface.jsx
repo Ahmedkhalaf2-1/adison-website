@@ -5,9 +5,9 @@ export default function GlassSurface({
   variant = "primary", // primary, secondary, or subtle
 }) {
   const variantStyles = {
-    primary: "bg-white/[0.04] border-white/10",
-    secondary: "bg-white/[0.02] border-white/5",
-    subtle: "bg-white/[0.01] border-white/5",
+    primary: "bg-black/40 border-white/10 backdrop-blur-xl",
+    secondary: "bg-black/30 border-white/5 backdrop-blur-xl",
+    subtle: "bg-black/20 border-white/5 backdrop-blur-xl",
   };
 
   return (
@@ -16,7 +16,6 @@ export default function GlassSurface({
         relative
         rounded-[32px]
         border
-        backdrop-blur-xl
         transition-all duration-500
         ${variantStyles[variant] || variantStyles.primary}
         ${className}
@@ -24,7 +23,7 @@ export default function GlassSurface({
     >
       {/* Internal subtle glow */}
       <div className="pointer-events-none absolute inset-0 rounded-[inherit] bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.02),transparent_40%)]" />
-      
+
       {children}
     </Tag>
   );

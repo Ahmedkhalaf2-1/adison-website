@@ -11,7 +11,7 @@ export default function AboutClosingSection() {
       <Container>
         <GlassSurface className="overflow-hidden px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
           <div className="relative z-10 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.30em] text-white/54">
+            <p className="text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
               {closing.eyebrow}
             </p>
 
@@ -19,7 +19,7 @@ export default function AboutClosingSection() {
               {closing.title}
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-white/66 sm:text-lg">
+            <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-white/90 sm:text-lg">
               {closing.description}
             </p>
 

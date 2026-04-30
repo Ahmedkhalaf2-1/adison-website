@@ -69,7 +69,7 @@ export default function Navbar() {
                       `relative text-sm transition ${
                         isActive
                           ? "text-white"
-                          : "text-white/60 hover:text-white"
+                          : "text-white/90 hover:text-white"
                       }`
                     }
                   >

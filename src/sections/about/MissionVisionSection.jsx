@@ -22,25 +22,25 @@ export default function MissionVisionSection() {
 
           <div className="grid gap-6">
             <GlassCard className="rounded-[28px]">
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/52">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/80">
                 {mission.eyebrow}
               </p>
               <h3 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
                 {mission.title}
               </h3>
-              <p className="mt-4 text-sm leading-7 text-white/64 sm:text-base">
+              <p className="mt-4 text-sm leading-7 text-white/90 sm:text-base">
                 {mission.description}
               </p>
             </GlassCard>
 
             <GlassCard className="rounded-[28px]">
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/52">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/80">
                 {vision.eyebrow}
               </p>
               <h3 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
                 {vision.title}
               </h3>
-              <p className="mt-4 text-sm leading-7 text-white/64 sm:text-base">
+              <p className="mt-4 text-sm leading-7 text-white/90 sm:text-base">
                 {vision.description}
               </p>
             </GlassCard>

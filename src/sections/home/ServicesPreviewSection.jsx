@@ -45,7 +45,7 @@ export default function ServicesPreviewSection() {
               <GlassCard className="h-full">
                 <div className="flex h-full flex-col">
                   <div className="mb-6 flex items-center gap-4">
-                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/72">
+                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/90">
                       {String(index + 1).padStart(2, "0")}
                     </div>
 
@@ -60,7 +60,7 @@ export default function ServicesPreviewSection() {
                     {item.title}
                   </h3>
 
-                  <p className="mt-4 max-w-2xl text-sm leading-7 text-white/62 sm:text-base">
+                  <p className="mt-4 max-w-2xl text-sm leading-7 text-white/90 sm:text-base">
                     {item.description}
                   </p>
                 </div>

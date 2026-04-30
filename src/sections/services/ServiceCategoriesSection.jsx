@@ -26,7 +26,7 @@ export default function ServiceCategoriesSection() {
             >
               <div className="flex flex-col gap-6 lg:flex-row lg:gap-8">
                 <div className="lg:w-[110px]">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/76">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/90">
                     {item.number}
                   </div>
                 </div>
@@ -36,7 +36,7 @@ export default function ServiceCategoriesSection() {
                     {item.title}
                   </h3>
 
-                  <p className="mt-4 max-w-2xl text-sm leading-7 text-white/64 sm:text-base">
+                  <p className="mt-4 max-w-2xl text-sm leading-7 text-white/90 sm:text-base">
                     {item.description}
                   </p>
 
@@ -44,10 +44,10 @@ export default function ServiceCategoriesSection() {
                     {item.bullets.map((bullet, bulletIndex) => (
                       <div
                         key={bullet}
-                        className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm text-white/72"
+                        className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm text-white/90"
                       >
                         <div className="mb-3 flex items-center gap-3">
-                          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/12 bg-white/[0.05] text-[11px] font-semibold text-white/70">
+                          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/12 bg-white/[0.05] text-[11px] font-semibold text-white/90">
                             {bulletIndex + 1}
                           </span>
                           <span className="h-px flex-1 bg-white/8" />

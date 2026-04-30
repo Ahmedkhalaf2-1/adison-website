@@ -39,7 +39,7 @@ export default function ProcessPreviewSection() {
               transition={{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }}
               className="text-center lg:sticky lg:top-28 lg:text-left"
             >
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/50">
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
                 {processPreview.eyebrow}
               </p>
 
@@ -47,7 +47,7 @@ export default function ProcessPreviewSection() {
                 {processPreview.title}
               </h2>
 
-              <p className="mt-5 max-w-xl text-base leading-8 text-white/64 sm:text-lg">
+              <p className="mt-5 max-w-xl text-base leading-8 text-white/90 sm:text-lg">
                 {processPreview.description}
               </p>
 
@@ -77,7 +77,7 @@ export default function ProcessPreviewSection() {
                 >
                   
                   {/* NODE */}
-                  <div className="absolute left-0 top-6 hidden h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/70 sm:inline-flex">
+                  <div className="absolute left-0 top-6 hidden h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/90 sm:inline-flex">
                     {step.number}
                   </div>
 
@@ -86,7 +86,7 @@ export default function ProcessPreviewSection() {
                     className="p-6 lg:p-8"
                   >
                     {/* MOBILE NUMBER */}
-                    <p className="relative z-10 mb-3 text-xs font-semibold tracking-[0.24em] text-white/42 sm:hidden">
+                    <p className="relative z-10 mb-3 text-xs font-semibold tracking-[0.24em] text-white/90 sm:hidden">
                       {step.number}
                     </p>
 
@@ -94,7 +94,7 @@ export default function ProcessPreviewSection() {
                       {step.title}
                     </h3>
 
-                    <p className="relative z-10 mt-3 max-w-2xl text-sm leading-7 text-white/60">
+                    <p className="relative z-10 mt-3 max-w-2xl text-sm leading-7 text-white/90">
                       {step.description}
                     </p>
                   </GlassCard>

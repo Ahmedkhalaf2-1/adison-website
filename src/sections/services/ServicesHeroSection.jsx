@@ -15,7 +15,7 @@ export default function ServicesHeroSection() {
               initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.55, delay: 0.05 }}
-              className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/58"
+              className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/80"
             >
               {hero.eyebrow}
             </motion.p>
@@ -33,7 +33,7 @@ export default function ServicesHeroSection() {
               initial={{ opacity: 0, y: 18, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="mt-7 max-w-3xl text-base leading-8 text-white/68 sm:text-lg"
+              className="mt-7 max-w-3xl text-base leading-8 text-white/90 sm:text-lg"
             >
               {hero.description}
             </motion.p>

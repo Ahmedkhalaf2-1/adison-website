@@ -24,7 +24,7 @@ export default function ProcessTimelineSection() {
             >
               <div className="grid gap-6 xl:grid-cols-[140px_1fr] xl:gap-8">
                 <div className="flex items-start gap-4 xl:block">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/78">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/90">
                     {step.number}
                   </div>
 
@@ -39,7 +39,7 @@ export default function ProcessTimelineSection() {
                       {step.title}
                     </h3>
 
-                    <p className="mt-4 max-w-3xl text-sm leading-7 text-white/64 sm:text-base">
+                    <p className="mt-4 max-w-3xl text-sm leading-7 text-white/90 sm:text-base">
                       {step.description}
                     </p>
                   </div>
@@ -48,10 +48,10 @@ export default function ProcessTimelineSection() {
                     {step.highlights.map((highlight) => (
                       <div
                         key={highlight}
-                        className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm text-white/72"
+                        className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm text-white/90"
                       >
                         <div className="mb-3 flex items-center gap-3">
-                          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/12 bg-white/[0.05] text-[11px] font-semibold text-white/70">
+                          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/12 bg-white/[0.05] text-[11px] font-semibold text-white/90">
                             •
                           </span>
                           <span className="h-px flex-1 bg-white/8" />
