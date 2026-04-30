@@ -1,0 +1,82 @@
+import Container from "../../components/shared/Container";
+import GlassSurface from "../../components/glass/GlassSurface";
+import GlassCard from "../../components/glass/GlassCard";
+import GlassButton from "../../components/glass/GlassButton";
+import { homeContent } from "../../content/homeContent";
+import { motion } from "framer-motion";
+
+const fadeLeft = {
+  initial: { opacity: 0, x: -24, filter: "blur(10px)" },
+  whileInView: { opacity: 1, x: 0, filter: "blur(0px)" },
+  viewport: { once: true, amount: 0.25 },
+};
+
+const fadeRight = {
+  initial: { opacity: 0, x: 24, filter: "blur(10px)" },
+  whileInView: { opacity: 1, x: 0, filter: "blur(0px)" },
+  viewport: { once: true, amount: 0.25 },
+};
+
+export default function HomeCTASection() {
+  const { cta } = homeContent;
+
+  return (
+    <section className="section-pad">
+      <Container>
+        <GlassSurface className="relative overflow-hidden rounded-[38px] px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
+          <div className="absolute inset-0 rounded-[38px] bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.03),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.02),_transparent_30%)]" />
+
+          <div className="pointer-events-none absolute -left-8 top-8 h-36 w-36 rounded-full bg-white/[0.02] blur-3xl" />
+          <div className="pointer-events-none absolute right-0 bottom-0 h-44 w-52 rounded-full bg-white/[0.02] blur-3xl" />
+
+          <div className="relative z-10 grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+            <motion.div
+              {...fadeLeft}
+              transition={{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }}
+              className="text-center lg:text-left"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.30em] text-white/50">
+                {cta.eyebrow}
+              </p>
+
+              <h2 className="mt-5 max-w-4xl text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+                {cta.title}
+              </h2>
+
+              <p className="mt-5 max-w-2xl text-base leading-8 text-white/64 sm:text-lg lg:max-w-xl">
+                {cta.description}
+              </p>
+            </motion.div>
+
+            <motion.div
+              {...fadeRight}
+              transition={{ duration: 0.8, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+              className="grid gap-4"
+            >
+              <GlassCard className="p-5 sm:p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/46">
+                  Next Step
+                </p>
+
+                <p className="mt-4 text-lg font-semibold leading-snug text-white">
+                  Start the conversation and move the idea forward with structure.
+                </p>
+
+                <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+                  <GlassButton to={cta.primaryCta.to}>
+                    {cta.primaryCta.label}
+                  </GlassButton>
+
+                  <GlassButton to={cta.secondaryCta.to} variant="secondary">
+                    {cta.secondaryCta.label}
+                  </GlassButton>
+                </div>
+              </GlassCard>
+
+            </motion.div>
+          </div>
+        </GlassSurface>
+      </Container>
+    </section>
+  );
+}
