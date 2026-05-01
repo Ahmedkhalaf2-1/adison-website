@@ -1,282 +1,386 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "À Propos",
-    "services": "Services",
+    "about": "Cabinet",
+    "services": "Expertise",
     "howWeWork": "Méthodologie",
     "contact": "Contact"
   },
   "home": {
     "hero": {
-      "eyebrow": "Une firme canadienne à portée mondiale",
+      "eyebrow": "Cabinet canadien à rayonnement international",
       "title": "Éclairer la voie de votre croissance",
-      "description": "ADISON Corp est une firme d'innovation et de développement d'affaires offrant des solutions structurées, pratiques et évolutives. Nous transformons les idées en stratégies claires et en résultats concrets.",
+      "description": "ADISON Corp est un cabinet d'innovation et d'ingénierie d'affaires dédié à la structuration de solutions évolutives. Nous transformons vos visions stratégiques en modèles opérationnels concrets et performants.",
       "primaryCta": {
-        "label": "Contacter ADISON",
+        "label": "Engager ADISON",
         "to": "/contact"
       },
       "secondaryCta": {
-        "label": "Explorer les Services",
+        "label": "Découvrir l'Expertise",
         "to": "/services"
       },
       "cards": {
         "global": {
-          "eyebrow": "Positionnement Mondial",
-          "title": "Expertise canadienne avec une portée internationale.",
-          "description": "Innovation et développement d'affaires structurés"
+          "eyebrow": "Positionnement Global",
+          "title": "Expertise canadienne, impact international.",
+          "description": "Ingénierie d'affaires et structuration stratégique"
         },
         "focus": {
-          "eyebrow": "Focus Principal",
-          "title": "Clarté, structure et exécution pratique."
+          "eyebrow": "Axe Principal",
+          "title": "Clarté, architecture et exécution rigoureuse."
         },
         "direction": {
-          "eyebrow": "Direction Stratégique",
-          "title": "Transformer les idées en résultats d'affaires exploitables."
+          "eyebrow": "Orientation Stratégique",
+          "title": "Convertir le potentiel en résultats tangibles."
         }
       }
     },
     "intro": {
-      "eyebrow": "Qui Sommes-Nous",
-      "title": "Pensée structurée. Exécution pratique. Direction durable.",
-      "description": "ADISON Corp accompagne les individus, les entrepreneurs et les organisations dans la transition de l'incertitude vers la structure. Nous travaillons à l'intersection de la stratégie, de l'analyse, du développement et de l'exécution pour façonner des résultats durables.",
-      "card": "Une pensée structurée crée une exécution plus forte, des priorités plus claires et une meilleure direction dès le départ."
+      "eyebrow": "À Propos",
+      "title": "Pensée structurée. Rigueur opérationnelle. Croissance durable.",
+      "description": "ADISON Corp accompagne les leaders et les organisations dans la transition de la complexité vers la structure. Nous opérons à la confluence de la stratégie, de l'analyse et de l'exécution pour bâtir des modèles pérennes.",
+      "card": "Une architecture de pensée rigoureuse garantit une exécution optimale et une direction stratégique dès la genèse du projet."
     },
     "servicesPreview": {
-      "eyebrow": "Ce Que Nous Faisons",
-      "title": "Nous aidons les idées à passer du concept à l'exécution à travers des piliers de services ciblés.",
-      "description": "Notre travail est organisé autour du développement des affaires, de l'analyse, du conseil pédagogique, des systèmes numériques et de l'identité de marque.",
+      "eyebrow": "Nos Domaines d'Intervention",
+      "title": "Propulser vos concepts vers l'excellence opérationnelle grâce à nos piliers d'expertise.",
+      "description": "Notre intervention se structure autour du développement stratégique, de l'analyse de données et de l'optimisation des systèmes numériques.",
       "items": [
-        { "title": "Développement et Stratégie", "description": "Planification structurée, direction de modèle d'affaires et conception de feuilles de route claires." },
-        { "title": "Analyse d'Affaires et de Données", "description": "Évaluation, diagnostic, interprétation et cadres de soutien à la décision." },
-        { "title": "Conseil et Développement Pédagogique", "description": "Conception de programmes, développement pédagogique et solutions de structure d'apprentissage." },
-        { "title": "Solutions et Plateformes Numériques", "description": "Planification Web, flux de travail numériques, structure de systèmes et modèles de services en ligne." },
-        { "title": "Identité de Marque et Design", "description": "Création d'identité, positionnement, développement de concepts et direction visuelle." }
+        {
+          "title": "Stratégie et Ingénierie d'Affaires",
+          "description": "Planification structurée, modélisation d'affaires et conception de feuilles de route stratégiques."
+        },
+        {
+          "title": "Analyse d'Affaires et BI",
+          "description": "Diagnostic, interprétation analytique et cadres d'aide à la décision stratégique."
+        },
+        {
+          "title": "Conseil et Ingénierie Pédagogique",
+          "description": "Conception de curricula, ingénierie de formation et solutions de transfert de compétences."
+        },
+        {
+          "title": "Solutions et Écosystèmes Numériques",
+          "description": "Architecture Web, optimisation des flux numériques et structuration de plateformes de services."
+        },
+        {
+          "title": "Identité Visuelle et Positionnement",
+          "description": "Architecture de marque, positionnement de marché et direction artistique stratégique."
+        }
       ],
-      "cta": "Voir Tous les Services"
+      "cta": "Consulter l'offre complète"
     },
     "whyAdison": {
       "eyebrow": "Pourquoi ADISON",
-      "title": "Un partenaire méthodique axé sur la clarté, la structure et le progrès significatif.",
-      "description": "Nous nous concentrons sur des solutions d'affaires pratiques, disciplinées et alignées avec le développement durable à long terme.",
+      "title": "Un partenaire méthodique pour une clarté absolue et un progrès structuré.",
+      "description": "Nous privilégions des solutions pragmatiques, disciplinées et alignées sur les impératifs de développement durable.",
       "points": [
-        "Approche structurée et méthodique",
-        "Expertise professionnelle avec expérience internationale",
-        "Solutions pratiques et axées sur les résultats",
-        "Communication claire et direction stratégique",
-        "Focus sur la croissance et le développement durable"
+        "Approche méthodologique rigoureuse",
+        "Expertise certifiée au niveau international",
+        "Solutions axées sur la performance et le ROI",
+        "Communication transparente et alignement stratégique",
+        "Focus sur la scalabilité et la pérennité"
       ],
-      "sideNote": "Chaque engagement est conçu pour réduire la confusion, renforcer la direction et faire avancer le travail avec confiance.",
+      "sideNote": "Chaque intervention vise à neutraliser l'incertitude et à instaurer une dynamique de progrès maîtrisée.",
       "cards": {
         "strategic": {
           "eyebrow": "Valeur Stratégique",
-          "title": "La clarté des affaires doit inspirer le calme, pas le chaos.",
+          "title": "La clarté opérationnelle est le socle de la sérénité décisionnelle.",
           "outcomes": "Résultats structurés",
-          "direction": "Direction claire"
+          "direction": "Orientation précise"
         }
       }
     },
     "processPreview": {
       "eyebrow": "Méthodologie",
-      "title": "Un processus clair qui transforme les idées en résultats structurés.",
-      "description": "Nous suivons une méthodologie disciplinée en cinq étapes pour que chaque projet avance avec clarté, alignement et but.",
+      "title": "Un cadre rigoureux pour transformer vos ambitions en actifs structurés.",
+      "description": "Nous suivons un protocole discipliné en cinq étapes pour garantir la cohérence et l'impact de chaque projet.",
       "steps": [
-        { "number": "01", "title": "Découverte et Clarté", "description": "Nous définissons l'idée, les objectifs, les priorités et la direction." },
-        { "number": "02", "title": "Analyse et Évaluation", "description": "Nous évaluons les opportunités, les défis, les risques et la performance." },
-        { "number": "03", "title": "Conception et Structure", "description": "Nous bâtissons la feuille de route, les systèmes et le cadre opérationnel." },
-        { "number": "04", "title": "Développement et Exécution", "description": "Nous soutenons la mise en œuvre, le développement et la livraison." },
-        { "number": "05", "title": "Soutien et Croissance", "description": "Nous guidons l'amélioration, l'adaptation et le progrès à long terme." }
+        {
+          "number": "01",
+          "title": "Découverte et Cadrage",
+          "description": "Définition de la vision, des objectifs prioritaires et de l'orientation stratégique."
+        },
+        {
+          "number": "02",
+          "title": "Analyse et Diagnostic",
+          "description": "Évaluation des leviers de croissance, des risques et des indicateurs de performance."
+        },
+        {
+          "number": "03",
+          "title": "Architecture et Modélisation",
+          "description": "Conception de la feuille de route et du cadre opérationnel intégré."
+        },
+        {
+          "number": "04",
+          "title": "Déploiement et Exécution",
+          "description": "Pilotage de la mise en œuvre pour assurer l'excellence du livrable."
+        },
+        {
+          "number": "05",
+          "title": "Accompagnement et Scalabilité",
+          "description": "Optimisation continue pour garantir la pérennité et la croissance à long terme."
+        }
       ],
-      "cta": "En Savoir Plus"
+      "cta": "Découvrir notre approche"
     },
     "cta": {
-      "eyebrow": "Prêt à avancer ?",
-      "title": "Vous avez une idée ou un projet en tête ?",
-      "description": "Laissez ADISON vous aider à avancer avec clarté, confiance et exécution structurée.",
-      "primaryCta": "Contacter ADISON",
-      "secondaryCta": "Voir les Services",
+      "eyebrow": "Prêt à franchir le cap ?",
+      "title": "Une vision ou un projet à concrétiser ?",
+      "description": "Laissez ADISON instaurer la structure et la clarté nécessaires à votre prochaine réussite.",
+      "primaryCta": "Engager la conversation",
+      "secondaryCta": "Explorer les solutions",
       "card": {
         "eyebrow": "Prochaine Étape",
-        "title": "Lancez la conversation et donnez une structure claire à votre idée."
+        "title": "Bâtissons dès aujourd'hui les fondations de votre futur succès."
       }
     }
   },
   "about": {
     "hero": {
-      "eyebrow": "À Propos d'ADISON",
-      "title": "Une firme canadienne à portée mondiale avec une approche structurée de l'innovation.",
-      "description": "ADISON Corp se spécialise dans la transformation d'idées en solutions d'affaires structurées, exploitables et évolutives. Notre travail repose sur la clarté, l'expertise professionnelle et l'expérience internationale."
+      "eyebrow": "Le Cabinet",
+      "title": "Cabinet canadien d'ingénierie d'affaires à vocation internationale.",
+      "description": "ADISON Corp est spécialisé dans la conversion de concepts en solutions d'affaires structurées et scalables. Notre approche repose sur la clarté, l'expertise métier et la rigueur analytique."
     },
     "identity": {
-      "eyebrow": "Qui Sommes-Nous",
-      "title": "Nous bâtissons une direction claire autour d'idées prometteuses.",
-      "description": "ADISON Corp est une firme d'innovation et de développement d'affaires axée sur l'accompagnement vers la structure. Nous travaillons à l'intersection de la stratégie, de l'analyse et de l'exécution.",
-      "note": "Notre rôle n'est pas seulement de conseiller, mais d'aider à organiser la complexité en progrès structuré."
+      "eyebrow": "Notre Identité",
+      "title": "Instaurer la clarté au cœur des projets à fort potentiel.",
+      "description": "ADISON Corp est un cabinet de conseil en innovation d'affaires aidant les organisations à passer du chaos à la structure. Nous intervenons sur les axes stratégiques pour générer des résultats pérennes.",
+      "note": "Notre mission dépasse le simple conseil : nous structurons la complexité en leviers de croissance concrets."
     },
     "mission": {
-      "eyebrow": "Notre Mission",
-      "title": "Éclairer les idées d'affaires et les transformer en solutions claires, structurées et réalisables.",
-      "description": "Nous guidons les projets par une pensée disciplinée et une structure stratégique pour avancer avec confiance."
+      "eyebrow": "Mission",
+      "title": "Éclairer les opportunités et les transformer en solutions structurées et réalisables.",
+      "description": "Nous guidons les projets par une pensée disciplinée et une ingénierie stratégique pour assurer un progrès maîtrisé."
     },
     "vision": {
-      "eyebrow": "Notre Vision",
-      "title": "Devenir un leader de confiance en innovation et développement d'affaires.",
-      "description": "Nous visons à être reconnus pour notre clarté, notre professionnalisme et notre impact significatif."
+      "eyebrow": "Vision",
+      "title": "S'imposer comme le partenaire de référence en ingénierie d'innovation d'affaires.",
+      "description": "Nous aspirons à être reconnus pour notre rigueur, notre professionnalisme et notre capacité à générer de la valeur durable."
     },
     "values": {
-      "eyebrow": "Nos Valeurs",
-      "title": "Les principes qui façonnent notre façon de penser, de bâtir et de livrer.",
-      "description": "Chaque projet est guidé par des valeurs qui maintiennent notre travail discipliné et crédible.",
+      "eyebrow": "Valeurs",
+      "title": "Les piliers qui régissent notre pensée, notre conception et nos livrables.",
+      "description": "Chaque intervention est dictée par des standards rigoureux garantissant l'intégrité et la performance de notre travail.",
       "items": [
-        { "title": "Innovation", "description": "Nous explorons les idées et libérons leur potentiel par un développement réfléchi." },
-        { "title": "Clarté", "description": "Nous simplifions la complexité et fournissons une direction facile à suivre." },
-        { "title": "Structure", "description": "Chaque résultat réussi commence par une base solide et organisée." },
-        { "title": "Intégrité", "description": "Nous travaillons avec professionnalisme, honnêteté et transparence." },
-        { "title": "Croissance", "description": "Nous soutenons l'amélioration continue et le développement à long terme." },
-        { "title": "Consistance", "description": "Nous livrons un travail discipliné avec une qualité constante." }
+        {
+          "title": "Innovation",
+          "description": "Explorer de nouveaux horizons pour libérer le plein potentiel de chaque concept."
+        },
+        {
+          "title": "Clarté",
+          "description": "Simplifier la complexité pour offrir des directions exploitables immédiatement."
+        },
+        {
+          "title": "Structure",
+          "description": "Tout succès pérenne repose sur une architecture solide et organisée."
+        },
+        {
+          "title": "Intégrité",
+          "description": "Rigueur, transparence et déontologie sont au cœur de nos engagements."
+        },
+        {
+          "title": "Croissance",
+          "description": "Favoriser l'amélioration continue et l'expansion stratégique à long terme."
+        },
+        {
+          "title": "Excellence",
+          "description": "Délivrer un travail de haute précision avec une exigence de qualité constante."
+        }
       ]
     },
     "closing": {
       "eyebrow": "Perspective Finale",
-      "title": "Transformer les idées en résultats d'affaires pratiques et durables.",
-      "description": "Chez ADISON, nous créons des parcours d'affaires clairs et conçus pour la pertinence à long terme.",
-      "cta": "Contacter ADISON"
+      "title": "Convertir l'inspiration en actifs d'affaires structurés et durables.",
+      "description": "Chez ADISON, nous dessinons des trajectoires de croissance claires et pérennes. Notre objectif est de transformer le potentiel en progrès réel."
     }
   },
   "services": {
     "hero": {
-      "eyebrow": "Innovation et Développement d'Affaires",
-      "title": "Services structurés conçus pour transformer les idées en solutions concrètes.",
-      "description": "ADISON offre un soutien ciblé en stratégie, analyse, éducation et numérique pour apporter clarté et structure."
+      "eyebrow": "Ingénierie d'Innovation d'Affaires",
+      "title": "Solutions stratégiques pour transformer vos ambitions en réalités opérationnelles.",
+      "description": "ADISON déploie une expertise multidimensionnelle en stratégie, analyse et écosystèmes numériques pour instaurer structure et dynamisme."
     },
     "categories": {
-      "eyebrow": "Catégories de Services",
-      "title": "Cinq piliers de services bâtis sur la clarté, la structure et l'exécution.",
-      "description": "Nos services sont organisés pour soutenir les projets de l'idéation à la croissance, répondant aux besoins pratiques.",
+      "eyebrow": "Expertises",
+      "title": "Cinq piliers d'intervention fondés sur la clarté, la structure et la performance.",
+      "description": "Nos services sont articulés pour soutenir les projets de l'idéation à la maturité, en répondant aux impératifs métiers réels.",
       "items": [
         {
-          "number": "01", "title": "Stratégie et Développement",
-          "description": "Nous aidons à transformer les idées en opportunités structurées par la planification et la conception de feuilles de route.",
-          "bullets": ["Développement d'idées", "Planification stratégique", "Conception de feuilles de route", "Planification des processus"]
+          "number": "01",
+          "title": "Ingénierie et Stratégie d'Affaires",
+          "description": "Modélisation de concepts en opportunités structurées via la planification stratégique et la conception de feuilles de route opérationnelles.",
+          "bullets": [
+            "Modélisation de concepts d'affaires",
+            "Planification stratégique",
+            "Architecture de feuilles de route",
+            "Optimisation des processus"
+          ]
         },
         {
-          "number": "02", "title": "Analyse et Données",
-          "description": "Nous évaluons la performance et les parcours décisionnels par le diagnostic et l'interprétation analytique.",
-          "bullets": ["Diagnostic d'affaires", "Analyse de données", "Évaluation de performance", "Cadres de soutien à la décision"]
+          "number": "02",
+          "title": "Analyse de Données et BI",
+          "description": "Évaluation de la performance et des schémas décisionnels via des diagnostics précis et une interprétation analytique rigoureuse.",
+          "bullets": [
+            "Diagnostic et audit d'affaires",
+            "Business Intelligence et analyse",
+            "Reporting de performance",
+            "Cadres d'aide à la décision"
+          ]
         },
         {
-          "number": "03", "title": "Conseil Pédagogique",
-          "description": "Nous concevons des solutions d'apprentissage structurées soutenant le développement des talents et des programmes.",
-          "bullets": ["Développement de programmes", "Conception pédagogique", "Structure de modèles d'apprentissage", "Formation des talents"]
+          "number": "03",
+          "title": "Ingénierie Pédagogique et Conseil",
+          "description": "Conception de solutions d'apprentissage structurées pour le développement des compétences et la valorisation du capital humain.",
+          "bullets": [
+            "Développement de curricula",
+            "Ingénierie de programmes",
+            "Structuration de modèles d'apprentissage",
+            "Formation et coaching de talents"
+          ]
         },
         {
-          "number": "04", "title": "Solutions Numériques",
-          "description": "Nous définissons les flux de travail numériques, les modèles de services et les sites soutenant l'efficacité opérationnelle.",
-          "bullets": ["Planification de plateformes", "Flux de travail numériques", "Modèles de services en ligne"]
+          "number": "04",
+          "title": "Écosystèmes et Solutions Numériques",
+          "description": "Définition de la trajectoire numérique, de l'architecture Web à l'automatisation des flux pour garantir l'efficacité opérationnelle.",
+          "bullets": [
+            "Architecture de plateformes",
+            "Optimisation des flux numériques",
+            "Développement de modèles e-services"
+          ]
         },
         {
-          "number": "05", "title": "Identité et Design",
-          "description": "Nous façonnons l'identité d'affaires par le positionnement et la direction visuelle alignés sur les objectifs à long terme.",
-          "bullets": ["Création d'identité", "Positionnement de marque", "Développement de concepts", "Design graphique"]
+          "number": "05",
+          "title": "Architecture de Marque et Design",
+          "description": "Façonner l'identité de votre entreprise par le positionnement stratégique et une direction artistique alignée sur vos objectifs.",
+          "bullets": [
+            "Architecture d'identité",
+            "Branding et positionnement",
+            "Naming et concept créatif",
+            "Design graphique stratégique"
+          ]
         }
       ]
     },
     "packages": {
-      "eyebrow": "Forfaits de Services",
-      "title": "Forfaits conçus pour les différentes étapes du développement d'affaires.",
-      "description": "Nos forfaits soutiennent les entreprises là où elles ont le plus besoin de clarté ou de structure.",
+      "eyebrow": "Offres de Services",
+      "title": "Solutions intégrées adaptées aux cycles de maturité de vos projets.",
+      "description": "Nos offres sont conçues pour intervenir aux moments critiques nécessitant une clarté absolue ou un renforcement structurel.",
       "items": [
-        { "title": "Forfait Clarté", "summary": "Définissez votre idée et votre direction par un conseil structuré.", "points": ["Direction initiale", "Révision de positionnement", "Consultation de haut niveau"] },
-        { "title": "Forfait Structure", "summary": "Bâtissez une base solide par la planification et la feuille de route.", "points": ["Feuille de route de projet", "Clarté opérationnelle", "Base de planification exploitable"] },
-        { "title": "Forfait Croissance", "summary": "Optimisez et développez votre entreprise par la stratégie et l'analyse.", "points": ["Optimisation des affaires", "Soutien analytique", "Amélioration des flux de travail"] },
-        { "title": "Conseil Stratégique", "summary": "Soutien expert continu pour les décisions et le développement.", "points": ["Direction stratégique", "Soutien-conseil continu", "Consultation axée sur les décisions"] }
+        {
+          "title": "Pack Clarté",
+          "summary": "Définir vos orientations stratégiques via un diagnostic structuré.",
+          "points": [
+            "Définition de trajectoire",
+            "Audit de positionnement",
+            "Consultation stratégique flash"
+          ]
+        },
+        {
+          "title": "Pack Structure",
+          "summary": "Bâtir les fondations de votre projet via une feuille de route opérationnelle.",
+          "points": [
+            "Architecture de feuille de route",
+            "Clarté des processus",
+            "Cadre opérationnel prêt-à-l'emploi"
+          ]
+        },
+        {
+          "title": "Pack Croissance",
+          "summary": "Propulser vos activités par l'analyse et l'optimisation des systèmes.",
+          "points": [
+            "Optimisation de la performance",
+            "Analyse de données stratégiques",
+            "Amélioration des flux de travail"
+          ]
+        },
+        {
+          "title": "Conseil Stratégique",
+          "summary": "Accompagnement expert pour sécuriser vos décisions et pérenniser votre succès.",
+          "points": [
+            "Accompagnement à la décision",
+            "Support consultatif permanent",
+            "Veille et conseil stratégique"
+          ]
+        }
       ]
-    },
-    "cta": {
-      "eyebrow": "Prêt à avancer ?",
-      "title": "Façonnons votre prochaine étape avec clarté et structure.",
-      "description": "Que vous bâtissiez une nouvelle idée ou optimisiez une entreprise existante, ADISON est prête à vous soutenir.",
-      "primaryCta": "Contacter ADISON",
-      "secondaryCta": "Méthodologie"
     }
   },
   "process": {
     "hero": {
       "eyebrow": "Méthodologie",
-      "title": "Une approche structurée du concept à l'exécution.",
-      "description": "ADISON suit une méthodologie claire et disciplinée pour assurer le développement de chaque projet avec structure et clarté."
-    },
-    "intro": {
-      "eyebrow": "Méthodologie Structurée",
-      "title": "Un processus conçu pour guider les projets avec logique et élan.",
-      "description": "Notre cadre assure que chaque étape est intentionnelle, contribuant à un résultat d'affaires organisé et durable."
+      "title": "Un protocole rigoureux de l'idéation à l'excellence opérationnelle.",
+      "description": "ADISON applique une méthodologie scientifique et disciplinée pour assurer le développement maîtrisé de chaque projet."
     },
     "steps": [
-      { "number": "01", "title": "Découverte et Clarté", "description": "Nous définissons l'idée et les priorités, créant la clarté nécessaire pour avancer.", "highlights": ["Définition de l'idée", "Clarification des buts", "Alignement de direction"] },
-      { "number": "02", "title": "Analyse et Évaluation", "description": "Nous évaluons les opportunités et les risques pour façonner des étapes réfléchies.", "highlights": ["Évaluation des risques", "Revue de situation", "Soutien à la décision"] },
-      { "number": "03", "title": "Conception et Structure", "description": "Nous organisons le projet en un modèle pratique par la feuille de route et le cadre opérationnel.", "highlights": ["Bâtir la feuille de route", "Structure des systèmes", "Cadre de travail pratique"] },
-      { "number": "04", "title": "Développement et Exécution", "description": "Nous soutenons la transition de la planification à l'action par la mise en œuvre guidée.", "highlights": ["Guidage d'exécution", "Soutien à la livraison", "Lier planification et action"] },
-      { "number": "05", "title": "Soutien et Croissance", "description": "Nous aidons les projets à évoluer par la revue continue et le soutien stratégique à long terme.", "highlights": ["Amélioration continue", "Soutien à l'adaptation", "Développement à long terme"] }
-    ],
-    "closing": {
-      "eyebrow": "Perspective Finale",
-      "title": "Chaque étape transforme la clarté en élan pratique.",
-      "description": "Notre processus structuré assure que les idées deviennent des solutions d'affaires exploitables et durables.",
-      "primaryCta": "Contacter ADISON",
-      "secondaryCta": "Explorer les Services"
-    }
+      {
+        "number": "01",
+        "title": "Découverte et Cadrage",
+        "description": "Identification des enjeux, des objectifs stratégiques et de la vision globale.",
+        "highlights": [
+          "Cadrage du concept",
+          "Définition des priorités",
+          "Alignement stratégique"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Analyse et Diagnostic",
+        "description": "Audit du paysage actuel pour identifier les leviers de croissance et anticiper les risques.",
+        "highlights": [
+          "Audit de situation",
+          "Analyse SWOT et risques",
+          "Aide à la décision basée sur les faits"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Architecture et Modélisation",
+        "description": "Structuration du projet en un modèle opérationnel cohérent via la feuille de route.",
+        "highlights": [
+          "Conception de feuille de route",
+          "Architecture des systèmes",
+          "Modélisation opérationnelle"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Déploiement et Pilotage",
+        "description": "Transition de la planification à l'exécution maîtrisée avec un suivi rigoureux de la mise en œuvre.",
+        "highlights": [
+          "Pilotage de l'exécution",
+          "Suivi de la livraison",
+          "Mise en œuvre concrète"
+        ]
+      },
+      {
+        "number": "05",
+        "title": "Optimisation et Scalabilité",
+        "description": "Accompagnement continu pour garantir l'agilité et la pérennité de l'actif créé.",
+        "highlights": [
+          "Amélioration continue",
+          "Soutien à la scalabilité",
+          "Focus pérennité et croissance"
+        ]
+      }
+    ]
   },
   "contact": {
-    "hero": {
-      "eyebrow": "Contacter ADISON",
-      "title": "Faisons avancer votre entreprise.",
-      "description": "Que vous ayez une nouvelle idée ou un projet en cours, ADISON est prête à vous soutenir."
-    },
-    "info": {
-      "eyebrow": "Coordonnées",
-      "title": "Contactez-nous avec votre idée ou demande de renseignement.",
-      "description": "Nous accueillons les conversations sur les nouveaux concepts et le soutien stratégique.",
-      "items": [
-        { "title": "Email", "value": "info@adison.ca", "note": "Pour les demandes de projets et renseignements généraux." },
-        { "title": "Téléphone", "value": "+1 647 847 0111", "note": "Pour un contact direct concernant le développement d'affaires." },
-        { "title": "Lieu", "value": "Toronto, Ontario, Canada", "note": "Firme canadienne à portée mondiale." }
-      ]
-    },
     "form": {
-      "eyebrow": "Envoyer un Message",
-      "title": "Partagez votre idée. Partagez votre but.",
-      "description": "Utilisez le formulaire pour nous parler de votre projet ou du soutien que vous recherchez.",
-      "inquiryOptions": ["Nouvelle Idée", "Développement", "Conseil", "Autre"],
-      "placeholders": {
-        "name": "Nom Complet",
-        "email": "Email",
-        "phone": "Téléphone (Optionnel)",
-        "inquiry": "Type de demande",
-        "message": "Parlez-nous de votre projet..."
-      },
-      "labels": {
-        "name": "Nom Complet",
-        "email": "Email",
-        "phone": "Téléphone",
-        "inquiry": "Type de demande",
-        "message": "Message"
-      },
-      "submitLabel": "Contacter ADISON",
-      "availableNow": "Disponible Maintenant",
-      "responseTime": "Réponse sous",
-      "responseHours": "24 heures",
-      "sharePrompt": "Partagez votre idée ou le soutien que vous recherchez.",
-      "sending": "Envoi en cours...",
-      "successTitle": "Message Reçu",
-      "successDescription": "Nous vous répondrons sous 24 heures."
-    },
-    "closing": {
-      "title": "La clarté commence par une conversation.",
-      "description": "Faites le premier pas. ADISON est là pour vous aider à structurer la voie à suivre."
+      "inquiryOptions": [
+        "Nouveau Projet",
+        "Ingénierie d'Affaires",
+        "Consultation",
+        "Autre"
+      ],
+      "submitLabel": "Engager la conversation",
+      "sending": "Transmission en cours...",
+      "successTitle": "Message Transmis",
+      "successDescription": "Notre équipe vous répondra sous 24 heures."
     }
   },
   "footer": {
     "companyName": "ADISON Corp.",
-    "description": "Firme canadienne à portée mondiale, offrant des solutions structurées d'innovation d'affaires.",
+    "description": "Cabinet canadien d'ingénierie d'affaires, offrant des solutions structurées et scalables à l'échelle internationale.",
     "location": "Toronto, Ontario, Canada",
     "email": "info@adison.ca",
     "phone": "+1 647 847 0111",
