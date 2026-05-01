@@ -1,10 +1,20 @@
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "../../components/shared/Container";
-import { navigation } from "../../content/navigation";
+import LanguageSwitcher from "../../components/shared/LanguageSwitcher";
+
+const navKeys = [
+  { key: "nav.home", path: "/" },
+  { key: "nav.about", path: "/about" },
+  { key: "nav.services", path: "/services" },
+  { key: "nav.howWeWork", path: "/how-we-work" },
+  { key: "nav.contact", path: "/contact" },
+];
 
 export default function Navbar() {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(true);
   const [lastScroll, setLastScroll] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,7 +31,7 @@ export default function Navbar() {
       const current = window.scrollY;
 
       if (current > lastScroll && current > 80) {
-        if (!mobileMenuOpen) setVisible(false); // keep visible if menu is open
+        if (!mobileMenuOpen) setVisible(false);
       } else {
         setVisible(true);
       }
@@ -60,50 +70,50 @@ export default function Navbar() {
               <div className="flex h-[72px] w-full items-center justify-between">
                 
                 {/* LEFT: LOGO */}
-                <div className="flex flex-1 justify-start">
-                  <Link to="/" className="flex items-center">
-                    <span className="text-lg font-semibold tracking-tight text-white">
-                      ADISON
-                    </span>
-                  </Link>
-                </div>
+                <Link to="/" className="flex items-center">
+                  <span className="text-lg font-semibold tracking-tight text-white">
+                    ADISON
+                  </span>
+                </Link>
 
-                {/* CENTER: DESKTOP NAV */}
-                <nav className="hidden flex-none items-center gap-10 md:flex">
-                  {navigation.map((item) => (
-                    <NavLink
-                      key={item.path}
-                      to={item.path}
-                      className={({ isActive }) =>
-                        `text-[14px] font-medium transition-colors duration-200 ${
-                          isActive
-                            ? "text-white"
-                            : "text-white/50 hover:text-white"
-                        }`
-                      }
+                {/* RIGHT: DESKTOP NAV + ACTIONS */}
+                <div className="flex items-center gap-10">
+                  <nav className="hidden items-center gap-10 md:flex">
+                    {navKeys.map((item) => (
+                      <NavLink
+                        key={item.path}
+                        to={item.path}
+                        className={({ isActive }) =>
+                          `text-[14px] font-medium transition-colors duration-200 ${
+                            isActive
+                              ? "text-white"
+                              : "text-white/50 hover:text-white"
+                          }`
+                        }
+                      >
+                        {t(item.key)}
+                      </NavLink>
+                    ))}
+                  </nav>
+
+                  <div className="flex items-center gap-3">
+                    <LanguageSwitcher />
+                    <button
+                      className="flex h-10 w-10 items-center justify-end text-white/70 transition-colors hover:text-white md:hidden"
+                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                      aria-label="Toggle Menu"
                     >
-                      {item.label}
-                    </NavLink>
-                  ))}
-                </nav>
-
-                {/* RIGHT: MOBILE TOGGLE */}
-                <div className="flex flex-1 justify-end md:hidden">
-                  <button
-                    className="flex h-10 w-10 items-center justify-end text-white/70 transition-colors hover:text-white"
-                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    aria-label="Toggle Menu"
-                  >
-                    {mobileMenuOpen ? (
-                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    ) : (
-                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
-                      </svg>
-                    )}
-                  </button>
+                      {mobileMenuOpen ? (
+                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      ) : (
+                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                      )}
+                    </button>
+                  </div>
                 </div>
 
               </div>
@@ -121,7 +131,7 @@ export default function Navbar() {
                 >
                   <Container className="flex h-full flex-col py-10">
                     <nav className="flex flex-col gap-8">
-                      {navigation.map((item) => (
+                      {navKeys.map((item) => (
                         <NavLink
                           key={item.path}
                           to={item.path}
@@ -131,7 +141,7 @@ export default function Navbar() {
                             }`
                           }
                         >
-                          {item.label}
+                          {t(item.key)}
                         </NavLink>
                       ))}
                     </nav>
@@ -142,7 +152,6 @@ export default function Navbar() {
           </motion.header>
         )}
       </AnimatePresence>
-
     </>
   );
 }

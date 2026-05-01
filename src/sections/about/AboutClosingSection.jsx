@@ -1,10 +1,13 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 import GlassButton from "../../components/glass/GlassButton";
-import { aboutContent } from "../../content/aboutContent";
 
 export default function AboutClosingSection() {
-  const { closing } = aboutContent;
+  const content = useContent("about");
+  const { closing } = content;
+
+  if (!closing) return null;
 
   return (
     <section className="section-pad">
@@ -24,7 +27,7 @@ export default function AboutClosingSection() {
             </p>
 
             <div className="mt-10 flex justify-center">
-              <GlassButton to="/contact">Contact ADISON</GlassButton>
+              <GlassButton to="/contact">{closing.cta}</GlassButton>
             </div>
           </div>
         </GlassSurface>

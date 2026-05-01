@@ -1,10 +1,13 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 import GlassButton from "../../components/glass/GlassButton";
-import { processContent } from "../../content/processContent";
 
 export default function ProcessCTASection() {
-  const { closing } = processContent;
+  const content = useContent("process");
+  const { closing } = content;
+
+  if (!closing) return null;
 
   return (
     <section className="section-pad">
@@ -24,12 +27,12 @@ export default function ProcessCTASection() {
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <GlassButton to={closing.primaryCta.to}>
-                {closing.primaryCta.label}
+              <GlassButton to="/contact">
+                {closing.primaryCta}
               </GlassButton>
 
-              <GlassButton to={closing.secondaryCta.to} variant="secondary">
-                {closing.secondaryCta.label}
+              <GlassButton to="/services" variant="secondary">
+                {closing.secondaryCta}
               </GlassButton>
             </div>
           </div>

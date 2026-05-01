@@ -1,10 +1,13 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
-import { contactContent } from "../../content/contactContent";
 import { motion } from "framer-motion";
 
 export default function ContactHeroSection() {
-  const { hero, closing } = contactContent;
+  const content = useContent("contact");
+  const { hero, closing } = content;
+
+  if (!hero) return null;
 
   return (
     <section className="section-pad pt-6 sm:pt-8 lg:pt-10">

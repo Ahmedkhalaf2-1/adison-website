@@ -2,7 +2,7 @@ import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 import GlassCard from "../../components/glass/GlassCard";
 import GlassButton from "../../components/glass/GlassButton";
-import { homeContent } from "../../content/homeContent";
+import { useContent } from "../../hooks/useContent";
 import { motion } from "framer-motion";
 
 const fadeLeft = {
@@ -18,7 +18,10 @@ const fadeRight = {
 };
 
 export default function HomeCTASection() {
-  const { cta } = homeContent;
+  const content = useContent("home");
+  const { cta } = content;
+
+  if (!cta) return null;
 
   return (
     <section className="section-pad">
@@ -29,17 +32,17 @@ export default function HomeCTASection() {
             <motion.div
               {...fadeLeft}
               transition={{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }}
-              className="text-center lg:text-left"
+              className="text-center lg:text-start"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
+              <p className="mb-2 text-[14px] font-semibold uppercase tracking-[0.32em] text-white/90">
                 {cta.eyebrow}
               </p>
 
-              <h2 className="mt-5 max-w-4xl text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+              <h2 className="mt-3 max-w-4xl text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
                 {cta.title}
               </h2>
 
-              <p className="mt-5 max-w-2xl text-base leading-8 text-white/90 sm:text-lg lg:max-w-xl">
+              <p className="mt-3 max-w-2xl text-base leading-8 text-white/90 sm:text-lg lg:max-w-xl">
                 {cta.description}
               </p>
             </motion.div>
@@ -51,20 +54,20 @@ export default function HomeCTASection() {
             >
               <GlassCard className="p-5 sm:p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/90">
-                  Next Step
+                  {cta.card.eyebrow}
                 </p>
 
                 <p className="mt-4 text-lg font-semibold leading-snug text-white">
-                  Start the conversation and move the idea forward with structure.
+                  {cta.card.title}
                 </p>
 
                 <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-                  <GlassButton to={cta.primaryCta.to}>
-                    {cta.primaryCta.label}
+                  <GlassButton to="/contact">
+                    {cta.primaryCta}
                   </GlassButton>
 
-                  <GlassButton to={cta.secondaryCta.to} variant="secondary">
-                    {cta.secondaryCta.label}
+                  <GlassButton to="/services" variant="secondary">
+                    {cta.secondaryCta}
                   </GlassButton>
                 </div>
               </GlassCard>

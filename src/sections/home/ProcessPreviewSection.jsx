@@ -2,7 +2,7 @@ import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 import GlassCard from "../../components/glass/GlassCard";
 import GlassButton from "../../components/glass/GlassButton";
-import { homeContent } from "../../content/homeContent";
+import { useContent } from "../../hooks/useContent";
 import { motion } from "framer-motion";
 
 const fadeLeft = {
@@ -18,39 +18,39 @@ const fadeRight = {
 };
 
 export default function ProcessPreviewSection() {
-  const { processPreview } = homeContent;
+  const content = useContent("home");
+  const { processPreview } = content;
+
+  if (!processPreview) return null;
 
   return (
     <section className="section-pad">
       <Container>
         <GlassSurface className="relative overflow-hidden rounded-[36px] px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
           
-          {/* CLEAN BACKGROUND */}
-
-
           <div className="relative z-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
             
             {/* LEFT */}
             <motion.div
               {...fadeLeft}
               transition={{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }}
-              className="text-center lg:sticky lg:top-28 lg:text-left"
+              className="text-center lg:sticky lg:top-28 lg:text-start"
             >
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
+              <p className="mb-2 text-[14px] font-semibold uppercase tracking-[0.32em] text-white/90">
                 {processPreview.eyebrow}
               </p>
 
-              <h2 className="max-w-xl text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+              <h2 className="max-w-xl text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
                 {processPreview.title}
               </h2>
 
-              <p className="mt-5 max-w-xl text-base leading-8 text-white/90 sm:text-lg">
+              <h3 className="mt-3 max-w-xl text-base leading-8 text-white/90 sm:text-lg">
                 {processPreview.description}
-              </p>
+              </h3>
 
               <div className="mt-8 hidden lg:flex">
-                <GlassButton to={processPreview.cta.to} variant="secondary">
-                  {processPreview.cta.label}
+                <GlassButton to="/how-we-work" variant="secondary">
+                  {processPreview.cta}
                 </GlassButton>
               </div>
             </motion.div>
@@ -108,8 +108,8 @@ export default function ProcessPreviewSection() {
             transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
             className="relative z-10 mt-10 flex justify-center lg:hidden"
           >
-            <GlassButton to={processPreview.cta.to} variant="secondary">
-              {processPreview.cta.label}
+            <GlassButton to="/how-we-work" variant="secondary">
+              {processPreview.cta}
             </GlassButton>
           </motion.div>
         </GlassSurface>

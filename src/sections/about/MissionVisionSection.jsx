@@ -1,11 +1,14 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import GlassCard from "../../components/glass/GlassCard";
 import GlassSurface from "../../components/glass/GlassSurface";
-import { aboutContent } from "../../content/aboutContent";
 
 export default function MissionVisionSection() {
-  const { identity, mission, vision } = aboutContent;
+  const content = useContent("about");
+  const { identity, mission, vision } = content;
+
+  if (!identity) return null;
 
   return (
     <section className="section-pad">
@@ -25,10 +28,10 @@ export default function MissionVisionSection() {
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/80">
                 {mission.eyebrow}
               </p>
-              <h3 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
+              <h3 className="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl">
                 {mission.title}
               </h3>
-              <p className="mt-4 text-sm leading-7 text-white/90 sm:text-base">
+              <p className="mt-3 text-sm leading-7 text-white/90 sm:text-base">
                 {mission.description}
               </p>
             </GlassCard>
@@ -37,10 +40,10 @@ export default function MissionVisionSection() {
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/80">
                 {vision.eyebrow}
               </p>
-              <h3 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
+              <h3 className="mt-2 text-2xl font-semibold leading-tight text-white sm:text-3xl">
                 {vision.title}
               </h3>
-              <p className="mt-4 text-sm leading-7 text-white/90 sm:text-base">
+              <p className="mt-3 text-sm leading-7 text-white/90 sm:text-base">
                 {vision.description}
               </p>
             </GlassCard>

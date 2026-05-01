@@ -1,10 +1,12 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import GlassCard from "../../components/glass/GlassCard";
-import { aboutContent } from "../../content/aboutContent";
 
 export default function ValuesSection() {
-  const { values } = aboutContent;
+  const { values, tNumber } = useContent("about");
+
+  if (!values) return null;
 
   return (
     <section className="section-pad">
@@ -21,7 +23,7 @@ export default function ValuesSection() {
               <div className="flex h-full flex-col">
                 <div className="mb-6 flex items-center gap-3">
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/12 bg-white/[0.05] text-sm font-semibold text-white/90">
-                    {String(index + 1).padStart(2, "0")}
+                    {tNumber(index + 1, 2)}
                   </span>
                   <span className="h-px flex-1 bg-white/8" />
                 </div>

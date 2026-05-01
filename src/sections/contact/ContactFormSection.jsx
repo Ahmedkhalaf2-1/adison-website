@@ -6,7 +6,7 @@ import GlassSurface from "../../components/glass/GlassSurface";
 import GlassInput from "../../components/glass/GlassInput";
 import GlassTextarea from "../../components/glass/GlassTextarea";
 import GlassSelect from "../../components/glass/GlassSelect";
-import { contactContent } from "../../content/contactContent";
+import { useContent } from "../../hooks/useContent";
 import { motion } from "framer-motion";
 
 const fadeUp = (delay = 0) => ({
@@ -37,7 +37,7 @@ function StepDot({ active }) {
 }
 
 export default function ContactFormSection() {
-  const { form, closing } = contactContent;
+  const { form, closing, tNumber } = useContent("contact");
 
   const [formData, setFormData] = useState({
     name: "",
@@ -53,6 +53,8 @@ export default function ContactFormSection() {
   const filled = Object.values(formData).filter(Boolean).length;
   const total = Object.keys(formData).length;
 
+  if (!form) return null;
+
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -60,8 +62,6 @@ export default function ContactFormSection() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("SUBMIT FIRED");
-
     if (loading) return;
     setLoading(true);
 
@@ -78,8 +78,7 @@ export default function ContactFormSection() {
         },
         "zc2KkQfTFzx1l5x0D"
       )
-      .then((result) => {
-        console.log("EMAILJS SUCCESS:", result);
+      .then(() => {
         setSubmitted(true);
         setFormData({
           name: "",
@@ -118,7 +117,7 @@ export default function ContactFormSection() {
                   <div className="mb-4 flex items-center gap-2.5">
                     <div className="h-1.5 w-1.5 rounded-full bg-white/60" />
                     <p className="text-xs font-medium uppercase tracking-wider text-white/50">
-                      Available Now
+                      {form.availableNow}
                     </p>
                   </div>
 
@@ -138,9 +137,9 @@ export default function ContactFormSection() {
                     </svg>
                   </div>
                   <p className="text-sm text-white/90">
-                    Typical response within{" "}
+                    {form.responseTime}{" "}
                     <span className="font-semibold text-white/90">
-                      24 hours
+                      {form.responseHours}
                     </span>
                   </p>
                 </div>
@@ -194,17 +193,17 @@ export default function ContactFormSection() {
 
                     <div>
                       <p className="text-lg font-semibold text-white">
-                        Message received
+                        {form.successTitle}
                       </p>
                       <p className="mt-2 text-sm text-white/80">
-                        We'll be in touch within 24 hours.
+                        {form.successDescription}
                       </p>
                     </div>
                   </motion.div>
                 ) : (
                   <>
                     <div className="grid gap-5 sm:grid-cols-2">
-                      <Field label="Full Name" span2>
+                      <Field label={form.labels.name} span2>
                         <GlassInput
                           type="text"
                           name="name"
@@ -215,7 +214,7 @@ export default function ContactFormSection() {
                         />
                       </Field>
 
-                      <Field label="Email Address">
+                      <Field label={form.labels.email}>
                         <GlassInput
                           type="email"
                           name="email"
@@ -226,7 +225,7 @@ export default function ContactFormSection() {
                         />
                       </Field>
 
-                      <Field label="Phone Number">
+                      <Field label={form.labels.phone}>
                         <GlassInput
                           type="text"
                           name="phone"
@@ -236,7 +235,7 @@ export default function ContactFormSection() {
                         />
                       </Field>
 
-                      <Field label="Inquiry Type" span2>
+                      <Field label={form.labels.inquiry} span2>
                         <GlassSelect
                           name="inquiry"
                           value={formData.inquiry}
@@ -262,7 +261,7 @@ export default function ContactFormSection() {
                         </GlassSelect>
                       </Field>
 
-                      <Field label="Message" span2>
+                      <Field label={form.labels.message} span2>
                         <GlassTextarea
                           name="message"
                           value={formData.message}
@@ -273,15 +272,14 @@ export default function ContactFormSection() {
                         />
 
                         <p className="text-[11px] text-white/90 mt-2 text-right">
-                          {formData.message.length} / 3000
+                          {tNumber(formData.message.length)} / {tNumber(3000)}
                         </p>
                       </Field>
                     </div>
 
                     <div className="mt-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
                       <p className="max-w-xs text-sm leading-[1.8] text-white/90">
-                        Share your idea, your project, or the kind of support
-                        you are looking for.
+                        {form.sharePrompt}
                       </p>
 
                       <button
@@ -289,7 +287,7 @@ export default function ContactFormSection() {
                         disabled={loading}
                         className="inline-flex items-center justify-center rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-black transition-transform hover:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
                       >
-                        {loading ? "Sending..." : form.submitLabel}
+                        {loading ? form.sending : form.submitLabel}
                       </button>
                     </div>
                   </>

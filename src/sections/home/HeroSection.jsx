@@ -2,7 +2,7 @@ import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 import GlassCard from "../../components/glass/GlassCard";
 import GlassButton from "../../components/glass/GlassButton";
-import { homeContent } from "../../content/homeContent";
+import { useContent } from "../../hooks/useContent";
 import { motion } from "framer-motion";
 
 const fadeLeft = {
@@ -18,7 +18,10 @@ const fadeRight = {
 };
 
 export default function HeroSection() {
-  const { hero } = homeContent;
+  const content = useContent("home");
+  const { hero } = content;
+
+  if (!hero) return null;
 
   return (
     <section className="section-pad pt-6 sm:pt-8 lg:pt-10">
@@ -32,9 +35,9 @@ export default function HeroSection() {
             <motion.div
               {...fadeLeft}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="text-center lg:text-left"
+              className="text-start"
             >
-              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
+              <p className="mb-2 text-[14px] font-semibold uppercase tracking-[0.32em] text-white/90">
                 {hero.eyebrow}
               </p>
 
@@ -42,11 +45,11 @@ export default function HeroSection() {
                 {hero.title}
               </h1>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/90 sm:text-lg lg:max-w-xl">
+              <p className="mt-4 max-w-2xl text-base leading-8 text-white/90 sm:text-lg lg:max-w-xl">
                 {hero.description}
               </p>
 
-              <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
+              <div className="mt-6 flex flex-col items-start gap-4 sm:flex-row">
                 <GlassButton to={hero.primaryCta.to}>
                   {hero.primaryCta.label}
                 </GlassButton>
@@ -66,17 +69,17 @@ export default function HeroSection() {
               <GlassCard className="min-h-[180px]">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.26em] text-white/90">
-                      Global Positioning
+                    <p className="text-[13px] font-semibold uppercase tracking-[0.30em] text-white/90">
+                      {hero.cards.global.eyebrow}
                     </p>
                     <h3 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
-                      Canadian-based expertise with international reach.
+                      {hero.cards.global.title}
                     </h3>
                   </div>
 
                   <div className="mt-8 flex items-center gap-3">
                     <p className="text-sm text-white/80">
-                      Structured business innovation and development
+                      {hero.cards.global.description}
                     </p>
                   </div>
                 </div>
@@ -84,20 +87,20 @@ export default function HeroSection() {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <GlassCard className="min-h-[150px]">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/90">
-                    Core Focus
+                  <p className="text-[13px] font-semibold uppercase tracking-[0.28em] text-white/90">
+                    {hero.cards.focus.eyebrow}
                   </p>
                   <p className="mt-4 text-lg font-semibold leading-snug text-white">
-                    Clarity, structure, and practical execution.
+                    {hero.cards.focus.title}
                   </p>
                 </GlassCard>
 
                 <GlassCard className="min-h-[150px]">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/90">
-                    Strategic Direction
+                  <p className="text-[13px] font-semibold uppercase tracking-[0.28em] text-white/90">
+                    {hero.cards.direction.eyebrow}
                   </p>
                   <p className="mt-4 text-lg font-semibold leading-snug text-white">
-                    Turning ideas into actionable business outcomes.
+                    {hero.cards.direction.title}
                   </p>
                 </GlassCard>
               </div>

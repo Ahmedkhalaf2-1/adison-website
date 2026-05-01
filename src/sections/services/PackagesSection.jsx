@@ -1,10 +1,13 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import GlassCard from "../../components/glass/GlassCard";
-import { servicesContent } from "../../content/servicesContent";
 
 export default function PackagesSection() {
-  const { packages } = servicesContent;
+  const content = useContent("services");
+  const { packages } = content;
+
+  if (!packages) return null;
 
   return (
     <section className="section-pad">

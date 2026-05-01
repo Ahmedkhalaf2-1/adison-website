@@ -19,6 +19,7 @@ export const homeContent = {
     title: "Structured thinking. Practical execution. Sustainable business direction.",
     description:
       "ADISON Corp supports individuals, entrepreneurs, and organizations in transforming ideas into structured and functional business solutions. We combine clarity, strategy, and execution to ensure every project is developed with purpose and direction.",
+    card: "Structured thinking creates stronger execution, clearer priorities, and better business direction from the start."
   },
 
   servicesPreview: {

@@ -4,6 +4,32 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* RTL support for Arabic */
+html[dir="rtl"] {
+  font-family: 'Cairo', sans-serif !important;
+  font-size: 1.12em; /* Scaled up for better readability */
+}
+
+/* Ensure natural text alignment based on direction */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* Allow Tailwind classes to handle alignment naturally */
+[dir="rtl"] .text-center {
+  text-align: center !important;
+}
+
+[dir="rtl"] .mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
 :root {
   /* Background */
   --bg-0: #000000;
@@ -26,17 +52,13 @@
   --accent-light-glow: rgba(255, 211, 106, 0.12);
 
   /* Glass */
-  --glass-bg: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06) 0%,
-    rgba(255, 255, 255, 0.025) 100%
-  );
+  --glass-bg: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(255, 255, 255, 0.025) 100%);
 
-  --glass-bg-soft: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0.018) 100%
-  );
+  --glass-bg-soft: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.018) 100%);
 
   --shadow-soft:
     0 10px 30px rgba(0, 0, 0, 0.3),
@@ -136,12 +158,10 @@ textarea {
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(
-        135deg,
+      linear-gradient(135deg,
         rgba(255, 255, 255, 0.12) 0%,
         rgba(255, 255, 255, 0.035) 22%,
-        rgba(255, 255, 255, 0) 48%
-      );
+        rgba(255, 255, 255, 0) 48%);
     pointer-events: none;
   }
 
@@ -156,12 +176,10 @@ textarea {
     border-radius: inherit;
     padding: 1px;
     background:
-      linear-gradient(
-        135deg,
+      linear-gradient(135deg,
         rgba(255, 255, 255, 0.14),
         rgba(255, 255, 255, 0.03),
-        rgba(255, 211, 106, 0.1)
-      );
+        rgba(255, 211, 106, 0.1));
     -webkit-mask:
       linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);

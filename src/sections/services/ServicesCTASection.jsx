@@ -1,10 +1,13 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 import GlassButton from "../../components/glass/GlassButton";
-import { servicesContent } from "../../content/servicesContent";
 
 export default function ServicesCTASection() {
-  const { cta } = servicesContent;
+  const content = useContent("services");
+  const { cta } = content;
+
+  if (!cta) return null;
 
   return (
     <section className="section-pad">
@@ -24,12 +27,12 @@ export default function ServicesCTASection() {
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <GlassButton to={cta.primaryCta.to}>
-                {cta.primaryCta.label}
+              <GlassButton to="/contact">
+                {cta.primaryCta}
               </GlassButton>
 
-              <GlassButton to={cta.secondaryCta.to} variant="secondary">
-                {cta.secondaryCta.label}
+              <GlassButton to="/how-we-work" variant="secondary">
+                {cta.secondaryCta}
               </GlassButton>
             </div>
           </div>

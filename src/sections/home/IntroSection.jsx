@@ -1,7 +1,7 @@
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 import GlassCard from "../../components/glass/GlassCard";
-import { homeContent } from "../../content/homeContent";
+import { useContent } from "../../hooks/useContent";
 import { motion } from "framer-motion";
 
 const fadeLeft = {
@@ -17,41 +17,49 @@ const fadeRight = {
 };
 
 export default function IntroSection() {
-  const { intro } = homeContent;
+  const content = useContent("home");
+  const { intro } = content;
+
+  if (!intro) return null;
 
   return (
     <section className="section-pad">
       <Container>
-        <GlassSurface className="overflow-hidden px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
-
-          <div className="relative z-10 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
+        <GlassSurface className="overflow-hidden px-6 py-12 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+          <div className="relative z-10 grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:gap-10">
+            {/* LEFT SIDE: Identity */}
             <motion.div
               {...fadeLeft}
               transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-              className="text-center lg:text-left"
+              className="text-center lg:text-start"
             >
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
+              <p className="mb-2 text-[14px] font-semibold uppercase tracking-[0.32em] text-white/90">
                 {intro.eyebrow}
               </p>
 
-              <h2 className="max-w-2xl text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+              <h2 className="text-balance text-4xl font-semibold leading-[1.2] text-white sm:text-5xl lg:text-[4rem]">
                 {intro.title}
               </h2>
             </motion.div>
 
+            {/* RIGHT SIDE: Description & Card */}
             <motion.div
               {...fadeRight}
               transition={{ duration: 0.78, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="grid gap-5"
+              className="grid gap-3"
             >
               <p className="max-w-2xl text-base leading-8 text-white/90 sm:text-lg">
                 {intro.description}
               </p>
 
-              <GlassCard variant="secondary" className="px-5 py-5 text-sm leading-7 text-white/80 sm:text-base">
-                Structured thinking creates stronger execution, clearer priorities,
-                and better business direction from the start.
-              </GlassCard>
+              <div className="mt-4 flex justify-center lg:justify-start">
+                <GlassCard
+                  variant="secondary"
+                  className="w-full max-w-2xl px-8 py-8 text-center text-sm leading-relaxed text-white/80 sm:text-base"
+                >
+                  {intro.card}
+                </GlassCard>
+              </div>
             </motion.div>
           </div>
         </GlassSurface>

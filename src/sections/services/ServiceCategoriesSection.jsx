@@ -1,10 +1,12 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import GlassSurface from "../../components/glass/GlassSurface";
-import { servicesContent } from "../../content/servicesContent";
 
 export default function ServiceCategoriesSection() {
-  const { categories } = servicesContent;
+  const { categories, tNumber } = useContent("services");
+
+  if (!categories) return null;
 
   return (
     <section className="section-pad">
@@ -48,7 +50,7 @@ export default function ServiceCategoriesSection() {
                       >
                         <div className="mb-3 flex items-center gap-3">
                           <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-white/12 bg-white/[0.05] text-[11px] font-semibold text-white/90">
-                            {bulletIndex + 1}
+                            {tNumber(bulletIndex + 1)}
                           </span>
                           <span className="h-px flex-1 bg-white/8" />
                         </div>

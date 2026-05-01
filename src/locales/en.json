@@ -1,0 +1,467 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "howWeWork": "How We Work",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "A Canadian-Based Firm with Global Reach",
+      "title": "Lighting the Way for Your Business",
+      "description": "ADISON Corp is a Business Innovation & Development firm delivering structured, practical, and scalable solutions to clients across diverse markets. With expert knowledge and international experience, we transform ideas into clear strategies and actionable results.",
+      "primaryCta": {
+        "label": "Contact ADISON",
+        "to": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Explore Services",
+        "to": "/services"
+      },
+      "cards": {
+        "global": {
+          "eyebrow": "Global Positioning",
+          "title": "Canadian-based expertise with international reach.",
+          "description": "Structured business innovation and development"
+        },
+        "focus": {
+          "eyebrow": "Core Focus",
+          "title": "Clarity, structure, and practical execution."
+        },
+        "direction": {
+          "eyebrow": "Strategic Direction",
+          "title": "Turning ideas into actionable business outcomes."
+        }
+      }
+    },
+    "intro": {
+      "eyebrow": "Who We Are",
+      "title": "Structured thinking. Practical execution. Sustainable business direction.",
+      "description": "ADISON Corp supports individuals, entrepreneurs, and organizations in transforming ideas into structured and functional business solutions. We combine clarity, strategy, and execution to ensure every project is developed with purpose and direction.",
+      "card": "Structured thinking creates stronger execution, clearer priorities, and better business direction from the start."
+    },
+    "servicesPreview": {
+      "eyebrow": "What We Do",
+      "title": "We help ideas move from concept to execution through focused service pillars.",
+      "description": "Our work is organized around business development, analysis, educational consultancy, digital systems, and brand direction.",
+      "items": [
+        {
+          "title": "Business Development & Strategy",
+          "description": "Structured planning, business model direction, and clear project roadmap design."
+        },
+        {
+          "title": "Business & Data Analysis",
+          "description": "Evaluation, diagnostics, interpretation, and decision-support frameworks."
+        },
+        {
+          "title": "Educational Consultancy & Development",
+          "description": "Curriculum design, program development, and learning structure solutions."
+        },
+        {
+          "title": "Digital Solutions & Platforms",
+          "description": "Website planning, digital workflows, systems structure, and online service models."
+        },
+        {
+          "title": "Brand Identity & Design",
+          "description": "Identity creation, positioning, concept development, naming, and visual direction."
+        }
+      ],
+      "cta": "View All Services"
+    },
+    "whyAdison": {
+      "eyebrow": "Why ADISON",
+      "title": "A methodical partner built around clarity, structure, and meaningful progress.",
+      "description": "We focus on business solutions that are practical, disciplined, and aligned with sustainable long-term development.",
+      "points": [
+        "Structured and methodical approach",
+        "Professional expertise with international experience",
+        "Practical and results-oriented solutions",
+        "Clear communication and strategic direction",
+        "Focus on sustainable growth and development"
+      ],
+      "sideNote": "Every engagement is built to reduce confusion, strengthen direction, and move work forward with confidence.",
+      "cards": {
+        "strategic": {
+          "eyebrow": "Strategic Value",
+          "title": "Business clarity should feel calm, not chaotic.",
+          "outcomes": "Structured outcomes",
+          "direction": "Clear direction"
+        }
+      }
+    },
+    "processPreview": {
+      "eyebrow": "How We Work",
+      "title": "A clear process that transforms business ideas into structured outcomes.",
+      "description": "We follow a disciplined five-step methodology so every project moves forward with clarity, alignment, and purpose.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Discover & Clarify",
+          "description": "We define the idea, goals, priorities, and direction."
+        },
+        {
+          "number": "02",
+          "title": "Analyze & Evaluate",
+          "description": "We assess opportunities, challenges, risks, and performance."
+        },
+        {
+          "number": "03",
+          "title": "Design & Structure",
+          "description": "We build the roadmap, systems, and operational framework."
+        },
+        {
+          "number": "04",
+          "title": "Develop & Implement",
+          "description": "We support execution, development, and delivery."
+        },
+        {
+          "number": "05",
+          "title": "Support & Grow",
+          "description": "We guide improvement, adaptation, and long-term progress."
+        }
+      ],
+      "cta": "Learn More About Our Approach"
+    },
+    "cta": {
+      "eyebrow": "Ready to Move Forward?",
+      "title": "Have an idea or project in mind?",
+      "description": "Let ADISON help you move forward with clarity, confidence, and structured execution.",
+      "primaryCta": "Contact ADISON",
+      "secondaryCta": "View Services",
+      "card": {
+        "eyebrow": "Next Step",
+        "title": "Start the conversation and move the idea forward with structure."
+      }
+    }
+  },
+
+  "about": {
+    "hero": {
+      "eyebrow": "About ADISON",
+      "title": "A Canadian-based firm with global reach and a structured approach to business innovation.",
+      "description": "ADISON Corp specializes in transforming ideas into structured, actionable, and scalable business solutions. Our work is grounded in clarity, professional expertise, and international experience across diverse industries and markets."
+    },
+    "identity": {
+      "eyebrow": "Who We Are",
+      "title": "We build clear direction around promising ideas.",
+      "description": "ADISON Corp is a Business Innovation & Development firm focused on helping individuals, entrepreneurs, and organizations move from uncertainty to structure. We work at the intersection of strategy, analysis, development, and execution to shape practical and sustainable outcomes.",
+      "note": "Our role is not only to advise, but to help organize complexity into usable, well-structured progress."
+    },
+    "mission": {
+      "eyebrow": "Our Mission",
+      "title": "To illuminate business ideas and transform them into clear, structured, and achievable solutions.",
+      "description": "We guide projects through disciplined thinking, strategic structure, and practical development so that ideas can move forward with confidence and purpose."
+    },
+    "vision": {
+      "eyebrow": "Our Vision",
+      "title": "To become a trusted leader in Business Innovation & Development.",
+      "description": "We aim to be recognized for clarity, professionalism, and meaningful impact, helping businesses and projects grow through structure, direction, and sustained value."
+    },
+    "values": {
+      "eyebrow": "Our Values",
+      "title": "The principles that shape how we think, build, and deliver.",
+      "description": "Every project we support is guided by values that keep our work disciplined, credible, and growth-oriented.",
+      "items": [
+        {
+          "title": "Innovation",
+          "description": "We explore ideas and unlock their potential through thoughtful development."
+        },
+        {
+          "title": "Clarity",
+          "description": "We simplify complexity and provide direction that is easy to act on."
+        },
+        {
+          "title": "Structure",
+          "description": "Every successful outcome begins with a strong and organized foundation."
+        },
+        {
+          "title": "Integrity",
+          "description": "We work with professionalism, honesty, and transparency in every engagement."
+        },
+        {
+          "title": "Growth",
+          "description": "We support continuous improvement and long-term development."
+        },
+        {
+          "title": "Consistency",
+          "description": "We deliver disciplined, reliable work with steady quality and focus."
+        }
+      ]
+    },
+    "closing": {
+      "eyebrow": "Closing Perspective",
+      "title": "Turning ideas into practical, structured, and sustainable business outcomes.",
+      "description": "At ADISON, we focus on creating business pathways that are clear, workable, and built for long-term relevance. Our objective is always to turn potential into progress with discipline and purpose.",
+      "cta": "Contact ADISON"
+    }
+  },
+
+  "services": {
+    "hero": {
+      "eyebrow": "Business Innovation & Development Services",
+      "title": "Structured services designed to turn ideas into clear, functional, and scalable solutions.",
+      "description": "ADISON provides focused support across business strategy, analysis, educational development, digital systems, and brand direction. Every service is shaped to bring clarity, structure, and practical momentum."
+    },
+    "categories": {
+      "eyebrow": "Service Categories",
+      "title": "Five service pillars built around clarity, structure, and execution.",
+      "description": "Our services are organized to support projects from idea formation to long-term growth, with each area designed to solve practical business needs.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Business Development & Strategy",
+          "description": "We help shape business ideas into structured opportunities through strategic planning, project direction, roadmap design, and operational clarity.",
+          "bullets": [
+            "Business idea development",
+            "Strategic planning and direction",
+            "Project structuring and roadmap design",
+            "Workflow and operational planning"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Business & Data Analysis",
+          "description": "We assess business performance and decision pathways through evaluation, diagnostics, reporting, and analytical interpretation.",
+          "bullets": [
+            "Business evaluation and diagnostics",
+            "Data analysis and interpretation",
+            "Performance assessment and reporting",
+            "Decision-support frameworks"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Educational Consultancy & Development",
+          "description": "We design structured educational and training solutions that support learning systems, programs, staff development, and curriculum clarity.",
+          "bullets": [
+            "Course and curriculum development",
+            "Academic and training program design",
+            "Learning model structuring",
+            "Staff training and development"
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Digital Solutions & Platforms",
+          "description": "We help define digital workflows, service models, websites, and platform structures that support practical delivery and business efficiency.",
+          "bullets": [
+            "Website and platform planning",
+            "Digital workflows and systems",
+            "Online service model development"
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Brand Identity & Design",
+          "description": "We help shape business identity through concept development, positioning, naming, and visual direction that align with long-term business goals.",
+          "bullets": [
+            "Business identity creation",
+            "Brand positioning and direction",
+            "Concept development and naming",
+            "Graphic design"
+          ]
+        }
+      ]
+    },
+    "packages": {
+      "eyebrow": "Service Packages",
+      "title": "Concise service packages tailored to different stages of business development.",
+      "description": "Our packages are designed to support businesses and projects at the point where they need the most clarity, structure, or strategic guidance.",
+      "items": [
+        {
+          "title": "Clarity Package",
+          "summary": "Define your idea and direction through structured consultation and evaluation.",
+          "points": [
+            "Initial direction setting",
+            "Idea review and positioning",
+            "High-level consultation"
+          ]
+        },
+        {
+          "title": "Structure Package",
+          "summary": "Build a clear business foundation through roadmap development and planning.",
+          "points": [
+            "Roadmap and project structuring",
+            "Operational clarity",
+            "Actionable planning foundation"
+          ]
+        },
+        {
+          "title": "Growth Package",
+          "summary": "Improve and expand your business through strategy, systems, and analysis.",
+          "points": [
+            "Business improvement focus",
+            "Analytical support",
+            "System and workflow enhancement"
+          ]
+        },
+        {
+          "title": "Advisory & Strategy",
+          "summary": "Ongoing expert support for business decisions, development, and growth.",
+          "points": [
+            "Strategic guidance",
+            "Ongoing advisory support",
+            "Decision-focused consultation"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Ready to Move Forward?",
+      "title": "Let's shape your next step with clarity and structure.",
+      "description": "Whether you are building a new idea, refining an existing business, or developing a project in motion, ADISON is ready to support your direction.",
+      "primaryCta": "Contact ADISON",
+      "secondaryCta": "How We Work"
+    }
+  },
+
+  "process": {
+    "hero": {
+      "eyebrow": "How We Work",
+      "title": "A structured approach from idea to execution.",
+      "description": "ADISON follows a clear and disciplined methodology to ensure every project is developed with structure, clarity, and purpose. Our process is designed to reduce uncertainty, strengthen direction, and support steady, practical progress."
+    },
+    "intro": {
+      "eyebrow": "Structured Methodology",
+      "title": "A process built to guide projects with logic, focus, and momentum.",
+      "description": "Our framework ensures that each stage of development is intentional. From defining the idea to supporting long-term growth, every step contributes to a more organized and sustainable business outcome."
+    },
+    "steps": [
+      {
+        "number": "01",
+        "title": "Discover & Clarify",
+        "description": "We begin by defining the idea, goals, priorities, and overall direction. This stage establishes the purpose of the project and creates the clarity needed to move forward with confidence.",
+        "highlights": [
+          "Define the core idea",
+          "Clarify goals and priorities",
+          "Align direction and expectations"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Analyze & Evaluate",
+        "description": "We assess the current landscape, identify opportunities and risks, and evaluate performance, constraints, and decision pathways. This helps shape informed and practical next steps.",
+        "highlights": [
+          "Assess opportunities and risks",
+          "Review business or project conditions",
+          "Support better decision-making"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Design & Structure",
+        "description": "We organize the project into a workable model by building the roadmap, operational structure, systems logic, and development framework required for execution.",
+        "highlights": [
+          "Build the roadmap",
+          "Structure systems and workflow",
+          "Translate direction into a practical framework"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Develop & Implement",
+        "description": "We support the transition from planning to action through execution guidance, development support, implementation alignment, and practical delivery.",
+        "highlights": [
+          "Guide implementation",
+          "Support execution and delivery",
+          "Connect planning to action"
+        ]
+      },
+      {
+        "number": "05",
+        "title": "Support & Grow",
+        "description": "We help projects evolve through continuous review, adjustment, strategic support, and long-term growth thinking so the work remains relevant and sustainable.",
+        "highlights": [
+          "Encourage continuous improvement",
+          "Support adaptation and refinement",
+          "Focus on long-term development"
+        ]
+      }
+    ],
+    "closing": {
+      "eyebrow": "Closing Statement",
+      "title": "Every step is designed to turn clarity into practical momentum.",
+      "description": "Our structured process ensures that ideas are not left in abstraction. We help shape them into business solutions that are organized, actionable, and built for sustainable progress.",
+      "primaryCta": "Contact ADISON",
+      "secondaryCta": "Explore Services"
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact ADISON",
+      "title": "Let's move your business forward.",
+      "description": "Whether you have a new idea, an existing business, or a project in development, ADISON is ready to support your next step with clarity, structure, and practical direction."
+    },
+    "info": {
+      "eyebrow": "Contact Information",
+      "title": "Reach out with your idea, inquiry, or next business step.",
+      "description": "We welcome conversations around new concepts, business development needs, consultations, and strategic support.",
+      "items": [
+        {
+          "title": "Email",
+          "value": "info@adison.ca",
+          "note": "For project inquiries, consultations, and general communication."
+        },
+        {
+          "title": "Phone",
+          "value": "+1 647 847 0111",
+          "note": "For direct contact regarding business support and development."
+        },
+        {
+          "title": "Location",
+          "value": "Toronto, Ontario, Canada",
+          "note": "Canadian-based with global reach across diverse markets."
+        }
+      ]
+    },
+    "form": {
+      "eyebrow": "Send a Message",
+      "title": "Share your idea. Share your goal.",
+      "description": "Use the form below to tell us about your inquiry, your project, or the kind of support you are looking for.",
+      "inquiryOptions": [
+        "New Idea",
+        "Business Development",
+        "Consultation",
+        "Other"
+      ],
+      "placeholders": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number (optional)",
+        "inquiry": "Select Inquiry Type",
+        "message": "Tell us about your idea, project, or inquiry..."
+      },
+      "labels": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "inquiry": "Inquiry Type",
+        "message": "Message"
+      },
+      "submitLabel": "Contact ADISON",
+      "availableNow": "Available Now",
+      "responseTime": "Typical response within",
+      "responseHours": "24 hours",
+      "sharePrompt": "Share your idea, your project, or the kind of support you are looking for.",
+      "sending": "Sending...",
+      "successTitle": "Message received",
+      "successDescription": "We'll be in touch within 24 hours."
+    },
+    "closing": {
+      "title": "Clarity begins with a conversation.",
+      "description": "Start with the next step. ADISON is here to help structure the path forward."
+    }
+  },
+
+  "footer": {
+    "companyName": "ADISON Corp.",
+    "description": "A Canadian-based firm with global reach, delivering structured, practical, and scalable business innovation and development solutions.",
+    "location": "Toronto, Ontario, Canada",
+    "email": "info@adison.ca",
+    "phone": "+1 647 847 0111",
+    "copyright": "© 2026 ADISON Corp. All rights reserved."
+  }
+}

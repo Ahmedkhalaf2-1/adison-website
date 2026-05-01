@@ -1,7 +1,12 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 
 export default function Footer() {
+  const footer = useContent("footer");
+
+  if (!footer) return null;
+
   return (
     <footer className="relative z-10 pb-6 pt-20 sm:pt-24">
       <Container>
@@ -9,24 +14,22 @@ export default function Footer() {
           <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
             <div>
               <p className="text-lg font-semibold text-white sm:text-xl">
-                ADISON Corp.
+                {footer.companyName}
               </p>
               <p className="mt-3 max-w-xl text-sm leading-7 text-white/90 sm:text-base">
-                A Canadian-based firm with global reach, delivering structured,
-                practical, and scalable business innovation and development
-                solutions.
+                {footer.description}
               </p>
             </div>
 
             <div className="grid gap-3 text-sm text-white/80 sm:text-right">
-              <p>Toronto, Ontario, Canada</p>
-              <p>info@adison.ca</p>
-              <p>+1 647 847 0111</p>
+              <p>{footer.location}</p>
+              <p>{footer.email}</p>
+              <p>{footer.phone}</p>
             </div>
           </div>
 
           <div className="mt-8 border-t border-white/10 pt-5 text-xs text-white/38 sm:text-sm">
-            © 2026 ADISON Corp. All rights reserved.
+            {footer.copyright}
           </div>
         </GlassSurface>
       </Container>

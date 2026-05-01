@@ -2,7 +2,7 @@ import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import GlassCard from "../../components/glass/GlassCard";
 import GlassButton from "../../components/glass/GlassButton";
-import { homeContent } from "../../content/homeContent";
+import { useContent } from "../../hooks/useContent";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -12,7 +12,9 @@ const fadeUp = {
 };
 
 export default function ServicesPreviewSection() {
-  const { servicesPreview } = homeContent;
+  const { servicesPreview, tNumber } = useContent("home");
+
+  if (!servicesPreview) return null;
 
   return (
     <section className="section-pad">
@@ -46,7 +48,7 @@ export default function ServicesPreviewSection() {
                 <div className="flex h-full flex-col">
                   <div className="mb-6 flex items-center gap-4">
                     <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/90">
-                      {String(index + 1).padStart(2, "0")}
+                      {tNumber(index + 1, 2)}
                     </div>
 
                     <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent" />
@@ -75,7 +77,7 @@ export default function ServicesPreviewSection() {
           className="mt-8 flex justify-center"
         >
           <GlassButton to="/services" variant="secondary">
-            View All Services
+            {servicesPreview.cta}
           </GlassButton>
         </motion.div>
       </Container>

@@ -1,10 +1,13 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
-import { servicesContent } from "../../content/servicesContent";
 import { motion } from "framer-motion";
 
 export default function ServicesHeroSection() {
-  const { hero } = servicesContent;
+  const content = useContent("services");
+  const { hero } = content;
+
+  if (!hero) return null;
 
   return (
     <section className="section-pad pt-6 sm:pt-8 lg:pt-10">
@@ -12,10 +15,10 @@ export default function ServicesHeroSection() {
         <GlassSurface className="overflow-hidden px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
           <div className="relative z-10 max-w-5xl">
             <motion.p
-              initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
+              initial={{ opacity: 0, y: 15, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.55, delay: 0.05 }}
-              className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/80"
+              className="mb-6 text-[14px] font-semibold uppercase tracking-[0.32em] text-white/90"
             >
               {hero.eyebrow}
             </motion.p>
@@ -24,7 +27,7 @@ export default function ServicesHeroSection() {
               initial={{ opacity: 0, y: 18, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.7, delay: 0.12 }}
-              className="text-balance text-4xl font-semibold leading-[1.04] text-white sm:text-5xl lg:text-6xl"
+              className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-7xl"
             >
               {hero.title}
             </motion.h1>

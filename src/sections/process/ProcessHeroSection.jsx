@@ -1,11 +1,14 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import GlassSurface from "../../components/glass/GlassSurface";
 import GlassCard from "../../components/glass/GlassCard";
-import { processContent } from "../../content/processContent";
 import { motion } from "framer-motion";
 
 export default function ProcessHeroSection() {
-  const { hero, intro } = processContent;
+  const content = useContent("process");
+  const { hero, intro } = content;
+
+  if (!hero) return null;
 
   return (
     <section className="section-pad pt-6 sm:pt-8 lg:pt-10">
@@ -17,7 +20,7 @@ export default function ProcessHeroSection() {
                 initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.55, delay: 0.05 }}
-                className="mb-5 text-xs font-semibold uppercase tracking-[0.30em] text-white/80"
+                className="mb-6 text-[14px] font-semibold uppercase tracking-[0.32em] text-white/90"
               >
                 {hero.eyebrow}
               </motion.p>
@@ -26,7 +29,7 @@ export default function ProcessHeroSection() {
                 initial={{ opacity: 0, y: 18, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.7, delay: 0.12 }}
-                className="max-w-4xl text-balance text-4xl font-semibold leading-[1.04] text-white sm:text-5xl lg:text-6xl"
+                className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-7xl"
               >
                 {hero.title}
               </motion.h1>

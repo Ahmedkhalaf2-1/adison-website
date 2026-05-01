@@ -1,10 +1,13 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import GlassSurface from "../../components/glass/GlassSurface";
-import { processContent } from "../../content/processContent";
 
 export default function ProcessTimelineSection() {
-  const { intro, steps } = processContent;
+  const content = useContent("process");
+  const { intro, steps } = content;
+
+  if (!intro) return null;
 
   return (
     <section className="section-pad">

@@ -16,7 +16,7 @@ export default function GlassCard({ children, className = "", variant = "primary
     >
       {/* Subtle top light effect */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-      
+
       {children}
     </GlassSurface>
   );

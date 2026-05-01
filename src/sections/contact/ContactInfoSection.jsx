@@ -1,7 +1,7 @@
+import { useContent } from "../../hooks/useContent";
 import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import GlassCard from "../../components/glass/GlassCard";
-import { contactContent } from "../../content/contactContent";
 import { motion } from "framer-motion";
 
 const fadeUp = (i = 0) => ({
@@ -12,7 +12,9 @@ const fadeUp = (i = 0) => ({
 });
 
 export default function ContactInfoSection() {
-  const { info } = contactContent;
+  const { info, tNumber } = useContent("contact");
+
+  if (!info) return null;
 
   return (
     <section className="section-pad">
@@ -39,7 +41,7 @@ export default function ContactInfoSection() {
                   <div className="mb-7 flex items-center gap-3">
                     <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-white/[0.1] bg-white/[0.05]">
                       <span className="text-[11px] font-semibold tabular-nums text-white/90">
-                        {String(index + 1).padStart(2, "0")}
+                        {tNumber(index + 1, 2)}
                       </span>
                       {/* animated corner tick */}
                       <span className="absolute -right-px -top-px h-2 w-2 rounded-full border-r border-t border-white/20" />
