@@ -69,7 +69,7 @@ export default function Navbar() {
           >
             <Container>
               <div className="flex h-[72px] w-full items-center justify-between">
-                
+
                 {/* LEFT: LOGO */}
                 <Link to="/" className="flex items-center">
                   <img
@@ -87,10 +87,9 @@ export default function Navbar() {
                         key={item.path}
                         to={item.path}
                         className={({ isActive }) =>
-                          `text-[15px] font-semibold uppercase tracking-[0.15em] transition-colors duration-200 ${
-                            isActive
-                              ? "text-white"
-                              : "text-white/60 hover:text-white"
+                          `text-[15px] font-semibold uppercase tracking-[0.15em] transition-colors duration-200 ${isActive
+                            ? "text-white"
+                            : "text-white/60 hover:text-white"
                           }`
                         }
                       >
@@ -139,8 +138,7 @@ export default function Navbar() {
                           key={item.path}
                           to={item.path}
                           className={({ isActive }) =>
-                            `text-3xl font-medium tracking-tight transition-colors ${
-                              isActive ? "text-white" : "text-white/40 hover:text-white"
+                            `text-3xl font-medium tracking-tight transition-colors ${isActive ? "text-white" : "text-white/40 hover:text-white"
                             }`
                           }
                         >
