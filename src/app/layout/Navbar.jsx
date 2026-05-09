@@ -87,10 +87,10 @@ export default function Navbar() {
                         key={item.path}
                         to={item.path}
                         className={({ isActive }) =>
-                          `text-[14px] font-medium transition-colors duration-200 ${
+                          `text-[15px] font-semibold uppercase tracking-[0.15em] transition-colors duration-200 ${
                             isActive
                               ? "text-white"
-                              : "text-white/50 hover:text-white"
+                              : "text-white/60 hover:text-white"
                           }`
                         }
                       >

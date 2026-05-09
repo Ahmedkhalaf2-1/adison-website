@@ -38,10 +38,10 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm font-medium text-white transition-all hover:bg-white/10"
+        className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[15px] font-semibold text-white transition-all hover:bg-white/10"
       >
         <span className="text-base">{currentLang.flag}</span>
-        <span className="hidden sm:inline-block">{currentLang.label}</span>
+        <span className="hidden uppercase tracking-wider sm:inline-block">{currentLang.label}</span>
         <svg
           className={`h-4 w-4 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
           fill="none"
