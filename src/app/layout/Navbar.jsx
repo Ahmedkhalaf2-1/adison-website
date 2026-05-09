@@ -1,4 +1,5 @@
 import { NavLink, Link, useLocation } from "react-router-dom";
+import adisonLogo from "../../assets/adison.png";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
@@ -71,9 +72,11 @@ export default function Navbar() {
                 
                 {/* LEFT: LOGO */}
                 <Link to="/" className="flex items-center">
-                  <span className="text-lg font-semibold tracking-tight text-white">
-                    ADISON
-                  </span>
+                  <img
+                    src={adisonLogo}
+                    alt="Adison"
+                    className="h-[56px] w-auto object-contain"
+                  />
                 </Link>
 
                 {/* RIGHT: DESKTOP NAV + ACTIONS */}

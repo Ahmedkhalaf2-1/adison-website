@@ -10,7 +10,7 @@ export default function LanguageSwitcher() {
   const languages = [
     { code: "en", label: "English", flag: "🇨🇦" },
     { code: "fr", label: "Français", flag: "🇫🇷" },
-    { code: "ar", label: "العربية", flag: "🇪🇬" },
+    // { code: "ar", label: "العربية", flag: "🇪🇬" },
   ];
 
   const currentLang = languages.find((l) => l.code === i18n.language) || languages[0];
@@ -66,9 +66,8 @@ export default function LanguageSwitcher() {
                 <button
                   key={lang.code}
                   onClick={() => changeLanguage(lang.code)}
-                  className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition-all hover:bg-white/10 ${
-                    i18n.language === lang.code ? "bg-white/10 text-white" : "text-white/70"
-                  }`}
+                  className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition-all hover:bg-white/10 ${i18n.language === lang.code ? "bg-white/10 text-white" : "text-white/70"
+                    }`}
                 >
                   <span className="text-lg">{lang.flag}</span>
                   <span className="flex-1 text-start">{lang.label}</span>
