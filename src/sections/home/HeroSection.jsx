@@ -4,6 +4,8 @@ import GlassCard from "../../components/glass/GlassCard";
 import GlassButton from "../../components/glass/GlassButton";
 import { useContent } from "../../hooks/useContent";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import adison2Logo from "../../assets/adison2.png";
 
 const fadeLeft = {
   initial: { opacity: 0, x: -24, filter: "blur(10px)" },
@@ -18,6 +20,7 @@ const fadeRight = {
 };
 
 export default function HeroSection() {
+  const { i18n } = useTranslation();
   const content = useContent("home");
   const { hero } = content;
 
@@ -42,7 +45,25 @@ export default function HeroSection() {
               </p>
 
               <h1 className="max-w-5xl text-balance text-4xl font-semibold leading-[0.98] text-white sm:text-5xl lg:text-6xl xl:text-[5rem]">
-                {hero.title}
+                {i18n.language === 'en' && hero.title.includes('ON') ? (
+                  hero.title.split('ON').map((part, i, arr) => (
+                    <span key={i}>
+                      {part.trimEnd()}
+                      {i < arr.length - 1 && (
+                        <span style={{ marginLeft: '0.15em' }}>
+                          <img
+                            src={adison2Logo}
+                            alt="O"
+                            style={{ height: '0.85em', display: 'inline-block', position: 'relative', top: '0.08em', verticalAlign: 'baseline' }}
+                          />
+                          <span>N</span>
+                        </span>
+                      )}
+                    </span>
+                  ))
+                ) : (
+                  hero.title
+                )}
               </h1>
 
               <p className="mt-4 max-w-2xl text-base leading-8 text-white/90 sm:text-lg lg:max-w-xl">
