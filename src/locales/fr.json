@@ -311,6 +311,11 @@
       "title": "Un protocole rigoureux de l'idéation à l'excellence opérationnelle.",
       "description": "ADISON applique une méthodologie scientifique et disciplinée pour assurer le développement maîtrisé de chaque projet."
     },
+    "intro": {
+      "eyebrow": "Méthodologie Structurée",
+      "title": "Un processus conçu pour guider vos projets avec logique, rigueur et impulsion.",
+      "description": "Notre cadre méthodologique garantit que chaque étape de développement est pleinement intentionnelle. De la définition de l'idée jusqu'à l'accompagnement de la croissance à long terme, chaque jalon contribue à bâtir un résultat commercial structuré et durable."
+    },
     "steps": [
       {
         "number": "01",
@@ -362,20 +367,79 @@
           "Focus pérennité et croissance"
         ]
       }
-    ]
+    ],
+    "closing": {
+      "eyebrow": "Conclusion",
+      "title": "Chaque étape est conçue pour transformer la clarté en dynamique concrète.",
+      "description": "Notre démarche structurée garantit que vos idées ne restent pas au stade d'abstractions. Nous vous aidons à les modéliser en solutions d'affaires organisées, opérationnelles et calibrées pour un progrès pérenne.",
+      "primaryCta": "Contacter ADISON",
+      "secondaryCta": "Découvrir l'Expertise"
+    }
   },
   "contact": {
+    "hero": {
+      "eyebrow": "Contacter ADISON",
+      "title": "Propulsons votre entreprise vers de nouveaux sommets.",
+      "description": "Que vous ayez une idée émergente, une entreprise établie ou un projet en cours de développement, ADISON est prêt à accompagner votre prochaine étape avec clarté, structure et orientation pragmatique."
+    },
+    "info": {
+      "eyebrow": "Coordonnées",
+      "title": "Contactez-nous pour échanger sur vos idées, vos besoins de développement ou vos projets.",
+      "description": "Nous accueillons avec intérêt les échanges autour des nouveaux concepts, des besoins d'expansion, des consultations et du support stratégique.",
+      "items": [
+        {
+          "title": "E-mail",
+          "value": "info@adison.ca",
+          "note": "Pour les demandes de projets, les consultations et les communications générales."
+        },
+        {
+          "title": "Téléphone",
+          "value": "+1 647 847 0111",
+          "note": "Pour un contact direct concernant l'accompagnement et le développement d'affaires."
+        },
+        {
+          "title": "Localisation",
+          "value": "Toronto, Ontario, Canada",
+          "note": "Cabinet basé au Canada avec une portée internationale sur divers marchés."
+        }
+      ]
+    },
     "form": {
+      "eyebrow": "Envoyer un message",
+      "title": "Partagez votre vision. Définissez vos objectifs.",
+      "description": "Utilisez le formulaire ci-dessous pour nous faire part de vos besoins, de vos projets ou du type d'accompagnement recherché.",
       "inquiryOptions": [
         "Nouveau Projet",
         "Ingénierie d'Affaires",
         "Consultation",
         "Autre"
       ],
+      "placeholders": {
+        "name": "Nom complet",
+        "email": "Adresse e-mail",
+        "phone": "Numéro de téléphone (optionnel)",
+        "inquiry": "Sélectionnez le type de demande",
+        "message": "Parlez-nous de votre idée, projet ou demande..."
+      },
+      "labels": {
+        "name": "Nom complet",
+        "email": "Adresse e-mail",
+        "phone": "Numéro de téléphone",
+        "inquiry": "Type de demande",
+        "message": "Message"
+      },
       "submitLabel": "Engager la conversation",
+      "availableNow": "Disponible immédiatement",
+      "responseTime": "Réponse habituelle sous",
+      "responseHours": "24 heures",
+      "sharePrompt": "Partagez votre idée, votre projet ou le type de soutien que vous recherchez.",
       "sending": "Transmission en cours...",
-      "successTitle": "Message Transmis",
+      "successTitle": "Message reçu",
       "successDescription": "Notre équipe vous répondra sous 24 heures."
+    },
+    "closing": {
+      "title": "La clarté commence par une conversation.",
+      "description": "Franchissez la première étape. ADISON est là pour structurer la voie à suivre."
     }
   },
   "footer": {
