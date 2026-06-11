@@ -11,8 +11,8 @@ export default function ProcessCTASection() {
 
   return (
     <section className="section-pad">
-      <Container>
-        <GlassSurface className="overflow-hidden px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+      <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-8 lg:px-12">
+        <GlassSurface className="overflow-hidden px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20 rounded-[30px]">
           <div className="relative z-10 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.30em] text-white/80">
               {closing.eyebrow}
@@ -37,7 +37,7 @@ export default function ProcessCTASection() {
             </div>
           </div>
         </GlassSurface>
-      </Container>
+      </div>
     </section>
   );
 }

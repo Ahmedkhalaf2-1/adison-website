@@ -11,7 +11,7 @@
     "hero": {
       "eyebrow": "A Canadian-Based Firm with Global Reach",
       "title": "Power ON Your Business",
-      "description": "ADISON Corp is a Business Innovation & Development firm delivering structured, practical, and scalable solutions to clients across diverse markets. With expert knowledge and international experience, we transform ideas into clear strategies and actionable results.",
+      "description": "ADISON Corp is a Business Intelligence company delivering structured, practical, and data-informed solutions to businesses at every stage — from startup to growth. We combine strategy, analytics, and digital expertise to give our clients the clarity and direction they need to move forward.",
       "primaryCta": {
         "label": "Contact ADISON",
         "to": "/contact"
@@ -24,7 +24,7 @@
         "global": {
           "eyebrow": "Global Positioning",
           "title": "Canadian-based expertise with international reach.",
-          "description": "Structured business innovation and development"
+          "description": "Business Intelligence — strategy, analytics, and digital presence."
         },
         "focus": {
           "eyebrow": "Core Focus",
@@ -39,57 +39,74 @@
     "intro": {
       "eyebrow": "Who We Are",
       "title": "Structured thinking. Practical execution. Sustainable business direction.",
-      "description": "ADISON Corp supports individuals, entrepreneurs, and organizations in transforming ideas into structured and functional business solutions. We combine clarity, strategy, and execution to ensure every project is developed with purpose and direction.",
+      "description": "ADISON Corp is a Business Intelligence company serving new and growing businesses across Canada and internationally. We combine strategy, analytics, and digital expertise to provide the clarity and direction businesses need to move forward with confidence.",
       "card": "Structured thinking creates stronger execution, clearer priorities, and better business direction from the start."
     },
     "servicesPreview": {
       "eyebrow": "What We Do",
       "title": "We help ideas move from concept to execution through focused service pillars.",
-      "description": "Our work is organized around business development, analysis, educational consultancy, digital systems, and brand direction.",
+      "description": "Our work is organized around business strategy, data analytics, training, and digital presence.",
       "items": [
         {
-          "title": "Business Development & Strategy",
+          "title": "Business Strategy & Development",
           "description": "Structured planning, business model direction, and clear project roadmap design."
         },
         {
-          "title": "Business & Data Analysis",
-          "description": "Evaluation, diagnostics, interpretation, and decision-support frameworks."
+          "title": "Data Analytics & Business Intelligence",
+          "description": "Data collection, analysis, visualization, dashboards, BI reporting, Excel and Power BI delivery, and market research."
         },
         {
-          "title": "Educational Consultancy & Development",
-          "description": "Curriculum design, program development, and learning structure solutions."
+          "title": "Training & Development",
+          "description": "Workshops, data literacy programs, staff development, and curriculum design."
         },
         {
-          "title": "Digital Solutions & Platforms",
-          "description": "Website planning, digital workflows, systems structure, and online service models."
-        },
-        {
-          "title": "Brand Identity & Design",
-          "description": "Identity creation, positioning, concept development, naming, and visual direction."
+          "title": "Digital Presence & Marketing",
+          "description": "Website development, mobile apps, brand identity, graphic design, content creation, social media, SEO, and digital marketing."
         }
       ],
       "cta": "View All Services"
+    },
+    "whoWeServe": {
+      "eyebrow": "Who We Serve",
+      "title": "ADISON works with three types of clients — each with distinct needs, challenges, and goals.",
+      "clients": [
+        {
+          "title": "New Businesses",
+          "description": "Entrepreneurs and startups at the idea or early-launch stage. ADISON helps with business model design, feasibility studies, planning, branding, and digital presence — everything needed to launch with structure and confidence."
+        },
+        {
+          "title": "Growing Businesses",
+          "description": "Established businesses seeking to expand, improve performance, or enter new markets. ADISON supports strategy refinement, market analysis, KPI frameworks, and digital marketing to accelerate sustainable growth."
+        },
+        {
+          "title": "Businesses Seeking BI Development",
+          "description": "Organizations that have data but are not using it effectively. ADISON builds dashboards, BI reports, data workflows, and analytics frameworks using Excel and Power BI — turning raw data into actionable business insight."
+        }
+      ]
     },
     "whyAdison": {
       "eyebrow": "Why ADISON",
       "title": "A methodical partner built around clarity, structure, and meaningful progress.",
       "description": "We focus on business solutions that are practical, disciplined, and aligned with sustainable long-term development.",
       "points": [
-        "Structured and methodical approach",
-        "Professional expertise with international experience",
-        "Practical and results-oriented solutions",
-        "Clear communication and strategic direction",
-        "Focus on sustainable growth and development"
+        "Bilingual delivery in English and Arabic, serving Canadian and international Arabic-speaking markets.",
+        "30+ years of international experience spanning academia, business strategy, and data analytics.",
+        "Project-based model: no retainer lock-in. ADISON is engaged for a specific scope and deliverable."
       ],
-      "sideNote": "Every engagement is built to reduce confusion, strengthen direction, and move work forward with confidence.",
+      "sideNote": "Every ADISON engagement is built around a clear scope, a structured process, and a practical deliverable.",
       "cards": {
         "strategic": {
           "eyebrow": "Strategic Value",
-          "title": "Business clarity should feel calm, not chaotic.",
+          "title": "Clarity, structure, and results — without the noise.",
           "outcomes": "Structured outcomes",
           "direction": "Clear direction"
         }
       }
+    },
+    "founderQuote": {
+      "eyebrow": "FROM THE FOUNDER",
+      "quote": "At ADISON, every engagement starts with one commitment: to give you a clear picture of where you stand, and a structured path to where you want to go. That is not a promise — it is a process.",
+      "attribution": "Dr. Ibrahim Abdalla, Ph.D. | Founder & CEO, ADISON Corp."
     },
     "processPreview": {
       "eyebrow": "How We Work",
@@ -140,180 +157,193 @@
   "about": {
     "hero": {
       "eyebrow": "About ADISON",
-      "title": "A Canadian-based firm with global reach and a structured approach to business innovation.",
-      "description": "ADISON Corp specializes in transforming ideas into structured, actionable, and scalable business solutions. Our work is grounded in clarity, professional expertise, and international experience across diverse industries and markets."
+      "title": "A Canadian-based Business Intelligence company delivering strategy, analytics, and digital presence.",
+      "description": "We help new businesses launch with structure, growing businesses scale with intelligence, and established businesses harness their data for better decisions."
     },
     "identity": {
       "eyebrow": "Who We Are",
-      "title": "We build clear direction around promising ideas.",
-      "description": "ADISON Corp is a Business Innovation & Development firm focused on helping individuals, entrepreneurs, and organizations move from uncertainty to structure. We work at the intersection of strategy, analysis, development, and execution to shape practical and sustainable outcomes.",
-      "note": "Our role is not only to advise, but to help organize complexity into usable, well-structured progress."
+      "title": "Company Overview",
+      "description": "ADISON Corp. is a Canadian-based Business Intelligence company serving businesses locally and internationally. Our work spans four practice areas: Business Strategy & Development, Data Analytics & Business Intelligence, Digital Presence & Marketing, and Training & Development. Every engagement is personal, project-based, and built around a specific client need — not a generic package or a long retainer.",
+      "note": "ADISON is based in Toronto, Ontario, and serves clients across Canada and internationally."
     },
     "mission": {
-      "eyebrow": "Our Mission",
-      "title": "To illuminate business ideas and transform them into clear, structured, and achievable solutions.",
-      "description": "We guide projects through disciplined thinking, strategic structure, and practical development so that ideas can move forward with confidence and purpose."
+      "eyebrow": "Mission",
+      "title": "Clarity & Capability",
+      "description": "To give businesses at every stage the strategic clarity, analytical intelligence, and digital capability they need to move forward with confidence."
     },
     "vision": {
-      "eyebrow": "Our Vision",
-      "title": "To become a trusted leader in Business Innovation & Development.",
-      "description": "We aim to be recognized for clarity, professionalism, and meaningful impact, helping businesses and projects grow through structure, direction, and sustained value."
+      "eyebrow": "Vision",
+      "title": "Trusted BI Partnership",
+      "description": "To be the most trusted Business Intelligence partner for businesses operating across Canada and Arabic-speaking international markets."
     },
     "values": {
-      "eyebrow": "Our Values",
+      "eyebrow": "Values",
       "title": "The principles that shape how we think, build, and deliver.",
-      "description": "Every project we support is guided by values that keep our work disciplined, credible, and growth-oriented.",
+      "description": "Clarity over complexity. Structure over guesswork. Results over reports. Honesty over convenience.",
       "items": [
         {
-          "title": "Innovation",
-          "description": "We explore ideas and unlock their potential through thoughtful development."
-        },
-        {
           "title": "Clarity",
-          "description": "We simplify complexity and provide direction that is easy to act on."
+          "description": "Clarity over complexity."
         },
         {
           "title": "Structure",
-          "description": "Every successful outcome begins with a strong and organized foundation."
+          "description": "Structure over guesswork."
         },
         {
-          "title": "Integrity",
-          "description": "We work with professionalism, honesty, and transparency in every engagement."
+          "title": "Results",
+          "description": "Results over reports."
         },
         {
-          "title": "Growth",
-          "description": "We support continuous improvement and long-term development."
+          "title": "Honesty",
+          "description": "Honesty over convenience."
+        }
+      ]
+    },
+    "ceoMessage": {
+      "eyebrow": "FROM THE FOUNDER",
+      "p1": "At ADISON, we believe that real growth is built on clarity and structure, not just effort. Our goal is to transform complex business challenges into clear, data-informed pathways that allow our clients to make decisions with confidence and purpose. We bridge advanced analytics with practical strategy to deliver solutions that are directly actionable.",
+      "p2": "With over three decades of international experience spanning academia, business development, and analytics, we recognize that every market has its unique demands. Delivering bilingual services in English and Arabic allows us to serve Canadian enterprises, international clients, and partners in the Arab world with the cultural and technical depth they deserve.",
+      "p3": "We reject generic packages and long, locked-in retainers. Every client engagement is shaped by a project-based focus, designed specifically for your situation, and delivered with my personal involvement and commitment to your success.",
+      "name": "Dr. Ibrahim Abdalla",
+      "title": "Ph.D. | Founder & CEO",
+      "company": "ADISON Corp.",
+      "location": "Toronto, Ontario, Canada",
+      "credentials": [
+        "Ph.D. Mathematics Education",
+        "30+ Years International Experience",
+        "Bilingual: English & Arabic",
+        "College Professor — Mathematics & Business"
+      ]
+    },
+    "approach": {
+      "eyebrow": "HOW WE THINK",
+      "title": "Our Approach",
+      "p1": "At ADISON, we believe that most business problems are not solved by more effort — they are solved by better structure. Every engagement we take on begins with understanding the actual situation, not the presenting symptom. We ask questions, analyse what we find, and deliver a practical roadmap that our clients can act on immediately.",
+      "p2": "We do not deliver generic reports. We do not recommend solutions we cannot support. Every recommendation comes with a clear rationale, a practical implementation path, and a measurable outcome."
+    },
+    "whyChoose": {
+      "eyebrow": "THREE REASONS THAT MATTER",
+      "title": "Why Choose ADISON",
+      "items": [
+        {
+          "title": "Bilingual: English & Arabic",
+          "description": "ADISON serves clients in both English and Arabic — a distinct advantage for Canadian businesses with Arabic-speaking partners, staff, or markets, and for international clients in the Arab world."
         },
         {
-          "title": "Consistency",
-          "description": "We deliver disciplined, reliable work with steady quality and focus."
+          "title": "30+ Years of International Experience",
+          "description": "Dr. Abdalla brings over three decades of experience spanning mathematics education, transportation management, and business development across multiple countries and sectors."
+        },
+        {
+          "title": "Project-Based. Personal. Practical.",
+          "description": "No retainer lock-in. No junior team. Every engagement is scoped specifically for your situation, delivered personally by the founder, and measured against a real business outcome."
         }
       ]
     },
     "closing": {
-      "eyebrow": "Closing Perspective",
-      "title": "Turning ideas into practical, structured, and sustainable business outcomes.",
-      "description": "At ADISON, we focus on creating business pathways that are clear, workable, and built for long-term relevance. Our objective is always to turn potential into progress with discipline and purpose.",
+      "eyebrow": "Ready to work with ADISON?",
+      "title": "Ready to work with ADISON?",
+      "description": "Every engagement starts with a conversation. Tell us where you are and where you want to go — we will tell you exactly how we can help.",
       "cta": "Contact ADISON"
     }
   },
 
   "services": {
     "hero": {
-      "eyebrow": "Business Innovation & Development Services",
+      "eyebrow": "Business Intelligence Services",
       "title": "Structured services designed to turn ideas into clear, functional, and scalable solutions.",
-      "description": "ADISON provides focused support across business strategy, analysis, educational development, digital systems, and brand direction. Every service is shaped to bring clarity, structure, and practical momentum."
+      "description": "ADISON provides focused support across business strategy, data analytics, training, and digital presence. Every service is shaped to bring clarity, structure, and practical momentum."
     },
-    "categories": {
-      "eyebrow": "Service Categories",
-      "title": "Five service pillars built around clarity, structure, and execution.",
-      "description": "Our services are organized to support projects from idea formation to long-term growth, with each area designed to solve practical business needs.",
-      "items": [
-        {
-          "number": "01",
-          "title": "Business Development & Strategy",
-          "description": "We help shape business ideas into structured opportunities through strategic planning, project direction, roadmap design, and operational clarity.",
-          "bullets": [
-            "Business idea development",
-            "Strategic planning and direction",
-            "Project structuring and roadmap design",
-            "Workflow and operational planning"
-          ]
-        },
-        {
-          "number": "02",
-          "title": "Business & Data Analysis",
-          "description": "We assess business performance and decision pathways through evaluation, diagnostics, reporting, and analytical interpretation.",
-          "bullets": [
-            "Business evaluation and diagnostics",
-            "Data analysis and interpretation",
-            "Performance assessment and reporting",
-            "Decision-support frameworks"
-          ]
-        },
-        {
-          "number": "03",
-          "title": "Educational Consultancy & Development",
-          "description": "We design structured educational and training solutions that support learning systems, programs, staff development, and curriculum clarity.",
-          "bullets": [
-            "Course and curriculum development",
-            "Academic and training program design",
-            "Learning model structuring",
-            "Staff training and development"
-          ]
-        },
-        {
-          "number": "04",
-          "title": "Digital Solutions & Platforms",
-          "description": "We help define digital workflows, service models, websites, and platform structures that support practical delivery and business efficiency.",
-          "bullets": [
-            "Website and platform planning",
-            "Digital workflows and systems",
-            "Online service model development"
-          ]
-        },
-        {
-          "number": "05",
-          "title": "Brand Identity & Design",
-          "description": "We help shape business identity through concept development, positioning, naming, and visual direction that align with long-term business goals.",
-          "bullets": [
-            "Business identity creation",
-            "Brand positioning and direction",
-            "Concept development and naming",
-            "Graphic design"
-          ]
-        }
-      ]
-    },
-    "packages": {
-      "eyebrow": "Service Packages",
-      "title": "Concise service packages tailored to different stages of business development.",
-      "description": "Our packages are designed to support businesses and projects at the point where they need the most clarity, structure, or strategic guidance.",
-      "items": [
-        {
-          "title": "Clarity Package",
-          "summary": "Define your idea and direction through structured consultation and evaluation.",
-          "points": [
-            "Initial direction setting",
-            "Idea review and positioning",
-            "High-level consultation"
-          ]
-        },
-        {
-          "title": "Structure Package",
-          "summary": "Build a clear business foundation through roadmap development and planning.",
-          "points": [
-            "Roadmap and project structuring",
-            "Operational clarity",
-            "Actionable planning foundation"
-          ]
-        },
-        {
-          "title": "Growth Package",
-          "summary": "Improve and expand your business through strategy, systems, and analysis.",
-          "points": [
-            "Business improvement focus",
-            "Analytical support",
-            "System and workflow enhancement"
-          ]
-        },
-        {
-          "title": "Advisory & Strategy",
-          "summary": "Ongoing expert support for business decisions, development, and growth.",
-          "points": [
-            "Strategic guidance",
-            "Ongoing advisory support",
-            "Decision-focused consultation"
-          ]
-        }
-      ]
-    },
+    "items": [
+      {
+        "number": "01",
+        "title": "Business Strategy & Development",
+        "description": "We help businesses define their direction, structure their operations, and build the planning frameworks they need to grow. Whether you are starting from scratch or restructuring an existing business, we provide the analysis and strategic clarity to move forward with confidence.",
+        "deliverablesLabel": "What We Deliver",
+        "deliverables": [
+          "Business creation and model design",
+          "Business planning and feasibility studies",
+          "Process analysis and operational improvement",
+          "Strategic advisory and direction-setting",
+          "KPI frameworks and performance measurement",
+          "Financial performance analysis",
+          "Project management support"
+        ],
+        "idealForLabel": "Ideal For",
+        "idealFor": [
+          "New businesses at the planning stage",
+          "Existing businesses facing strategic decisions",
+          "Organizations seeking structure and direction"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Data Analytics & Business Intelligence",
+        "description": "We turn your business data into clear, actionable intelligence. From raw data collection to interactive dashboards and BI reports, we give decision-makers the visibility they need to act with confidence. We deliver using the tools your team already uses — primarily Excel and Power BI.",
+        "deliverablesLabel": "What We Deliver",
+        "deliverables": [
+          "Data collection, cleaning, and structuring",
+          "Data analysis and interpretation",
+          "Business Intelligence reporting",
+          "Interactive dashboards and visualizations",
+          "Excel and Power BI solutions",
+          "Market research and competitive analysis"
+        ],
+        "idealForLabel": "Ideal For",
+        "idealFor": [
+          "Businesses with data they are not using effectively",
+          "Organizations needing dashboards or BI reports",
+          "Decision-makers who need clear analytics without technical complexity"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Digital Presence & Marketing",
+        "description": "We build and strengthen the digital face of your business — from your website and brand identity to your social media presence and marketing campaigns. Every element is designed to communicate your value clearly and attract the right clients.",
+        "deliverablesLabel": "What We Deliver",
+        "deliverables": [
+          "Website development and design",
+          "Mobile application development",
+          "Brand identity and visual direction",
+          "Graphic design",
+          "Content creation and copywriting",
+          "Social media strategy and management",
+          "SEO (Search Engine Optimization)",
+          "Email marketing",
+          "Paid digital advertising"
+        ],
+        "idealForLabel": "Ideal For",
+        "idealFor": [
+          "New businesses building their first digital presence",
+          "Existing businesses with outdated or ineffective online presence",
+          "Organizations seeking integrated digital marketing support"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Training & Development",
+        "description": "We design and deliver professional training programs that build the capability your team needs to perform. From data literacy and business intelligence tools to leadership and operational skills, our programs are practical, structured, and immediately applicable.",
+        "deliverablesLabel": "What We Deliver",
+        "deliverables": [
+          "Data literacy workshops",
+          "Power BI and Excel training",
+          "Business strategy and planning workshops",
+          "Staff development programs",
+          "Curriculum design for corporate training",
+          "Custom workshop design"
+        ],
+        "idealForLabel": "Ideal For",
+        "idealFor": [
+          "Organizations seeking to upskill their teams",
+          "Businesses implementing new BI or analytics tools",
+          "HR and L&D teams needing curriculum design"
+        ]
+      }
+    ],
     "cta": {
-      "eyebrow": "Ready to Move Forward?",
-      "title": "Let's shape your next step with clarity and structure.",
-      "description": "Whether you are building a new idea, refining an existing business, or developing a project in motion, ADISON is ready to support your direction.",
-      "primaryCta": "Contact ADISON",
-      "secondaryCta": "How We Work"
+      "headline": "Not sure which service fits your situation?",
+      "body": "Contact ADISON for a no-obligation initial conversation. We will listen to your situation and tell you honestly whether and how we can help.",
+      "button": "Contact ADISON",
+      "secondaryButton": "How We Work"
     }
   },
 
@@ -396,72 +426,91 @@
       "description": "Whether you have a new idea, an existing business, or a project in development, ADISON is ready to support your next step with clarity, structure, and practical direction."
     },
     "info": {
-      "eyebrow": "Contact Information",
-      "title": "Reach out with your idea, inquiry, or next business step.",
-      "description": "We welcome conversations around new concepts, business development needs, consultations, and strategic support.",
+      "eyebrow": "Contact Details",
+      "title": "Reach out directly or use the form below.",
+      "description": "Dr. Ibrahim Abdalla and the ADISON team are available to discuss your business requirements, project goals, or consulting needs.",
       "items": [
         {
           "title": "Email",
           "value": "info@adison.ca",
-          "note": "For project inquiries, consultations, and general communication."
+          "note": "For project inquiries, proposals, and general communication."
         },
         {
           "title": "Phone",
           "value": "+1 647 847 0111",
-          "note": "For direct contact regarding business support and development."
+          "note": "Direct line for immediate business development discussions."
+        },
+        {
+          "title": "Website",
+          "value": "www.adison.ca",
+          "note": "Access our platform services, case studies, and digital assets."
         },
         {
           "title": "Location",
           "value": "Toronto, Ontario, Canada",
-          "note": "Canadian-based with global reach across diverse markets."
+          "note": "Serving clients locally in Ontario and globally across international markets."
+        },
+        {
+          "title": "Business Hours",
+          "value": "Mon – Fri | 9:00 AM – 6:00 PM EST",
+          "note": "We operate on Canadian Eastern Standard Time."
+        },
+        {
+          "title": "Languages Supported",
+          "value": "English and Arabic",
+          "note": "Full bilingual support for documentation, strategy, and meetings."
         }
       ]
     },
     "form": {
-      "eyebrow": "Send a Message",
-      "title": "Share your idea. Share your goal.",
-      "description": "Use the form below to tell us about your inquiry, your project, or the kind of support you are looking for.",
+      "eyebrow": "Contact Form",
+      "title": "Send a Message",
+      "description": "Fill out the fields below, and we will get back to you with a direct, honest response within one business day.",
       "inquiryOptions": [
-        "New Idea",
-        "Business Development",
-        "Consultation",
-        "Other"
+        "Business Strategy & Development",
+        "Data Analytics & Business Intelligence",
+        "Digital Presence & Marketing",
+        "Training & Development",
+        "Not sure yet"
       ],
       "placeholders": {
-        "name": "Full Name",
-        "email": "Email Address",
+        "name": "Full Name (required)",
+        "email": "Email Address (required)",
         "phone": "Phone Number (optional)",
-        "inquiry": "Select Inquiry Type",
-        "message": "Tell us about your idea, project, or inquiry..."
+        "company": "Organization / Company Name (optional)",
+        "inquiry": "Select Service of Interest (required)",
+        "message": "Write your message here..."
       },
       "labels": {
         "name": "Full Name",
         "email": "Email Address",
         "phone": "Phone Number",
-        "inquiry": "Inquiry Type",
+        "company": "Organization / Company Name",
+        "inquiry": "Service of Interest",
         "message": "Message"
       },
-      "submitLabel": "Contact ADISON",
+      "submitLabel": "Send Message",
       "availableNow": "Available Now",
-      "responseTime": "Typical response within",
-      "responseHours": "24 hours",
-      "sharePrompt": "Share your idea, your project, or the kind of support you are looking for.",
-      "sending": "Sending...",
-      "successTitle": "Message received",
-      "successDescription": "We'll be in touch within 24 hours."
+      "responseTime": "Response within",
+      "responseHours": "1 Business Day",
+      "sharePrompt": "Every message is read personally by Dr. Abdalla. You will receive a direct, honest response within one business day.",
+      "sending": "Sending Message...",
+      "successTitle": "Message Received",
+      "successDescription": "Thank you — your message has been received. Dr. Abdalla will respond within one business day."
     },
     "closing": {
-      "title": "Clarity begins with a conversation.",
-      "description": "Start with the next step. ADISON is here to help structure the path forward."
+      "title": "Direct Founder Engagement",
+      "description": "Every project begins with a personal assessment by Dr. Abdalla to ensure alignment with ADISON's standards."
     }
   },
 
   "footer": {
     "companyName": "ADISON Corp.",
-    "description": "A Canadian-based firm with global reach, delivering structured, practical, and scalable business innovation and development solutions.",
+    "description": "A Canadian-based Business Intelligence company delivering strategy, analytics, and digital presence solutions to businesses locally and internationally.",
     "location": "Toronto, Ontario, Canada",
     "email": "info@adison.ca",
     "phone": "+1 647 847 0111",
+    "website": "www.adison.ca",
     "copyright": "© 2026 ADISON Corp. All rights reserved."
   }
 }

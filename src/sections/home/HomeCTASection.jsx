@@ -24,7 +24,7 @@ export default function HomeCTASection() {
   if (!cta) return null;
 
   return (
-    <section className="section-pad">
+    <section className="section-pad-lg">
       <Container>
         <GlassSurface className="overflow-hidden px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
 

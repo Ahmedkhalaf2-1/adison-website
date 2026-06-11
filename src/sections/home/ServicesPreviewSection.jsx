@@ -45,27 +45,52 @@ export default function ServicesPreviewSection() {
               className={`${index === 0 ? "xl:col-span-2" : ""} h-full`}
             >
               <GlassCard className="h-full">
-                <div className="flex h-full flex-col">
-                  <div className="mb-6 flex items-center gap-4">
-                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/90">
-                      {tNumber(index + 1, 2)}
+                {index === 0 ? (
+                  /* Featured anchor card — horizontal split on large screens */
+                  <div className="flex h-full flex-col xl:flex-row xl:items-stretch xl:gap-0">
+                    <div className="flex flex-col xl:flex-1 xl:pe-8">
+                      <div className="mb-6 flex items-center gap-4">
+                        <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/90">
+                          {tNumber(index + 1, 2)}
+                        </div>
+                        <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent" />
+                      </div>
+
+                      <h3 className="text-2xl font-semibold leading-tight text-white sm:text-3xl">
+                        {item.title}
+                      </h3>
                     </div>
 
-                    <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent" />
+                    {/* Vertical divider — visible only on xl */}
+                    <div className="my-5 h-px w-full bg-gradient-to-r from-white/10 via-white/6 to-transparent xl:my-0 xl:h-auto xl:w-px xl:bg-gradient-to-b xl:from-transparent xl:via-white/12 xl:to-transparent" />
+
+                    <div className="flex flex-col justify-center xl:flex-1 xl:ps-8">
+                      <p className="max-w-2xl text-sm leading-7 text-white/90 sm:text-base">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
+                ) : (
+                  /* Standard cards */
+                  <div className="flex h-full flex-col">
+                    <div className="mb-6 flex items-center gap-4">
+                      <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/90">
+                        {tNumber(index + 1, 2)}
+                      </div>
+                      <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent" />
+                    </div>
 
-                  <h3
-                    className={`font-semibold leading-tight text-white ${
-                      index === 0 ? "text-2xl sm:text-3xl" : "text-xl sm:text-2xl"
-                    }`}
-                  >
-                    {item.title}
-                  </h3>
+                    <h3 className="text-xl font-semibold leading-tight text-white sm:text-2xl">
+                      {item.title}
+                    </h3>
 
-                  <p className="mt-4 max-w-2xl text-sm leading-7 text-white/90 sm:text-base">
-                    {item.description}
-                  </p>
-                </div>
+                    <div className="mt-4 h-px w-10 bg-gradient-to-r from-white/14 to-transparent" />
+
+                    <p className="mt-4 max-w-2xl text-sm leading-7 text-white/90 sm:text-base">
+                      {item.description}
+                    </p>
+                  </div>
+                )}
               </GlassCard>
             </motion.div>
           ))}

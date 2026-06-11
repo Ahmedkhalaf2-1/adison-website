@@ -1,29 +1,29 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "Cabinet",
-    "services": "Expertise",
-    "howWeWork": "Méthodologie",
+    "about": "À propos",
+    "services": "Services",
+    "howWeWork": "Notre approche",
     "contact": "Contact"
   },
   "home": {
     "hero": {
-      "eyebrow": "Cabinet canadien à rayonnement international",
-      "title": "Propulsez votre Business",
-      "description": "ADISON Corp est un cabinet d'innovation et d'ingénierie d'affaires dédié à la structuration de solutions évolutives. Nous transformons vos visions stratégiques en modèles opérationnels concrets et performants.",
+      "eyebrow": "Une entreprise canadienne à portée mondiale",
+      "title": "Activez votre entreprise",
+      "description": "ADISON Corp est une entreprise d'intelligence d'affaires offrant des solutions structurées, pratiques et basées sur les données pour les entreprises à tous les stades, du démarrage à la croissance. Nous combinons stratégie, analyse et expertise numérique pour donner à nos clients la clarté et la direction nécessaires pour progresser.",
       "primaryCta": {
-        "label": "Engager ADISON",
+        "label": "Contacter ADISON",
         "to": "/contact"
       },
       "secondaryCta": {
-        "label": "Découvrir l'Expertise",
+        "label": "Découvrir nos services",
         "to": "/services"
       },
       "cards": {
         "global": {
           "eyebrow": "Positionnement Global",
           "title": "Expertise canadienne, impact international.",
-          "description": "Ingénierie d'affaires et structuration stratégique"
+          "description": "Intelligence d'affaires — stratégie, analyse et présence numérique."
         },
         "focus": {
           "eyebrow": "Axe Principal",
@@ -37,37 +37,51 @@
     },
     "intro": {
       "eyebrow": "À Propos",
-      "title": "Pensée structurée. Rigueur opérationnelle. Croissance durable.",
-      "description": "ADISON Corp accompagne les leaders et les organisations dans la transition de la complexité vers la structure. Nous opérons à la confluence de la stratégie, de l'analyse et de l'exécution pour bâtir des modèles pérennes.",
+      "title": "Pensée structurée. Exécution pratique. Direction d’affaires durable.",
+      "description": "ADISON Corp est une entreprise d'intelligence d'affaires au service des entreprises nouvelles et en croissance au Canada et à l'international. Nous combinons stratégie, analyse et expertise numérique pour fournir la clarté et la direction dont les entreprises ont besoin pour aller de l'avant avec confiance.",
       "card": "Une architecture de pensée rigoureuse garantit une exécution optimale et une direction stratégique dès la genèse du projet."
     },
     "servicesPreview": {
       "eyebrow": "Nos Domaines d'Intervention",
-      "title": "Propulser vos concepts vers l'excellence opérationnelle grâce à nos piliers d'expertise.",
-      "description": "Notre intervention se structure autour du développement stratégique, de l'analyse de données et de l'optimisation des systèmes numériques.",
+      "title": "Nous aidons les idées à passer du concept à l'exécution grâce à des piliers d'expertise ciblés.",
+      "description": "Notre intervention se structure autour de la stratégie d'affaires, de l'analyse de données, de la formation et de la présence numérique.",
       "items": [
         {
-          "title": "Stratégie et Ingénierie d'Affaires",
-          "description": "Planification structurée, modélisation d'affaires et conception de feuilles de route stratégiques."
+          "title": "Stratégie et développement d’affaires",
+          "description": "Planification structurée, modélisation d'affaires et conception de feuilles de route stratégiques claires."
         },
         {
-          "title": "Analyse d'Affaires et BI",
-          "description": "Diagnostic, interprétation analytique et cadres d'aide à la décision stratégique."
+          "title": "Analytique et intelligence d’affaires",
+          "description": "Collecte de données, analyse, visualisation, tableaux de bord, rapports de BI, livraison sous Excel et Power BI, et études de marché."
         },
         {
-          "title": "Conseil et Ingénierie Pédagogique",
-          "description": "Conception de curricula, ingénierie de formation et solutions de transfert de compétences."
+          "title": "Formation et développement",
+          "description": "Ateliers, programmes de littératie des données, développement du personnel et conception de curricula."
         },
         {
-          "title": "Solutions et Écosystèmes Numériques",
-          "description": "Architecture Web, optimisation des flux numériques et structuration de plateformes de services."
-        },
-        {
-          "title": "Identité Visuelle et Positionnement",
-          "description": "Architecture de marque, positionnement de marché et direction artistique stratégique."
+          "title": "Présence numérique et marketing",
+          "description": "Développement de sites Web, applications mobiles, identité de marque, conception graphique, création de contenu, réseaux sociaux, SEO et marketing numérique."
         }
       ],
       "cta": "Consulter l'offre complète"
+    },
+    "whoWeServe": {
+      "eyebrow": "Qui nous servons",
+      "title": "ADISON travaille avec trois types de clients — chacun ayant des défis et des objectifs distincts.",
+      "clients": [
+        {
+          "title": "Nouvelles entreprises",
+          "description": "Entrepreneurs et startups au stade de l'idée ou du lancement précoce. ADISON aide à la conception de modèles d'affaires, aux études de faisabilité, à la planification, à l'identité de marque et à la présence numérique — tout ce qui est nécessaire pour démarrer avec structure et confiance."
+        },
+        {
+          "title": "Entreprises en croissance",
+          "description": "Entreprises établies cherchant à se développer, à améliorer leurs performances ou à pénétrer de nouveaux marchés. ADISON soutient le raffinement stratégique, l'analyse de marché, les cadres d'indicateurs de performance (KPI) et le marketing numérique pour accélérer une croissance durable."
+        },
+        {
+          "title": "Entreprises cherchant à développer leur intelligence d’affaires",
+          "description": "Organisations qui possèdent des données mais ne les exploitent pas efficacement. ADISON conçoit des tableaux de bord, des rapports de BI, des flux de données et des cadres analytiques sous Excel et Power BI — transformant les données brutes en informations stratégiques exploitables."
+        }
+      ]
     },
     "whyAdison": {
       "eyebrow": "Pourquoi ADISON",
@@ -131,178 +145,199 @@
       "secondaryCta": "Explorer les solutions",
       "card": {
         "eyebrow": "Prochaine Étape",
-        "title": "Bâtissons dès aujourd'hui les fondations de votre futur succès."
+        "title": "Lancez la conversation et faites avancer votre projet avec structure."
       }
     }
   },
   "about": {
     "hero": {
-      "eyebrow": "Le Cabinet",
-      "title": "Cabinet canadien d'ingénierie d'affaires à vocation internationale.",
-      "description": "ADISON Corp est spécialisé dans la conversion de concepts en solutions d'affaires structurées et scalables. Notre approche repose sur la clarté, l'expertise métier et la rigueur analytique."
+      "eyebrow": "À Propos d'ADISON",
+      "title": "Une entreprise canadienne de Business Intelligence offrant stratégie, analyse et présence numérique.",
+      "description": "Nous aidons les nouvelles entreprises à se lancer avec structure, les entreprises en croissance à se développer grâce à l'intelligence, et les entreprises établies à exploiter leurs données pour de meilleures décisions."
     },
     "identity": {
-      "eyebrow": "Notre Identité",
-      "title": "Instaurer la clarté au cœur des projets à fort potentiel.",
-      "description": "ADISON Corp est un cabinet de conseil en innovation d'affaires aidant les organisations à passer du chaos à la structure. Nous intervenons sur les axes stratégiques pour générer des résultats pérennes.",
-      "note": "Notre mission dépasse le simple conseil : nous structurons la complexité en leviers de croissance concrets."
+      "eyebrow": "Qui Nous Sommes",
+      "title": "Présentation de l'Entreprise",
+      "description": "ADISON Corp. est une entreprise canadienne de Business Intelligence qui sert des clients locaux et internationaux. Nos activités couvrent quatre domaines clés : Stratégie & Développement d'Affaires, Analyse de Données & Business Intelligence, Présence Numérique & Marketing, et Formation & Développement. Chaque mission est personnalisée, basée sur un projet et conçue pour répondre à un besoin spécifique — sans engagement de longue durée ni solutions génériques.",
+      "note": "ADISON est basée à Toronto, Ontario, et accompagne ses clients au Canada et à l'international."
     },
     "mission": {
       "eyebrow": "Mission",
-      "title": "Éclairer les opportunités et les transformer en solutions structurées et réalisables.",
-      "description": "Nous guidons les projets par une pensée disciplinée et une ingénierie stratégique pour assurer un progrès maîtrisé."
+      "title": "Clarté & Capacité",
+      "description": "Offrir aux entreprises, à chaque étape, la clarté stratégique, l'intelligence analytique et les capacités numériques nécessaires pour avancer avec confiance."
     },
     "vision": {
       "eyebrow": "Vision",
-      "title": "S'imposer comme le partenaire de référence en ingénierie d'innovation d'affaires.",
-      "description": "Nous aspirons à être reconnus pour notre rigueur, notre professionnalisme et notre capacité à générer de la valeur durable."
+      "title": "Partenariat BI de Confiance",
+      "description": "Devenir le partenaire de Business Intelligence le plus fiable pour les entreprises opérant au Canada et sur les marchés internationaux arabophones."
     },
     "values": {
       "eyebrow": "Valeurs",
-      "title": "Les piliers qui régissent notre pensée, notre conception et nos livrables.",
-      "description": "Chaque intervention est dictée par des standards rigoureux garantissant l'intégrité et la performance de notre travail.",
+      "title": "Les principes qui guident notre réflexion, nos conceptions et nos résultats.",
+      "description": "La clarté plutôt que la complexité. La structure plutôt que l'incertitude. Les résultats plutôt que les rapports. L'honnêteté plutôt que la facilité.",
       "items": [
         {
-          "title": "Innovation",
-          "description": "Explorer de nouveaux horizons pour libérer le plein potentiel de chaque concept."
-        },
-        {
           "title": "Clarté",
-          "description": "Simplifier la complexité pour offrir des directions exploitables immédiatement."
+          "description": "La clarté plutôt que la complexité."
         },
         {
           "title": "Structure",
-          "description": "Tout succès pérenne repose sur une architecture solide et organisée."
+          "description": "La structure plutôt que l'incertitude."
         },
         {
-          "title": "Intégrité",
-          "description": "Rigueur, transparence et déontologie sont au cœur de nos engagements."
+          "title": "Résultats",
+          "description": "Les résultats plutôt que les rapports."
         },
         {
-          "title": "Croissance",
-          "description": "Favoriser l'amélioration continue et l'expansion stratégique à long terme."
+          "title": "Honnêteté",
+          "description": "L'honnêteté plutôt que la facilité."
+        }
+      ]
+    },
+    "ceoMessage": {
+      "eyebrow": "LE MOT DU FONDATEUR",
+      "p1": "Chez ADISON, nous pensons que la véritable croissance repose sur la clarté et la structure, et non sur le simple effort. Notre objectif est de transformer les défis commerciaux complexes en parcours clairs et informés par les données, permettant à nos clients de prendre des décisions avec confiance et discernement. Nous associons analyses avancées et stratégie concrète pour fournir des solutions directement applicables.",
+      "p2": "Forts de plus de trois décennies d'expérience internationale dans le monde universitaire, le développement des affaires et l'analyse de données, nous comprenons que chaque marché a des exigences spécifiques. Notre offre de services bilingues en anglais et en arabe nous permet de servir les entreprises canadiennes, les clients internationaux et les partenaires du monde arabe avec toute la profondeur culturelle et technique requise.",
+      "p3": "Nous refusons les formules toutes faites et les contrats d'honoraires à long terme. Chaque mandat client s'inscrit dans un projet ciblé, adapté précisément à votre situation, mené avec mon implication personnelle et mon engagement total envers votre réussite.",
+      "name": "Dr. Ibrahim Abdalla",
+      "title": "Ph.D. | Fondateur & CEO",
+      "company": "ADISON Corp.",
+      "location": "Toronto, Ontario, Canada",
+      "credentials": [
+        "Ph.D. en Éducation Mathématique",
+        "Plus de 30 ans d'expérience internationale",
+        "Bilingue : Anglais & Arabe",
+        "Professeur d'université — Mathématiques & Affaires"
+      ]
+    },
+    "approach": {
+      "eyebrow": "NOTRE PHILOSOPHIE",
+      "title": "Notre Approche",
+      "p1": "Chez ADISON, nous pensons que la majorité des problèmes d'affaires ne se résolvent pas par un surcroît d'efforts, mais par une meilleure structure. Chaque mission commence par la compréhension de la situation réelle, et non du symptôme apparent. Nous posons des questions, analysons nos conclusions et élaborons une feuille de route pratique, actionnable immédiatement.",
+      "p2": "Nous ne livrons pas de rapports génériques. Nous ne recommandons aucune solution que nous ne puissions soutenir. Chaque recommandation est accompagnée d'une justification claire, d'un plan de mise en œuvre pratique et d'un résultat mesurable."
+    },
+    "whyChoose": {
+      "eyebrow": "TROIS RAISONS ESSENTIELLES",
+      "title": "Pourquoi Choisir ADISON",
+      "items": [
+        {
+          "title": "Bilinguisme : Anglais & Arabe",
+          "description": "ADISON accompagne ses clients en anglais et en arabe — un atout majeur pour les entreprises canadiennes ayant des partenaires, employés ou marchés arabophones, ainsi que pour les clients internationaux du monde arabe."
         },
         {
-          "title": "Excellence",
-          "description": "Délivrer un travail de haute précision avec une exigence de qualité constante."
+          "title": "Plus de 30 ans d'expérience internationale",
+          "description": "Le Dr Abdalla apporte plus de trente ans d'expertise dans les domaines de l'éducation mathématique, de la gestion des transports et du développement commercial à travers plusieurs pays et secteurs."
+        },
+        {
+          "title": "Par projet. Personnel. Pratique.",
+          "description": "Pas de contrat d'honoraires contraignant. Pas d'équipe junior. Chaque mission est définie sur mesure pour votre projet, menée directement par le fondateur, et mesurée par rapport à un résultat concret."
         }
       ]
     },
     "closing": {
-      "eyebrow": "Perspective Finale",
-      "title": "Convertir l'inspiration en actifs d'affaires structurés et durables.",
-      "description": "Chez ADISON, nous dessinons des trajectoires de croissance claires et pérennes. Notre objectif est de transformer le potentiel en progrès réel."
+      "eyebrow": "Prêt à collaborer avec ADISON ?",
+      "title": "Prêt à collaborer avec ADISON ?",
+      "description": "Chaque collaboration commence par un échange. Dites-nous où vous en êtes et où vous souhaitez aller — nous vous expliquerons précisément comment vous y amener.",
+      "cta": "Contactez ADISON"
     }
   },
   "services": {
     "hero": {
-      "eyebrow": "Ingénierie d'Innovation d'Affaires",
-      "title": "Solutions stratégiques pour transformer vos ambitions en réalités opérationnelles.",
-      "description": "ADISON déploie une expertise multidimensionnelle en stratégie, analyse et écosystèmes numériques pour instaurer structure et dynamisme."
+      "eyebrow": "Services de Business Intelligence",
+      "title": "Des services structurés conçus pour transformer les idées en solutions claires, fonctionnelles et évolutives.",
+      "description": "ADISON apporte un soutien ciblé en stratégie d'affaires, analyse de données, formation et présence numérique. Chaque service est conçu pour apporter clarté, structure et dynamisme."
     },
-    "categories": {
-      "eyebrow": "Expertises",
-      "title": "Cinq piliers d'intervention fondés sur la clarté, la structure et la performance.",
-      "description": "Nos services sont articulés pour soutenir les projets de l'idéation à la maturité, en répondant aux impératifs métiers réels.",
-      "items": [
-        {
-          "number": "01",
-          "title": "Ingénierie et Stratégie d'Affaires",
-          "description": "Modélisation de concepts en opportunités structurées via la planification stratégique et la conception de feuilles de route opérationnelles.",
-          "bullets": [
-            "Modélisation de concepts d'affaires",
-            "Planification stratégique",
-            "Architecture de feuilles de route",
-            "Optimisation des processus"
-          ]
-        },
-        {
-          "number": "02",
-          "title": "Analyse de Données et BI",
-          "description": "Évaluation de la performance et des schémas décisionnels via des diagnostics précis et une interprétation analytique rigoureuse.",
-          "bullets": [
-            "Diagnostic et audit d'affaires",
-            "Business Intelligence et analyse",
-            "Reporting de performance",
-            "Cadres d'aide à la décision"
-          ]
-        },
-        {
-          "number": "03",
-          "title": "Ingénierie Pédagogique et Conseil",
-          "description": "Conception de solutions d'apprentissage structurées pour le développement des compétences et la valorisation du capital humain.",
-          "bullets": [
-            "Développement de curricula",
-            "Ingénierie de programmes",
-            "Structuration de modèles d'apprentissage",
-            "Formation et coaching de talents"
-          ]
-        },
-        {
-          "number": "04",
-          "title": "Écosystèmes et Solutions Numériques",
-          "description": "Définition de la trajectoire numérique, de l'architecture Web à l'automatisation des flux pour garantir l'efficacité opérationnelle.",
-          "bullets": [
-            "Architecture de plateformes",
-            "Optimisation des flux numériques",
-            "Développement de modèles e-services"
-          ]
-        },
-        {
-          "number": "05",
-          "title": "Architecture de Marque et Design",
-          "description": "Façonner l'identité de votre entreprise par le positionnement stratégique et une direction artistique alignée sur vos objectifs.",
-          "bullets": [
-            "Architecture d'identité",
-            "Branding et positionnement",
-            "Naming et concept créatif",
-            "Design graphique stratégique"
-          ]
-        }
-      ]
-    },
-    "packages": {
-      "eyebrow": "Offres de Services",
-      "title": "Solutions intégrées adaptées aux cycles de maturité de vos projets.",
-      "description": "Nos offres sont conçues pour intervenir aux moments critiques nécessitant une clarté absolue ou un renforcement structurel.",
-      "items": [
-        {
-          "title": "Pack Clarté",
-          "summary": "Définir vos orientations stratégiques via un diagnostic structuré.",
-          "points": [
-            "Définition de trajectoire",
-            "Audit de positionnement",
-            "Consultation stratégique flash"
-          ]
-        },
-        {
-          "title": "Pack Structure",
-          "summary": "Bâtir les fondations de votre projet via une feuille de route opérationnelle.",
-          "points": [
-            "Architecture de feuille de route",
-            "Clarté des processus",
-            "Cadre opérationnel prêt-à-l'emploi"
-          ]
-        },
-        {
-          "title": "Pack Croissance",
-          "summary": "Propulser vos activités par l'analyse et l'optimisation des systèmes.",
-          "points": [
-            "Optimisation de la performance",
-            "Analyse de données stratégiques",
-            "Amélioration des flux de travail"
-          ]
-        },
-        {
-          "title": "Conseil Stratégique",
-          "summary": "Accompagnement expert pour sécuriser vos décisions et pérenniser votre succès.",
-          "points": [
-            "Accompagnement à la décision",
-            "Support consultatif permanent",
-            "Veille et conseil stratégique"
-          ]
-        }
-      ]
+    "items": [
+      {
+        "number": "01",
+        "title": "Stratégie & Développement d'Affaires",
+        "description": "Nous aidons les entreprises à définir leur direction, structurer leurs opérations et bâtir les cadres de planification nécessaires à leur croissance. Que vous partiez de zéro ou restructuriez une entreprise existante, nous apportons l'analyse et la clarté stratégique pour avancer avec confiance.",
+        "deliverablesLabel": "Ce Que Nous Livrons",
+        "deliverables": [
+          "Création d'entreprise et conception de modèle",
+          "Études de faisabilité et planification d'affaires",
+          "Analyse des processus et amélioration opérationnelle",
+          "Conseil stratégique et définition d'objectifs",
+          "Indicateurs clés (KPI) et mesure de performance",
+          "Analyse de performance financière",
+          "Support à la gestion de projet"
+        ],
+        "idealForLabel": "Idéal Pour",
+        "idealFor": [
+          "Nouvelles entreprises en phase de planification",
+          "Entreprises existantes confrontées à des décisions stratégiques",
+          "Organisations recherchant structure et orientation"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Analyse de Données & Business Intelligence",
+        "description": "Nous transformons vos données d'entreprise en informations claires et exploitables. De la collecte de données brutes aux tableaux de bord interactifs et rapports BI, nous donnons aux décideurs la visibilité nécessaire pour agir avec confiance. Nous intervenons sur les outils que vos équipes utilisent déjà — principalement Excel et Power BI.",
+        "deliverablesLabel": "Ce Que Nous Livrons",
+        "deliverables": [
+          "Collecte, nettoyage et structuration des données",
+          "Analyse et interprétation des données",
+          "Rapports de Business Intelligence",
+          "Tableaux de bord interactifs et visualisations",
+          "Solutions Excel et Power BI",
+          "Études de marché et analyse concurrentielle"
+        ],
+        "idealForLabel": "Idéal Pour",
+        "idealFor": [
+          "Entreprises disposant de données sous-exploitées",
+          "Organisations nécessitant des rapports ou tableaux de bord BI",
+          "Décideurs recherchant des analyses claires sans complexité technique"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Présence Numérique & Marketing",
+        "description": "Nous construisons et renforçons la vitrine numérique de votre entreprise — de votre site Web et identité de marque à votre présence sur les réseaux sociaux et campagnes marketing. Chaque élément est conçu pour communiquer clairement votre valeur et attirer les bons clients.",
+        "deliverablesLabel": "Ce Que Nous Livrons",
+        "deliverables": [
+          "Conception et développement de sites Web",
+          "Développement d'applications mobiles",
+          "Identité de marque et direction visuelle",
+          "Design graphique",
+          "Création de contenu et rédaction (copywriting)",
+          "Stratégie et gestion des réseaux sociaux",
+          "Référencement (SEO - Search Engine Optimization)",
+          "Marketing par e-mail",
+          "Publicité numérique payante"
+        ],
+        "idealForLabel": "Idéal Pour",
+        "idealFor": [
+          "Nouvelles entreprises créant leur première vitrine numérique",
+          "Entreprises existantes ayant un site obsolète ou inefficace",
+          "Organisations recherchant un support marketing numérique intégré"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Formation & Développement",
+        "description": "Nous concevons et animons des programmes de formation professionnelle qui renforcent les compétences indispensables à votre équipe. De la culture des données aux outils décisionnels en passant par le leadership et l'efficacité opérationnelle, nos programmes sont pratiques, structurés et immédiatement applicables.",
+        "deliverablesLabel": "Ce Que Nous Livrons",
+        "deliverables": [
+          "Ateliers et programmes d'acculturation aux données",
+          "Formations Power BI et Excel",
+          "Ateliers de stratégie d'affaires et de planification",
+          "Programmes de développement du personnel",
+          "Conception de curricula pour la formation en entreprise",
+          "Conception d'ateliers sur mesure"
+        ],
+        "idealForLabel": "Idéal Pour",
+        "idealFor": [
+          "Organisations souhaitant monter en compétences leurs équipes",
+          "Entreprises déployant de nouveaux outils BI ou analytiques",
+          "Équipes RH et Formation ayant besoin de concevoir des parcours pédagogiques"
+        ]
+      }
+    ],
+    "cta": {
+      "headline": "Vous ne savez pas quel service correspond à votre situation ?",
+      "body": "Contactez ADISON pour un premier échange sans engagement. Nous écouterons votre situation et vous dirons en toute franchise si et comment nous pouvons vous aider.",
+      "button": "Contactez ADISON",
+      "secondaryButton": "Comment Nous Travaillons"
     }
   },
   "process": {
@@ -379,75 +414,94 @@
   "contact": {
     "hero": {
       "eyebrow": "Contacter ADISON",
-      "title": "Propulsons votre entreprise vers de nouveaux sommets.",
-      "description": "Que vous ayez une idée émergente, une entreprise établie ou un projet en cours de développement, ADISON est prêt à accompagner votre prochaine étape avec clarté, structure et orientation pragmatique."
+      "title": "Faisons progresser votre entreprise.",
+      "description": "Que vous ayez une nouvelle idée, une entreprise existante ou un projet en cours, ADISON est prêt à soutenir votre prochaine étape avec clarté, structure et orientation pratique."
     },
     "info": {
-      "eyebrow": "Coordonnées",
-      "title": "Contactez-nous pour échanger sur vos idées, vos besoins de développement ou vos projets.",
-      "description": "Nous accueillons avec intérêt les échanges autour des nouveaux concepts, des besoins d'expansion, des consultations et du support stratégique.",
+      "eyebrow": "Coordonnées de Contact",
+      "title": "Contactez-nous directement ou utilisez le formulaire.",
+      "description": "Le Dr Ibrahim Abdalla et l'équipe ADISON sont disponibles pour discuter de vos exigences commerciales, de vos objectifs de projet ou de vos besoins en conseil.",
       "items": [
         {
           "title": "E-mail",
           "value": "info@adison.ca",
-          "note": "Pour les demandes de projets, les consultations et les communications générales."
+          "note": "Pour les demandes de projet, les propositions et la communication générale."
         },
         {
           "title": "Téléphone",
           "value": "+1 647 847 0111",
-          "note": "Pour un contact direct concernant l'accompagnement et le développement d'affaires."
+          "note": "Ligne directe pour les discussions immédiates sur le développement d'affaires."
+        },
+        {
+          "title": "Site Web",
+          "value": "www.adison.ca",
+          "note": "Accédez à nos services, études de cas et ressources en ligne."
         },
         {
           "title": "Localisation",
           "value": "Toronto, Ontario, Canada",
-          "note": "Cabinet basé au Canada avec une portée internationale sur divers marchés."
+          "note": "Desservant des clients en Ontario et à l'échelle internationale."
+        },
+        {
+          "title": "Heures de Bureau",
+          "value": "Lun – Ven | 9:00 – 18:00 EST",
+          "note": "Nous opérons selon l'heure standard de l'Est du Canada."
+        },
+        {
+          "title": "Langues Supportées",
+          "value": "Anglais et Arabe",
+          "note": "Support bilingue complet pour la documentation, la stratégie et les réunions."
         }
       ]
     },
     "form": {
-      "eyebrow": "Envoyer un message",
-      "title": "Partagez votre vision. Définissez vos objectifs.",
-      "description": "Utilisez le formulaire ci-dessous pour nous faire part de vos besoins, de vos projets ou du type d'accompagnement recherché.",
+      "eyebrow": "Formulaire de Contact",
+      "title": "Envoyer un Message",
+      "description": "Remplissez les champs ci-dessous et nous vous répondrons par un retour direct et honnête sous un jour ouvrable.",
       "inquiryOptions": [
-        "Nouveau Projet",
-        "Ingénierie d'Affaires",
-        "Consultation",
-        "Autre"
+        "Stratégie & Développement d'Affaires",
+        "Analyse de Données & Business Intelligence",
+        "Présence Numérique & Marketing",
+        "Formation & Développement",
+        "Pas encore sûr"
       ],
       "placeholders": {
-        "name": "Nom complet",
-        "email": "Adresse e-mail",
+        "name": "Nom complet (requis)",
+        "email": "Adresse e-mail (requise)",
         "phone": "Numéro de téléphone (optionnel)",
-        "inquiry": "Sélectionnez le type de demande",
-        "message": "Parlez-nous de votre idée, projet ou demande..."
+        "company": "Nom de l'organisation / entreprise (optionnel)",
+        "inquiry": "Sélectionnez le service d'intérêt (requis)",
+        "message": "Écrivez votre message ici..."
       },
       "labels": {
         "name": "Nom complet",
         "email": "Adresse e-mail",
         "phone": "Numéro de téléphone",
-        "inquiry": "Type de demande",
+        "company": "Nom de l'organisation / entreprise",
+        "inquiry": "Service d'intérêt",
         "message": "Message"
       },
-      "submitLabel": "Engager la conversation",
+      "submitLabel": "Envoyer le Message",
       "availableNow": "Disponible immédiatement",
-      "responseTime": "Réponse habituelle sous",
-      "responseHours": "24 heures",
-      "sharePrompt": "Partagez votre idée, votre projet ou le type de soutien que vous recherchez.",
-      "sending": "Transmission en cours...",
-      "successTitle": "Message reçu",
-      "successDescription": "Notre équipe vous répondra sous 24 heures."
+      "responseTime": "Réponse sous",
+      "responseHours": "1 Jour Ouvrable",
+      "sharePrompt": "Chaque message est lu personnellement par le Dr Abdalla. Vous recevrez une réponse directe et honnête sous un jour ouvrable.",
+      "sending": "Envoi en cours...",
+      "successTitle": "Message Reçu",
+      "successDescription": "Merci — votre message a bien été reçu. Le Dr Abdalla vous répondra sous un jour ouvrable."
     },
     "closing": {
-      "title": "La clarté commence par une conversation.",
-      "description": "Franchissez la première étape. ADISON est là pour structurer la voie à suivre."
+      "title": "Engagement Direct du Fondateur",
+      "description": "Chaque projet commence par une évaluation personnelle par le Dr Abdalla pour garantir la conformité aux standards d'ADISON."
     }
   },
   "footer": {
     "companyName": "ADISON Corp.",
-    "description": "Cabinet canadien d'ingénierie d'affaires, offrant des solutions structurées et scalables à l'échelle internationale.",
+    "description": "Une entreprise canadienne de Business Intelligence offrant des solutions de stratégie, d'analyse et de présence numérique à l'échelle locale et internationale.",
     "location": "Toronto, Ontario, Canada",
     "email": "info@adison.ca",
     "phone": "+1 647 847 0111",
+    "website": "www.adison.ca",
     "copyright": "© 2026 ADISON Corp. Tous droits réservés."
   }
 }

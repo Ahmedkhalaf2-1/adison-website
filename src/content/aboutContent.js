@@ -1,72 +1,90 @@
 export const aboutContent = {
   hero: {
     eyebrow: "About ADISON",
-    title: "A Canadian-based firm with global reach and a structured approach to business innovation.",
-    description:
-      "ADISON Corp specializes in transforming ideas into structured, actionable, and scalable business solutions. Our work is grounded in clarity, professional expertise, and international experience across diverse industries and markets.",
+    title: "A Canadian-based Business Intelligence company delivering strategy, analytics, and digital presence.",
+    description: "We help new businesses launch with structure, growing businesses scale with intelligence, and established businesses harness their data for better decisions."
   },
-
   identity: {
     eyebrow: "Who We Are",
-    title: "We build clear direction around promising ideas.",
-    description:
-      "ADISON Corp is a Business Innovation & Development firm focused on helping individuals, entrepreneurs, and organizations move from uncertainty to structure. We work at the intersection of strategy, analysis, development, and execution to shape practical and sustainable outcomes.",
-    note: "Our role is not only to advise, but to help organize complexity into usable, well-structured progress.",
+    title: "Company Overview",
+    description: "ADISON Corp. is a Canadian-based Business Intelligence company serving businesses locally and internationally. Our work spans four practice areas: Business Strategy & Development, Data Analytics & Business Intelligence, Digital Presence & Marketing, and Training & Development. Every engagement is personal, project-based, and built around a specific client need — not a generic package or a long retainer.",
+    note: "ADISON is based in Toronto, Ontario, and serves clients across Canada and internationally."
   },
-
   mission: {
-    eyebrow: "Our Mission",
-    title:
-      "To illuminate business ideas and transform them into clear, structured, and achievable solutions.",
-    description:
-      "We guide projects through disciplined thinking, strategic structure, and practical development so that ideas can move forward with confidence and purpose.",
+    eyebrow: "Mission",
+    title: "To give businesses at every stage the strategic clarity, analytical intelligence, and digital capability they need to move forward with confidence."
   },
-
   vision: {
-    eyebrow: "Our Vision",
-    title:
-      "To become a trusted leader in Business Innovation & Development.",
-    description:
-      "We aim to be recognized for clarity, professionalism, and meaningful impact, helping businesses and projects grow through structure, direction, and sustained value.",
+    eyebrow: "Vision",
+    title: "To be the most trusted Business Intelligence partner for businesses operating across Canada and Arabic-speaking international markets."
   },
-
   values: {
-    eyebrow: "Our Values",
+    eyebrow: "Values",
     title: "The principles that shape how we think, build, and deliver.",
-    description:
-      "Every project we support is guided by values that keep our work disciplined, credible, and growth-oriented.",
+    description: "Clarity over complexity. Structure over guesswork. Results over reports. Honesty over convenience.",
     items: [
       {
-        title: "Innovation",
-        description: "We explore ideas and unlock their potential through thoughtful development.",
-      },
-      {
         title: "Clarity",
-        description: "We simplify complexity and provide direction that is easy to act on.",
+        description: "Clarity over complexity."
       },
       {
         title: "Structure",
-        description: "Every successful outcome begins with a strong and organized foundation.",
+        description: "Structure over guesswork."
       },
       {
-        title: "Integrity",
-        description: "We work with professionalism, honesty, and transparency in every engagement.",
+        title: "Results",
+        description: "Results over reports."
       },
       {
-        title: "Growth",
-        description: "We support continuous improvement and long-term development.",
-      },
-      {
-        title: "Consistency",
-        description: "We deliver disciplined, reliable work with steady quality and focus.",
-      },
-    ],
+        title: "Honesty",
+        description: "Honesty over convenience."
+      }
+    ]
   },
-
+  ceoMessage: {
+    eyebrow: "FROM THE FOUNDER",
+    p1: "At ADISON, we believe that real growth is built on clarity and structure, not just effort. Our goal is to transform complex business challenges into data-informed pathways that allow our clients to make decisions with confidence and purpose.",
+    p2: "With over three decades of international experience spanning academia, business development, and analytics, we recognize that every market has its unique demands. Delivering bilingual services in English and Arabic allows us to serve Canadian enterprises, international clients, and partners in the Arab world with the cultural and technical depth they deserve.",
+    p3: "We reject generic packages and long, locked-in retainers. Every client engagement is shaped by a project-based focus, designed specifically for your situation, and delivered with my personal involvement and commitment to your success.",
+    name: "Dr. Ibrahim Abdalla",
+    title: "Ph.D. | Founder & CEO",
+    company: "ADISON Corp.",
+    location: "Toronto, Ontario, Canada",
+    credentials: [
+      "Ph.D. Mathematics Education",
+      "30+ Years International Experience",
+      "Bilingual: English & Arabic",
+      "College Professor — Mathematics & Business"
+    ]
+  },
+  approach: {
+    eyebrow: "HOW WE THINK",
+    title: "Our Approach",
+    p1: "At ADISON, we believe that most business problems are not solved by more effort — they are solved by better structure. Every engagement we take on begins with understanding the actual situation, not the presenting symptom. We ask questions, analyse what we find, and deliver a practical roadmap that our clients can act on immediately.",
+    p2: "We do not deliver generic reports. We do not recommend solutions we cannot support. Every recommendation comes with a clear rationale, a practical implementation path, and a measurable outcome."
+  },
+  whyChoose: {
+    eyebrow: "THREE REASONS THAT MATTER",
+    title: "Why Choose ADISON",
+    items: [
+      {
+        title: "Bilingual: English & Arabic",
+        description: "ADISON serves clients in both English and Arabic — a distinct advantage for Canadian businesses with Arabic-speaking partners, staff, or markets, and for international clients in the Arab world."
+      },
+      {
+        title: "30+ Years of International Experience",
+        description: "Dr. Abdalla brings over three decades of experience spanning mathematics education, transportation management, and business development across multiple countries and sectors."
+      },
+      {
+        title: "Project-Based. Personal. Practical.",
+        description: "No retainer lock-in. No junior team. Every engagement is scoped specifically for your situation, delivered personally by the founder, and measured against a real business outcome."
+      }
+    ]
+  },
   closing: {
-    eyebrow: "Closing Perspective",
-    title: "Turning ideas into practical, structured, and sustainable business outcomes.",
-    description:
-      "At ADISON, we focus on creating business pathways that are clear, workable, and built for long-term relevance. Our objective is always to turn potential into progress with discipline and purpose.",
-  },
+    eyebrow: "Ready to work with ADISON?",
+    title: "Ready to work with ADISON?",
+    description: "Every engagement starts with a conversation. Tell us where you are and where you want to go — we will tell you exactly how we can help.",
+    cta: "Contact ADISON"
+  }
 };

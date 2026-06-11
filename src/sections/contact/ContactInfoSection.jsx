@@ -1,77 +1,65 @@
 import { useContent } from "../../hooks/useContent";
-import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
-import GlassCard from "../../components/glass/GlassCard";
+import GlassSurface from "../../components/glass/GlassSurface";
 import { motion } from "framer-motion";
-
-const fadeUp = (i = 0) => ({
-  initial: { opacity: 0, y: 20, filter: "blur(8px)" },
-  whileInView: { opacity: 1, y: 0, filter: "blur(0px)" },
-  viewport: { once: true, amount: 0.2 },
-  transition: { duration: 0.66, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] },
-});
+import { useTranslation } from "react-i18next";
 
 export default function ContactInfoSection() {
   const { info, tNumber } = useContent("contact");
+  const { i18n } = useTranslation();
+  const isAr = i18n.language === "ar";
 
   if (!info) return null;
 
   return (
     <section className="section-pad">
-      <Container>
+      <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-8 lg:px-12">
         <SectionHeader
           eyebrow={info.eyebrow}
           title={info.title}
           description={info.description}
         />
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {info.items.map((item, index) => (
-            <motion.div key={item.title} {...fadeUp(index)} className="h-full">
-              <GlassCard className="group relative h-full overflow-hidden rounded-[28px] transition-all duration-500 hover:bg-white/[0.07]">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-12"
+        >
+          <GlassSurface className="relative overflow-hidden rounded-[32px] p-8 sm:p-12 lg:p-16" soft>
+            {/* Elegant top reflection rule */}
+            <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-                {/* inner corner glow on hover */}
-
-                {/* top rule */}
-                <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-
-                <div className="relative flex h-full flex-col">
-
-                  {/* index row */}
-                  <div className="mb-7 flex items-center gap-3">
-                    <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-white/[0.1] bg-white/[0.05]">
-                      <span className="text-[11px] font-semibold tabular-nums text-white/90">
-                        {tNumber(index + 1, 2)}
-                      </span>
-                      {/* animated corner tick */}
-                      <span className="absolute -right-px -top-px h-2 w-2 rounded-full border-r border-t border-white/20" />
-                    </div>
-                    <div className="h-px flex-1 bg-gradient-to-r from-white/[0.1] to-transparent" />
+            <div
+              className={`grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 ${
+                isAr ? "text-right" : "text-left"
+              }`}
+            >
+              {info.items.map((item, index) => (
+                <div key={item.title} className="flex flex-col space-y-3">
+                  {/* Category label with step number */}
+                  <div className="flex items-center gap-2 text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-white/40">
+                    <span>{tNumber(index + 1, 2)}</span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-white/20" />
+                    <span>{item.title}</span>
                   </div>
 
-                  {/* label */}
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-white/90">
-                    {item.title}
-                  </p>
-
-                  {/* value */}
-                  <h3 className="mt-3 text-xl font-semibold leading-snug tracking-[-0.012em] text-white sm:text-[1.35rem]">
+                  {/* Value */}
+                  <h3 className="text-lg sm:text-xl xl:text-2xl font-semibold text-white tracking-tight leading-snug">
                     {item.value}
                   </h3>
 
-                  {/* divider */}
-                  <div className="my-5 h-px w-10 bg-gradient-to-r from-white/20 to-transparent transition-all duration-500 group-hover:w-16 group-hover:from-white/30" />
-
-                  {/* note */}
-                  <p className="mt-auto text-sm leading-[1.75] text-white/80 sm:text-[0.9375rem]">
+                  {/* Description note */}
+                  <p className="text-sm leading-relaxed text-white/70">
                     {item.note}
                   </p>
                 </div>
-              </GlassCard>
-            </motion.div>
-          ))}
-        </div>
-      </Container>
+              ))}
+            </div>
+          </GlassSurface>
+        </motion.div>
+      </div>
     </section>
   );
 }

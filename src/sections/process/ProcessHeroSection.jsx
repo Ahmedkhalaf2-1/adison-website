@@ -12,8 +12,8 @@ export default function ProcessHeroSection() {
 
   return (
     <section className="section-pad pt-6 sm:pt-8 lg:pt-10">
-      <Container>
-        <GlassSurface className="overflow-hidden px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+      <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-8 lg:px-12">
+        <GlassSurface className="overflow-hidden px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20 rounded-[30px]">
           <div className="relative z-10 grid gap-8 xl:grid-cols-[1.05fr_0.95fr] xl:items-end">
             <div>
               <motion.p
@@ -54,7 +54,7 @@ export default function ProcessHeroSection() {
             </motion.div>
           </div>
         </GlassSurface>
-      </Container>
+      </div>
     </section>
   );
 }

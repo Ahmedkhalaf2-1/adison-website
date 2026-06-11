@@ -1,140 +1,99 @@
 export const servicesContent = {
   hero: {
-    eyebrow: "Business Innovation & Development Services",
+    eyebrow: "Business Intelligence Services",
     title: "Structured services designed to turn ideas into clear, functional, and scalable solutions.",
-    description:
-      "ADISON provides focused support across business strategy, analysis, educational development, digital systems, and brand direction. Every service is shaped to bring clarity, structure, and practical momentum.",
+    description: "ADISON provides focused support across business strategy, data analytics, training, and digital presence. Every service is shaped to bring clarity, structure, and practical momentum."
   },
-
-  categories: {
-    eyebrow: "Service Categories",
-    title: "Five service pillars built around clarity, structure, and execution.",
-    description:
-      "Our services are organized to support projects from idea formation to long-term growth, with each area designed to solve practical business needs.",
-    items: [
-      {
-        number: "01",
-        title: "Business Development & Strategy",
-        description:
-          "We help shape business ideas into structured opportunities through strategic planning, project direction, roadmap design, and operational clarity.",
-        bullets: [
-          "Business idea development",
-          "Strategic planning and direction",
-          "Project structuring and roadmap design",
-          "Workflow and operational planning",
-        ],
-      },
-      {
-        number: "02",
-        title: "Business & Data Analysis",
-        description:
-          "We assess business performance and decision pathways through evaluation, diagnostics, reporting, and analytical interpretation.",
-        bullets: [
-          "Business evaluation and diagnostics",
-          "Data analysis and interpretation",
-          "Performance assessment and reporting",
-          "Decision-support frameworks",
-        ],
-      },
-      {
-        number: "03",
-        title: "Educational Consultancy & Development",
-        description:
-          "We design structured educational and training solutions that support learning systems, programs, staff development, and curriculum clarity.",
-        bullets: [
-          "Course and curriculum development",
-          "Academic and training program design",
-          "Learning model structuring",
-          "Staff training and development",
-        ],
-      },
-      {
-        number: "04",
-        title: "Digital Solutions & Platforms",
-        description:
-          "We help define digital workflows, service models, websites, and platform structures that support practical delivery and business efficiency.",
-        bullets: [
-          "Website and platform planning",
-          "Digital workflows and systems",
-          "Online service model development",
-        ],
-      },
-      {
-        number: "05",
-        title: "Brand Identity & Design",
-        description:
-          "We help shape business identity through concept development, positioning, naming, and visual direction that align with long-term business goals.",
-        bullets: [
-          "Business identity creation",
-          "Brand positioning and direction",
-          "Concept development and naming",
-          "Graphic design",
-        ],
-      },
-    ],
-  },
-
-  packages: {
-    eyebrow: "Service Packages",
-    title: "Concise service packages tailored to different stages of business development.",
-    description:
-      "Our packages are designed to support businesses and projects at the point where they need the most clarity, structure, or strategic guidance.",
-    items: [
-      {
-        title: "Clarity Package",
-        summary:
-          "Define your idea and direction through structured consultation and evaluation.",
-        points: [
-          "Initial direction setting",
-          "Idea review and positioning",
-          "High-level consultation",
-        ],
-      },
-      {
-        title: "Structure Package",
-        summary:
-          "Build a clear business foundation through roadmap development and planning.",
-        points: [
-          "Roadmap and project structuring",
-          "Operational clarity",
-          "Actionable planning foundation",
-        ],
-      },
-      {
-        title: "Growth Package",
-        summary:
-          "Improve and expand your business through strategy, systems, and analysis.",
-        points: [
-          "Business improvement focus",
-          "Analytical support",
-          "System and workflow enhancement",
-        ],
-      },
-      {
-        title: "Advisory & Strategy",
-        summary:
-          "Ongoing expert support for business decisions, development, and growth.",
-        points: [
-          "Strategic guidance",
-          "Ongoing advisory support",
-          "Decision-focused consultation",
-        ],
-      },
-    ],
-  },
-
+  items: [
+    {
+      number: "01",
+      title: "Business Strategy & Development",
+      description: "We help businesses define their direction, structure their operations, and build the planning frameworks they need to grow. Whether you are starting from scratch or restructuring an existing business, we provide the analysis and strategic clarity to move forward with confidence.",
+      deliverablesLabel: "What We Deliver",
+      deliverables: [
+        "Business creation and model design",
+        "Business planning and feasibility studies",
+        "Process analysis and operational improvement",
+        "Strategic advisory and direction-setting",
+        "KPI frameworks and performance measurement",
+        "Financial performance analysis",
+        "Project management support"
+      ],
+      idealForLabel: "Ideal For",
+      idealFor: [
+        "New businesses at the planning stage",
+        "Existing businesses facing strategic decisions",
+        "Organizations seeking structure and direction"
+      ]
+    },
+    {
+      number: "02",
+      title: "Data Analytics & Business Intelligence",
+      description: "We turn your business data into clear, actionable intelligence. From raw data collection to interactive dashboards and BI reports, we give decision-makers the visibility they need to act with confidence. We deliver using the tools your team already uses — primarily Excel and Power BI.",
+      deliverablesLabel: "What We Deliver",
+      deliverables: [
+        "Data collection, cleaning, and structuring",
+        "Data analysis and interpretation",
+        "Business Intelligence reporting",
+        "Interactive dashboards and visualizations",
+        "Excel and Power BI solutions",
+        "Market research and competitive analysis"
+      ],
+      idealForLabel: "Ideal For",
+      idealFor: [
+        "Businesses with data they are not using effectively",
+        "Organizations needing dashboards or BI reports",
+        "Decision-makers who need clear analytics without technical complexity"
+      ]
+    },
+    {
+      number: "03",
+      title: "Digital Presence & Marketing",
+      description: "We build and strengthen the digital face of your business — from your website and brand identity to your social media presence and marketing campaigns. Every element is designed to communicate your value clearly and attract the right clients.",
+      deliverablesLabel: "What We Deliver",
+      deliverables: [
+        "Website development and design",
+        "Mobile application development",
+        "Brand identity and visual direction",
+        "Graphic design",
+        "Content creation and copywriting",
+        "Social media strategy and management",
+        "SEO (Search Engine Optimization)",
+        "Email marketing",
+        "Paid digital advertising"
+      ],
+      idealForLabel: "Ideal For",
+      idealFor: [
+        "New businesses building their first digital presence",
+        "Existing businesses with outdated or ineffective online presence",
+        "Organizations seeking integrated digital marketing support"
+      ]
+    },
+    {
+      number: "04",
+      title: "Training & Development",
+      description: "We design and deliver professional training programs that build the capability your team needs to perform. From data literacy and business intelligence tools to leadership and operational skills, our programs are practical, structured, and immediately applicable.",
+      deliverablesLabel: "What We Deliver",
+      deliverables: [
+        "Data literacy workshops",
+        "Power BI and Excel training",
+        "Business strategy and planning workshops",
+        "Staff development programs",
+        "Curriculum design for corporate training",
+        "Custom workshop design"
+      ],
+      idealForLabel: "Ideal For",
+      idealFor: [
+        "Organizations seeking to upskill their teams",
+        "Businesses implementing new BI or analytics tools",
+        "HR and L&D teams needing curriculum design"
+      ]
+    }
+  ],
   cta: {
-    eyebrow: "Ready to Move Forward?",
-    title: "Let’s shape your next step with clarity and structure.",
-    description:
-      "Whether you are building a new idea, refining an existing business, or developing a project in motion, ADISON is ready to support your direction.",
-    primaryCta: {
-      label: "Contact ADISON",
-      to: "/contact",
-    },
-    secondaryCta: {
-      label: "How We Work",
-      to: "/how-we-work",
-    },
-  },
+    headline: "Not sure which service fits your situation?",
+    body: "Contact ADISON for a no-obligation initial conversation. We will listen to your situation and tell you honestly whether and how we can help.",
+    button: "Contact ADISON",
+    secondaryButton: "How We Work"
+  }
 };

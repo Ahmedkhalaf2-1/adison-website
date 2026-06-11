@@ -3,7 +3,7 @@ export const homeContent = {
     eyebrow: "A Canadian-Based Firm with Global Reach",
     title: "Lighting the Way for Your Business",
     description:
-      "ADISON Corp is a Business Innovation & Development firm delivering structured, practical, and scalable solutions to clients across diverse markets. With expert knowledge and international experience, we transform ideas into clear strategies and actionable results.",
+      "ADISON Corp is a Business Intelligence company delivering structured, practical, and data-informed solutions to businesses at every stage — from startup to growth. We combine strategy, analytics, and digital expertise to give our clients the clarity and direction they need to move forward.",
     primaryCta: {
       label: "Contact ADISON",
       to: "/contact",
@@ -18,7 +18,7 @@ export const homeContent = {
     eyebrow: "Who We Are",
     title: "Structured thinking. Practical execution. Sustainable business direction.",
     description:
-      "ADISON Corp supports individuals, entrepreneurs, and organizations in transforming ideas into structured and functional business solutions. We combine clarity, strategy, and execution to ensure every project is developed with purpose and direction.",
+      "ADISON Corp is a Business Intelligence company serving new and growing businesses across Canada and internationally. We combine strategy, analytics, and digital expertise to provide the clarity and direction businesses need to move forward with confidence.",
     card: "Structured thinking creates stronger execution, clearer priorities, and better business direction from the start."
   },
 
@@ -26,32 +26,27 @@ export const homeContent = {
     eyebrow: "What We Do",
     title: "We help ideas move from concept to execution through focused service pillars.",
     description:
-      "Our work is organized around business development, analysis, educational consultancy, digital systems, and brand direction.",
+      "Our work is organized around business strategy, data analytics, training, and digital presence.",
     items: [
       {
-        title: "Business Development & Strategy",
+        title: "Business Strategy & Development",
         description:
           "Structured planning, business model direction, and clear project roadmap design.",
       },
       {
-        title: "Business & Data Analysis",
+        title: "Data Analytics & Business Intelligence",
         description:
-          "Evaluation, diagnostics, interpretation, and decision-support frameworks.",
+          "Data collection, analysis, visualization, dashboards, BI reporting, Excel and Power BI delivery, and market research.",
       },
       {
-        title: "Educational Consultancy & Development",
+        title: "Training & Development",
         description:
-          "Curriculum design, program development, and learning structure solutions.",
+          "Workshops, data literacy programs, staff development, and curriculum design.",
       },
       {
-        title: "Digital Solutions & Platforms",
+        title: "Digital Presence & Marketing",
         description:
-          "Website planning, digital workflows, systems structure, and online service models.",
-      },
-      {
-        title: "Brand Identity & Design",
-        description:
-          "Identity creation, positioning, concept development, naming, and visual direction.",
+          "Website development, mobile apps, brand identity, graphic design, content creation, social media, SEO, and digital marketing.",
       },
     ],
   },
@@ -62,14 +57,16 @@ export const homeContent = {
     description:
       "We focus on business solutions that are practical, disciplined, and aligned with sustainable long-term development.",
     points: [
-      "Structured and methodical approach",
-      "Professional expertise with international experience",
-      "Practical and results-oriented solutions",
-      "Clear communication and strategic direction",
-      "Focus on sustainable growth and development",
+      "Bilingual delivery in English and Arabic, serving Canadian and international Arabic-speaking markets.",
+      "30+ years of international experience spanning academia, business strategy, and data analytics.",
+      "Project-based model: no retainer lock-in. ADISON is engaged for a specific scope and deliverable.",
     ],
-    sideNote:
-      "Every engagement is built to reduce confusion, strengthen direction, and move work forward with confidence.",
+  },
+
+  founderQuote: {
+    eyebrow: "FROM THE FOUNDER",
+    quote: "At ADISON, every engagement starts with one commitment: to give you a clear picture of where you stand, and a structured path to where you want to go. That is not a promise — it is a process.",
+    attribution: "Dr. Ibrahim Abdalla, Ph.D. | Founder & CEO, ADISON Corp."
   },
 
   processPreview: {

@@ -21,9 +21,8 @@ export default function ServiceCategoriesSection() {
           {categories.items.map((item, index) => (
             <GlassSurface
               key={item.title}
-              className={`rounded-[28px] px-6 py-7 sm:px-8 sm:py-8 ${
-                index === categories.items.length - 1 ? "xl:col-span-2" : ""
-              }`}
+              className={`rounded-[28px] px-6 py-7 sm:px-8 sm:py-8 ${index === categories.items.length - 1 ? "xl:col-span-2" : ""
+                }`}
               soft
             >
               <div className="flex flex-col gap-6 lg:flex-row lg:gap-8">

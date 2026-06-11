@@ -27,9 +27,9 @@ export default function ProcessPreviewSection() {
     <section className="section-pad">
       <Container>
         <GlassSurface className="relative overflow-hidden rounded-[36px] px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
-          
+
           <div className="relative z-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
-            
+
             {/* LEFT */}
             <motion.div
               {...fadeLeft}
@@ -57,7 +57,7 @@ export default function ProcessPreviewSection() {
 
             {/* RIGHT */}
             <div className="relative grid gap-4">
-              
+
               {/* LINE (clean) */}
               <div className="absolute left-[23px] top-2 hidden h-[calc(100%-16px)] w-px bg-gradient-to-b from-white/10 via-white/6 to-transparent sm:block" />
 
@@ -72,7 +72,7 @@ export default function ProcessPreviewSection() {
                   }}
                   className="relative pl-0 sm:pl-14"
                 >
-                  
+
                   {/* NODE */}
                   <div className="absolute left-0 top-6 hidden h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white/90 sm:inline-flex">
                     {step.number}

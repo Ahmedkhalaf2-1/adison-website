@@ -22,7 +22,7 @@ export default function WhyAdisonSection() {
   if (!whyAdison) return null;
 
   return (
-    <section className="section-pad">
+    <section className="section-pad-lg">
       <Container>
         <div className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr] xl:items-start">
           <motion.div

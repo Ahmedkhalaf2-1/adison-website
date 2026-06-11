@@ -28,7 +28,7 @@ export default function HeroSection() {
 
   return (
     <section className="section-pad pt-6 sm:pt-8 lg:pt-10">
-      <Container>
+      <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-8 lg:px-12">
         <GlassSurface className="overflow-hidden px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-16">
           {/* subtle haze (white only) */}
 
@@ -40,23 +40,23 @@ export default function HeroSection() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="text-start"
             >
-              <p className="mb-2 text-[14px] font-semibold uppercase tracking-[0.32em] text-white/90">
+              <p className="mb-3 label-tag text-white/50">
                 {hero.eyebrow}
               </p>
 
-              <h1 className="max-w-5xl text-balance text-4xl font-semibold leading-[0.98] text-white sm:text-5xl lg:text-6xl xl:text-[5rem]">
+              <h1 className="max-w-5xl text-balance hero-headline text-white tracking-tight">
                 {i18n.language === 'en' && hero.title.includes('ON') ? (
                   hero.title.split('ON').map((part, i, arr) => (
                     <span key={i}>
                       {part.trimEnd()}
                       {i < arr.length - 1 && (
-                        <span style={{ marginLeft: '0.15em' }}>
+                        <span className="inline-flex items-center gap-[0.05em] align-middle ml-[0.15em]">
                           <img
                             src={adison2Logo}
                             alt="O"
-                            style={{ height: '0.85em', display: 'inline-block', position: 'relative', top: '0.08em', verticalAlign: 'baseline' }}
+                            className="h-[0.78em] w-auto object-contain"
                           />
-                          <span>N</span>
+                          <span className="text-[0.88em] font-bold leading-none">N</span>
                         </span>
                       )}
                     </span>
@@ -66,7 +66,7 @@ export default function HeroSection() {
                 )}
               </h1>
 
-              <p className="mt-4 max-w-2xl text-base leading-8 text-white/90 sm:text-lg lg:max-w-xl">
+              <p className="mt-4 max-w-2xl body-text text-white/70 lg:max-w-xl">
                 {hero.description}
               </p>
 
@@ -81,55 +81,56 @@ export default function HeroSection() {
               </div>
             </motion.div>
 
-            {/* RIGHT SIDE */}
+            {/* RIGHT SIDE — Vertical Asymmetric Bento */}
             <motion.div
               {...fadeRight}
               transition={{ duration: 0.82, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="grid gap-4"
+              className="grid grid-cols-[1.1fr_0.9fr] gap-4"
             >
-              <GlassCard className="min-h-[180px]">
+              {/* Tall card — spans full height */}
+              <GlassCard className="row-span-2 min-h-[340px]">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <p className="text-[13px] font-semibold uppercase tracking-[0.30em] text-white/90">
+                    <p className="label-tag text-white/50">
                       {hero.cards.global.eyebrow}
                     </p>
-                    <h3 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
+                    <h3 className="mt-4 subheading text-white">
                       {hero.cards.global.title}
                     </h3>
                   </div>
 
-                  <div className="mt-8 flex items-center gap-3">
-                    <p className="text-sm text-white/80">
+                  <div className="mt-auto pt-8">
+                    <div className="h-px w-full bg-gradient-to-r from-white/12 to-transparent" />
+                    <p className="mt-4 card-text text-white/70">
                       {hero.cards.global.description}
                     </p>
                   </div>
                 </div>
               </GlassCard>
 
-              <div className="grid gap-4 sm:grid-cols-2">
-                <GlassCard className="min-h-[150px]">
-                  <p className="text-[13px] font-semibold uppercase tracking-[0.28em] text-white/90">
-                    {hero.cards.focus.eyebrow}
-                  </p>
-                  <p className="mt-4 text-lg font-semibold leading-snug text-white">
-                    {hero.cards.focus.title}
-                  </p>
-                </GlassCard>
+              {/* Right column — 2 stacked square-ish cards */}
+              <GlassCard>
+                <p className="label-tag text-white/50">
+                  {hero.cards.focus.eyebrow}
+                </p>
+                <p className="mt-4 text-base font-bold leading-[1.3] text-white sm:text-lg">
+                  {hero.cards.focus.title}
+                </p>
+              </GlassCard>
 
-                <GlassCard className="min-h-[150px]">
-                  <p className="text-[13px] font-semibold uppercase tracking-[0.28em] text-white/90">
-                    {hero.cards.direction.eyebrow}
-                  </p>
-                  <p className="mt-4 text-lg font-semibold leading-snug text-white">
-                    {hero.cards.direction.title}
-                  </p>
-                </GlassCard>
-              </div>
+              <GlassCard>
+                <p className="label-tag text-white/50">
+                  {hero.cards.direction.eyebrow}
+                </p>
+                <p className="mt-4 text-base font-bold leading-[1.3] text-white sm:text-lg">
+                  {hero.cards.direction.title}
+                </p>
+              </GlassCard>
             </motion.div>
 
           </div>
         </GlassSurface>
-      </Container>
+      </div>
     </section>
   );
 }

@@ -43,6 +43,7 @@ export default function ContactFormSection() {
     name: "",
     email: "",
     phone: "",
+    company: "",
     inquiry: "",
     message: "",
   });
@@ -50,8 +51,10 @@ export default function ContactFormSection() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const filled = Object.values(formData).filter(Boolean).length;
-  const total = Object.keys(formData).length;
+  // Track progress based on required fields only for better UX
+  const requiredFields = ["name", "email", "inquiry", "message"];
+  const filled = requiredFields.filter((key) => formData[key]).length;
+  const total = requiredFields.length;
 
   if (!form) return null;
 
@@ -73,6 +76,7 @@ export default function ContactFormSection() {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
+          company: formData.company,
           inquiry: formData.inquiry,
           message: formData.message,
         },
@@ -84,6 +88,7 @@ export default function ContactFormSection() {
           name: "",
           email: "",
           phone: "",
+          company: "",
           inquiry: "",
           message: "",
         });
@@ -99,7 +104,7 @@ export default function ContactFormSection() {
 
   return (
     <section className="section-pad">
-      <Container>
+      <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-8 lg:px-12">
         <div className="grid gap-5 xl:grid-cols-[0.9fr_1.1fr]">
           <motion.div {...fadeUp(0)}>
             <GlassSurface className="relative h-full overflow-hidden rounded-[32px] px-6 py-10 sm:px-10 sm:py-12 lg:px-12">
@@ -235,7 +240,17 @@ export default function ContactFormSection() {
                         />
                       </Field>
 
-                      <Field label={form.labels.inquiry} span2>
+                      <Field label={form.labels.company}>
+                        <GlassInput
+                          type="text"
+                          name="company"
+                          value={formData.company}
+                          onChange={handleChange}
+                          placeholder={form.placeholders.company}
+                        />
+                      </Field>
+
+                      <Field label={form.labels.inquiry}>
                         <GlassSelect
                           name="inquiry"
                           value={formData.inquiry}
@@ -269,6 +284,7 @@ export default function ContactFormSection() {
                           placeholder={form.placeholders.message}
                           maxLength={3000}
                           required
+                          rows={4}
                         />
 
                         <p className="text-[11px] text-white/90 mt-2 text-right">
@@ -296,7 +312,7 @@ export default function ContactFormSection() {
             </form>
           </motion.div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

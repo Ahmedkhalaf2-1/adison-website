@@ -16,6 +16,7 @@ export default function GlassSurface({
         relative
         rounded-[32px]
         border
+        ambient-border
         transition-all duration-500
         ${variantStyles[variant] || variantStyles.primary}
         ${className}

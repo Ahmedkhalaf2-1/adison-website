@@ -11,7 +11,7 @@ export default function ProcessTimelineSection() {
 
   return (
     <section className="section-pad">
-      <Container>
+      <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-8 lg:px-12">
         <SectionHeader
           eyebrow={intro.eyebrow}
           title={intro.title}
@@ -72,7 +72,7 @@ export default function ProcessTimelineSection() {
             </GlassSurface>
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

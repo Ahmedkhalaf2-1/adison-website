@@ -13,17 +13,17 @@ export default function SectionHeader({
   return (
     <div className={`max-w-3xl ${alignClasses} ${className}`}>
       {eyebrow ? (
-        <p className="mb-2 text-[14px] font-semibold uppercase tracking-[0.32em] text-white/90">
+        <p className="mb-3 label-tag text-white/50">
           {eyebrow}
         </p>
       ) : null}
 
-      <h2 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+      <h2 className="text-balance section-heading text-white tracking-tight">
         {title}
       </h2>
 
       {description ? (
-        <p className="mt-3 text-lg leading-8 text-white/90 sm:text-xl">
+        <p className="mt-4 body-text text-white/70">
           {description}
         </p>
       ) : null}
