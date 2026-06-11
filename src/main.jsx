@@ -5,8 +5,9 @@ import AppRouter from "./app/router/AppRouter";
 import "./styles/globals.css";
 import "./lib/i18n";
 
-// Set initial dir/lang from saved preference
-const savedLang = localStorage.getItem("adison-lang") || "en";
+const savedLang = ["en", "fr"].includes(localStorage.getItem("adison-lang"))
+  ? localStorage.getItem("adison-lang")
+  : "en";
 document.documentElement.lang = savedLang;
 document.documentElement.dir = savedLang === "ar" ? "rtl" : "ltr";
 

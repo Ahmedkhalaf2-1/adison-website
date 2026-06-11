@@ -4,7 +4,9 @@ import en from "../locales/en.json";
 import ar from "../locales/ar.json";
 import fr from "../locales/fr.json";
 
-const savedLang = localStorage.getItem("adison-lang") || "en";
+const savedLang = ["en", "fr"].includes(localStorage.getItem("adison-lang"))
+  ? localStorage.getItem("adison-lang")
+  : "en";
 
 i18n.use(initReactI18next).init({
   resources: {
