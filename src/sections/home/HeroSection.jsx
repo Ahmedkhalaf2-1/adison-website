@@ -54,7 +54,7 @@ export default function HeroSection() {
                           <img
                             src={adison2Logo}
                             alt="O"
-                            className="h-[0.92em] w-auto object-contain"
+                            className="h-[0.98em] w-auto object-contain"
                           />
                           <span className="font-bold leading-none">N</span>
                         </span>
