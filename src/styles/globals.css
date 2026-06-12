@@ -1,7 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Ethnocentric";
+  src: url("https://db.onlinewebfonts.com/t/482de819aa9631d27141f3d998cace18.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-ethnocentric: "Ethnocentric", sans-serif;
 }
 
 /* RTL support for Arabic */

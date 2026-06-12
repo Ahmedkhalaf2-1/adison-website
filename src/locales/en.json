@@ -6,7 +6,6 @@
     "howWeWork": "How We Work",
     "contact": "Contact"
   },
-
   "home": {
     "hero": {
       "eyebrow": "A Canadian-Based Firm with Global Reach",
@@ -153,7 +152,6 @@
       }
     }
   },
-
   "about": {
     "hero": {
       "eyebrow": "About ADISON",
@@ -246,7 +244,6 @@
       "cta": "Contact ADISON"
     }
   },
-
   "services": {
     "hero": {
       "eyebrow": "Business Intelligence Services",
@@ -346,7 +343,6 @@
       "secondaryButton": "How We Work"
     }
   },
-
   "process": {
     "hero": {
       "eyebrow": "How We Work",
@@ -418,7 +414,6 @@
       "secondaryCta": "Explore Services"
     }
   },
-
   "contact": {
     "hero": {
       "eyebrow": "Contact ADISON",
@@ -504,7 +499,6 @@
       "description": "Every project begins with a personal assessment by Dr. Abdalla to ensure alignment with ADISON's standards."
     }
   },
-
   "footer": {
     "companyName": "ADISON Corp.",
     "description": "A Canadian-based Business Intelligence company delivering strategy, analytics, and digital presence solutions to businesses locally and internationally.",

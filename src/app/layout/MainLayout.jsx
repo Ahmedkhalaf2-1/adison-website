@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import PageShell from "./PageShell";
 import SiteBackground from "../background/SiteBackground";
+import Preloader from "../../components/shared/Preloader";
 import { AnimatePresence } from "framer-motion";
 
 export default function MainLayout() {
@@ -11,11 +12,12 @@ export default function MainLayout() {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-transparent text-white">
+      <Preloader />
       <SiteBackground />
 
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
-        
+
         {/* Animated page wrapper container */}
         <div className="flex-grow">
           <AnimatePresence mode="wait" initial={false}>
