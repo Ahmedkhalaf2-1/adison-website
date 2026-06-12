@@ -68,13 +68,14 @@ export default function ServiceListSection() {
                         <h4 className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-white/50 mb-5">
                           {item.deliverablesLabel}
                         </h4>
-                        <ul className="grid gap-x-6 gap-y-3 sm:grid-cols-2">
+                        <ul className="grid gap-x-6 gap-y-4 sm:grid-cols-2">
                           {item.deliverables && item.deliverables.map((deliv, dIdx) => (
                             <li
                               key={dIdx}
-                              className="text-base sm:text-lg text-white/90 leading-relaxed font-medium"
+                              className="flex items-start gap-3 text-sm sm:text-[15px] text-white/80 leading-relaxed"
                             >
-                              {deliv}
+                              <span className="mt-3 h-0.5 w-2.5 shrink-0 bg-white/35" />
+                              <span>{deliv}</span>
                             </li>
                           ))}
                         </ul>
@@ -87,13 +88,14 @@ export default function ServiceListSection() {
                         <h4 className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-white/50 mb-5">
                           {item.idealForLabel}
                         </h4>
-                        <ul className="space-y-3">
+                        <ul className="space-y-4">
                           {item.idealFor && item.idealFor.map((ideal, iIdx) => (
                             <li
                               key={iIdx}
-                              className="text-base sm:text-lg text-white/90 leading-relaxed font-medium"
+                              className="flex items-start gap-3 text-sm sm:text-[15px] text-white/80 leading-relaxed"
                             >
-                              {ideal}
+                              <span className="mt-3 h-0.5 w-2.5 shrink-0 bg-white/20" />
+                              <span>{ideal}</span>
                             </li>
                           ))}
                         </ul>

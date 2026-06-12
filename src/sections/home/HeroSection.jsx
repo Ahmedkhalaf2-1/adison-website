@@ -40,7 +40,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="text-start"
             >
-              <p className="mb-3 label-tag text-white/50">
+              <p className="mb-3 label-tag text-white/80">
                 {hero.eyebrow}
               </p>
 
@@ -91,7 +91,7 @@ export default function HeroSection() {
               <GlassCard className="row-span-2 min-h-[340px]">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <p className="label-tag text-white/50">
+                    <p className="label-tag text-white/80">
                       {hero.cards.global.eyebrow}
                     </p>
                     <h3 className="mt-4 subheading text-white">
@@ -110,7 +110,7 @@ export default function HeroSection() {
 
               {/* Right column — 2 stacked square-ish cards */}
               <GlassCard>
-                <p className="label-tag text-white/50">
+                <p className="label-tag text-white/80">
                   {hero.cards.focus.eyebrow}
                 </p>
                 <p className="mt-4 text-base font-bold leading-[1.3] text-white sm:text-lg">
@@ -119,7 +119,7 @@ export default function HeroSection() {
               </GlassCard>
 
               <GlassCard>
-                <p className="label-tag text-white/50">
+                <p className="label-tag text-white/80">
                   {hero.cards.direction.eyebrow}
                 </p>
                 <p className="mt-4 text-base font-bold leading-[1.3] text-white sm:text-lg">

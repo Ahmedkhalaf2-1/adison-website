@@ -13,7 +13,7 @@ export default function SectionHeader({
   return (
     <div className={`max-w-3xl ${alignClasses} ${className}`}>
       {eyebrow ? (
-        <p className="mb-3 label-tag text-white/50">
+        <p className="mb-3 label-tag text-white/80">
           {eyebrow}
         </p>
       ) : null}

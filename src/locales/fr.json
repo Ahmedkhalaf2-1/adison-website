@@ -504,5 +504,11 @@
     "phone": "+1 647 847 0111",
     "website": "www.adison.ca",
     "copyright": "© 2026 ADISON Corp. Tous droits réservés."
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page Non Trouvée",
+    "description": "La page que vous recherchez a peut-être été supprimée, a changé de nom ou est temporairement indisponible.",
+    "button": "Retour à l'accueil"
   }
 }
