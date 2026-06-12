@@ -1,48 +1,65 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import adison2Logo from "../../assets/adison2.png";
+import bg from "../../assets/kh2.jpg";
 
 export default function Preloader() {
   const [loading, setLoading] = useState(true);
+  const previousOverflow = useRef("");
+  const shouldReduceMotion = useReducedMotion();
 
-  // The letters of the logo name
   const letters = ["A", "D", "I", "S", "O", "N"];
 
   useEffect(() => {
-    // Enable for all page refreshes
+    previousOverflow.current = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
-    // Fade out after animation is done
-    const timer = setTimeout(() => {
-      setLoading(false);
-      // Re-enable scroll
-      document.body.style.overflow = "";
-    }, 2500);
+    let isMounted = true;
+
+    const preloadImage = (src) =>
+      new Promise((resolve) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = resolve;
+        img.onerror = resolve;
+      });
+
+    const minDuration = new Promise((resolve) => {
+      setTimeout(resolve, 3200);
+    });
+
+    Promise.all([
+      minDuration,
+      preloadImage(bg),
+      preloadImage(adison2Logo),
+    ]).then(() => {
+      if (isMounted) {
+        setLoading(false);
+      }
+    });
 
     return () => {
-      clearTimeout(timer);
-      document.body.style.overflow = "";
+      isMounted = false;
+      document.body.style.overflow = previousOverflow.current;
     };
   }, []);
 
-  // Stagger variants for the container
   const containerVariants = {
     initial: {},
     animate: {
       transition: {
-        staggerChildren: 0.15, // Delay between each letter
-        delayChildren: 0.3,   // Initial delay before starting
+        staggerChildren: shouldReduceMotion ? 0 : 0.18,
+        delayChildren: shouldReduceMotion ? 0 : 0.5,
       },
     },
   };
 
-  // Variant for each letter (revealing left to right)
   const letterVariants = {
     initial: {
       opacity: 0,
-      y: 30,
-      scale: 0.75,
-      filter: "blur(10px)",
+      y: shouldReduceMotion ? 0 : 28,
+      scale: shouldReduceMotion ? 1 : 0.8,
+      filter: shouldReduceMotion ? "blur(0px)" : "blur(12px)",
     },
     animate: {
       opacity: 1,
@@ -50,59 +67,83 @@ export default function Preloader() {
       scale: 1,
       filter: "blur(0px)",
       transition: {
-        duration: 0.8,
-        ease: [0.22, 1, 0.36, 1], // Premium cubic-bezier transition
+        duration: shouldReduceMotion ? 0.2 : 0.85,
+        ease: [0.22, 1, 0.36, 1],
       },
     },
   };
 
   return (
-    <AnimatePresence>
+    <AnimatePresence
+      mode="wait"
+      onExitComplete={() => {
+        document.body.style.overflow = previousOverflow.current;
+      }}
+    >
       {loading && (
         <motion.div
+          key="preloader"
           initial={{ opacity: 1 }}
           exit={{
             opacity: 0,
-            y: "-100%",
             transition: {
-              duration: 0.85,
+              duration: shouldReduceMotion ? 0.25 : 1.1,
               ease: [0.76, 0, 0.24, 1],
             },
           }}
-          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#050811]"
+          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center overflow-hidden"
         >
-          {/* Ambient Glowing Background Lights */}
-          <div className="absolute h-[350px] w-[350px] rounded-full bg-gradient-to-r from-blue-500/10 via-purple-500/5 to-red-500/10 blur-[120px] pointer-events-none" />
+          {/* Background */}
+          <div className="absolute inset-0 -z-10">
+            <img
+              src={bg}
+              alt=""
+              aria-hidden="true"
+              className="h-full w-full scale-110 object-cover"
+              style={{ filter: "blur(22px) brightness(0.35)" }}
+            />
 
-          {/* Letter Reveal Container */}
+            <div className="absolute inset-0 bg-black/55" />
+          </div>
+
+          {/* Ambient Glow */}
+          <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-blue-600/12 via-purple-600/8 to-red-600/12 blur-[140px]" />
+
+          {/* Top Border */}
+          <div className="absolute inset-x-0 top-0 h-[1px] bg-white/8" />
+
+          {/* Letters */}
           <motion.div
             variants={containerVariants}
             initial="initial"
             animate="animate"
-            className="flex items-center justify-center gap-1.5 sm:gap-3 selection:bg-transparent"
+            className="flex items-center justify-center gap-1.5 selection:bg-transparent sm:gap-3"
           >
             {letters.map((char, index) => {
-              const isO = char === "O";
-              if (isO) {
+              const isLogoLetter = char === "O";
+
+              if (isLogoLetter) {
                 return (
                   <motion.div
-                    key={index}
+                    key={`${char}-${index}`}
                     variants={letterVariants}
                     className="flex items-center justify-center"
                   >
                     <img
                       src={adison2Logo}
-                      alt="O"
-                      className="h-[28px] sm:h-[45px] md:h-[55px] w-auto object-contain drop-shadow-[0_0_15px_rgba(239,68,68,0.75)]"
+                      alt=""
+                      aria-hidden="true"
+                      className="h-[39px] w-[39px] -translate-y-[2px] object-contain sm:h-[48px] sm:w-[48px] sm:-translate-y-[3px] md:h-[64px] md:w-[64px] md:-translate-y-[4px]"
                     />
                   </motion.div>
                 );
               }
+
               return (
                 <motion.span
-                  key={index}
+                  key={`${char}-${index}`}
                   variants={letterVariants}
-                  className="font-ethnocentric text-3xl sm:text-5xl md:text-6xl tracking-[0.1em] text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.25)]"
+                  className="font-ethnocentric text-3xl tracking-[0.1em] text-white drop-shadow-[0_0_12px_rgba(255,255,255,0.3)] sm:text-5xl md:text-6xl"
                 >
                   {char}
                 </motion.span>
@@ -110,29 +151,26 @@ export default function Preloader() {
             })}
           </motion.div>
 
-          {/* Elegant Progress Loading Line */}
-          <div className="relative mt-8 h-[1px] w-32 overflow-hidden bg-white/10 rounded-full">
-            <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{
-                duration: 1.8,
-                ease: [0.22, 1, 0.36, 1],
-                delay: 0.2,
-              }}
-              className="absolute inset-0 origin-left bg-gradient-to-r from-blue-500 via-white to-red-500"
-            />
-          </div>
-
-          {/* Loading status text */}
+          {/* Tagline */}
           <motion.p
-            initial={{ opacity: 0, y: 5 }}
-            animate={{ opacity: 0.4, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-            className="mt-6 text-[9px] uppercase tracking-[0.3em] text-white/80"
+            initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: shouldReduceMotion ? 0 : 1.1,
+              duration: shouldReduceMotion ? 0.2 : 0.9,
+            }}
+            className="mt-6 max-w-[90%] text-center text-base font-light italic tracking-wide text-white/80 sm:text-xl md:text-2xl"
+            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
           >
-            Initializing Intelligence
+            <span className="opacity-60">"</span>A Canadian-based{" "}
+            <em className="not-italic font-semibold text-white">
+              Business Intelligence
+            </em>{" "}
+            company with global reach.<span className="opacity-60">"</span>
           </motion.p>
+
+          {/* Bottom Border */}
+          <div className="absolute inset-x-0 bottom-0 h-[1px] bg-white/8" />
         </motion.div>
       )}
     </AnimatePresence>
