@@ -3,6 +3,7 @@ export default function GlassSurface({
   children,
   className = "",
   variant = "primary", // primary, secondary, or subtle
+  ...props
 }) {
   const variantStyles = {
     primary: "bg-black/60 border-white/10 backdrop-blur-2xl",
@@ -21,6 +22,7 @@ export default function GlassSurface({
         ${variantStyles[variant] || variantStyles.primary}
         ${className}
       `}
+      {...props}
     >
       {/* Internal subtle glow */}
       <div className="pointer-events-none absolute inset-0 rounded-[inherit] bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.02),transparent_40%)]" />
