@@ -2,7 +2,7 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "services": "Services",
+    "services": "Nos Services",
     "howWeWork": "Notre approche",
     "contact": "Contact"
   },
@@ -103,6 +103,11 @@
           "direction": "Orientation précise"
         }
       }
+    },
+    "founderQuote": {
+      "eyebrow": "MESSAGE DU FONDATEUR",
+      "quote": "Chez ADISON, chaque engagement commence par un engagement unique : vous donner une image claire de votre situation actuelle, et un chemin structuré vers là où vous voulez aller. Ce n'est pas une promesse — c'est un processus.",
+      "attribution": "Dr. Ibrahim Abdalla, Ph.D. | Fondateur & CEO, ADISON Corp."
     },
     "processPreview": {
       "eyebrow": "Méthodologie",
