@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./app/router/AppRouter";
 import ScrollToTop from "./components/shared/ScrollToTop";
 import { ReactLenis } from "lenis/react";
+import { Analytics } from "@vercel/analytics/react";
 import "./styles/globals.css";
 import "./lib/i18n";
 
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <BrowserRouter>
         <ScrollToTop />
         <AppRouter />
+        <Analytics />
       </BrowserRouter>
     </ReactLenis>
   </React.StrictMode>
