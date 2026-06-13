@@ -8,6 +8,19 @@ import GlassTextarea from "../../components/glass/GlassTextarea";
 import GlassSelect from "../../components/glass/GlassSelect";
 import { useContent } from "../../hooks/useContent";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
+// Safe EmailJS initialization from Vite environment variables
+const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+if (emailJsPublicKey) {
+  emailjs.init({
+    publicKey: emailJsPublicKey,
+    blockHeadless: true,
+    limitRate: {
+      throttle: 10000, // Throttles sending to once every 10 seconds to prevent spam
+    },
+  });
+}
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 18, filter: "blur(7px)" },
@@ -16,13 +29,18 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.68, delay, ease: [0.22, 1, 0.36, 1] },
 });
 
-function Field({ label, children, span2 = false }) {
+function Field({ label, children, span2 = false, error = "" }) {
   return (
     <div className={span2 ? "sm:col-span-2" : ""}>
       <p className="mb-2 text-xs font-medium uppercase tracking-wider text-white/90">
         {label}
       </p>
       {children}
+      {error && (
+        <p className="mt-1 text-xs text-red-400 font-medium">
+          {error}
+        </p>
+      )}
     </div>
   );
 }
@@ -38,6 +56,8 @@ function StepDot({ active }) {
 
 export default function ContactFormSection() {
   const { form, closing, tNumber } = useContent("contact");
+  const { i18n } = useTranslation();
+  const isAr = i18n.language === "ar";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -48,12 +68,13 @@ export default function ContactFormSection() {
     message: "",
   });
 
+  const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   // Track progress based on required fields only for better UX
   const requiredFields = ["name", "email", "inquiry", "message"];
-  const filled = requiredFields.filter((key) => formData[key]).length;
+  const filled = requiredFields.filter((key) => formData[key]?.trim()).length;
   const total = requiredFields.length;
 
   if (!form) return null;
@@ -61,26 +82,74 @@ export default function ContactFormSection() {
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    
+    // Clear errors when the user types
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: "" }));
+    }
+    if (errors.general) {
+      setErrors((prev) => ({ ...prev, general: "" }));
+    }
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     if (loading) return;
     setLoading(true);
+    setErrors({});
+
+    // Trim all form values for sanitization
+    const trimmedFormData = {
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      phone: formData.phone.trim(),
+      company: formData.company.trim(),
+      inquiry: formData.inquiry.trim(),
+      message: formData.message.trim(),
+    };
+
+    // Client-side validation checks
+    const validationErrors = {};
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!trimmedFormData.name) {
+      validationErrors.name = isAr ? "الاسم مطلوب." : "Name is required.";
+    }
+    if (!trimmedFormData.email) {
+      validationErrors.email = isAr ? "البريد الإلكتروني مطلوب." : "Email is required.";
+    } else if (!emailRegex.test(trimmedFormData.email)) {
+      validationErrors.email = isAr ? "يرجى إدخال بريد إلكتروني صالح." : "Please enter a valid email address.";
+    }
+    if (!trimmedFormData.inquiry) {
+      validationErrors.inquiry = isAr ? "نوع الاستفسار مطلوب." : "Inquiry type is required.";
+    }
+    if (!trimmedFormData.message) {
+      validationErrors.message = isAr ? "الرسالة مطلوبة." : "Message is required.";
+    }
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setLoading(false);
+      return;
+    }
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     emailjs
       .send(
-        "service_p9f2itf",
-        "template_95f6nd7",
+        serviceId,
+        templateId,
         {
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.company,
-          inquiry: formData.inquiry,
-          message: formData.message,
+          name: trimmedFormData.name,
+          email: trimmedFormData.email,
+          phone: trimmedFormData.phone,
+          company: trimmedFormData.company,
+          inquiry: trimmedFormData.inquiry,
+          message: trimmedFormData.message,
         },
-        "zc2KkQfTFzx1l5x0D"
+        publicKey
       )
       .then(() => {
         setSubmitted(true);
@@ -95,7 +164,11 @@ export default function ContactFormSection() {
       })
       .catch((error) => {
         console.error("EMAILJS ERROR:", error);
-        alert("Failed to send message.");
+        setErrors({
+          general: isAr
+            ? "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقاً."
+            : "Failed to send message. Please try again later.",
+        });
       })
       .finally(() => {
         setLoading(false);
@@ -173,7 +246,7 @@ export default function ContactFormSection() {
           </motion.div>
 
           <motion.div {...fadeUp(0.1)}>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} noValidate>
               <GlassSurface className="relative overflow-hidden rounded-[32px] px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
                 <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
@@ -227,26 +300,31 @@ export default function ContactFormSection() {
                   </motion.div>
                 ) : (
                   <>
+                    {/* General Error Message Block */}
+                    {errors.general && (
+                      <div className="mb-6 rounded-xl border border-red-500/20 bg-red-500/5 px-4 py-3 text-sm text-red-400">
+                        {errors.general}
+                      </div>
+                    )}
+
                     <div className="grid gap-5 sm:grid-cols-2">
-                      <Field label={form.labels.name} span2>
+                      <Field label={form.labels.name} span2 error={errors.name}>
                         <GlassInput
                           type="text"
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
                           placeholder={form.placeholders.name}
-                          required
                         />
                       </Field>
 
-                      <Field label={form.labels.email}>
+                      <Field label={form.labels.email} error={errors.email}>
                         <GlassInput
                           type="email"
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
                           placeholder={form.placeholders.email}
-                          required
                         />
                       </Field>
 
@@ -270,12 +348,11 @@ export default function ContactFormSection() {
                         />
                       </Field>
 
-                      <Field label={form.labels.inquiry}>
+                      <Field label={form.labels.inquiry} error={errors.inquiry}>
                         <GlassSelect
                           name="inquiry"
                           value={formData.inquiry}
                           onChange={handleChange}
-                          required
                         >
                           <option
                             value=""
@@ -296,14 +373,13 @@ export default function ContactFormSection() {
                         </GlassSelect>
                       </Field>
 
-                      <Field label={form.labels.message} span2>
+                      <Field label={form.labels.message} span2 error={errors.message}>
                         <GlassTextarea
                           name="message"
                           value={formData.message}
                           onChange={handleChange}
                           placeholder={form.placeholders.message}
                           maxLength={3000}
-                          required
                           rows={4}
                         />
 

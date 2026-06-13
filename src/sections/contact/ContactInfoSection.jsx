@@ -32,9 +32,8 @@ export default function ContactInfoSection() {
             <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
             <div
-              className={`grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 ${
-                isAr ? "text-right" : "text-left"
-              }`}
+              className={`grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 ${isAr ? "text-right" : "text-left"
+                }`}
             >
               {info.items.map((item, index) => (
                 <div key={item.title} className="flex flex-col space-y-3">
